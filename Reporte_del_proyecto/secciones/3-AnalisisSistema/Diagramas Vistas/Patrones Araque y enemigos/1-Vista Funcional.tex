@@ -1,0 +1,48 @@
+\subsubsection{Vista  Funcional}
+Este diagrama muestra cómo las entidades y procesos interactúan para gestionar la dificultad y ajustar los patrones de ataque de los enemigos en tiempo real, de acuerdo con el progreso del jugador.
+\begin{figure}[H]
+\centering
+\begin{adjustbox}{width=0.6\textwidth}
+\begin{tikzpicture}[
+    process/.style={rectangle, draw, minimum height=1cm, minimum width=3.5cm, align=center},
+    entity/.style={ellipse, draw, minimum height=1cm, minimum width=2.5cm, align=center},
+    relation/.style={-Stealth, thick}
+]
+
+% Entities
+\node[entity] (jugador) {Jugador};
+\node[entity, below=of jugador] (partida) {Partida};
+\node[entity, right=of partida] (nivel) {Nivel};
+\node[entity, below=of partida] (enemigo) {Enemigo};
+\node[entity, right=of enemigo] (ataque) {Ataque};
+
+% Processes
+\node[process, right=of jugador, xshift=3cm] (vars) {Recepción de Variables de Dificultad};
+\node[process, below=of vars] (enemigoSel) {Selección de Enemigos};
+\node[process, below=of enemigoSel] (patronGen) {Generación de Patrones de Ataque};
+\node[process, below=of patronGen] (ajuste) {Ajuste Procedural de Patrones};
+\node[process, below=of ajuste] (verif) {Verificación de Reglas de Juego};
+\node[process, below=of verif] (implement) {Implementación de Enemigos en el Nivel};
+
+% Arrows between processes
+\draw[relation] (vars) -- (enemigoSel);
+\draw[relation] (enemigoSel) -- (patronGen);
+\draw[relation] (patronGen) -- (ajuste);
+\draw[relation] (ajuste) -- (verif);
+\draw[relation] (verif) -- (implement);
+
+% Arrows between entities and processes
+\draw[relation] (jugador) -- (vars);
+\draw[relation] (nivel) -- (enemigoSel);
+\draw[relation] (enemigo) -- (enemigoSel);
+\draw[relation] (ataque) -- (patronGen);
+
+% Relationships
+\draw[relation, dashed] (jugador) -- (partida) node[midway, right] {Juega};
+\draw[relation, dashed] (partida) -- (nivel) node[midway, below] {Posee};
+\draw[relation, dashed] (enemigo) -- (ataque) node[midway, below] {Dispara};
+
+\end{tikzpicture}
+\end{adjustbox}
+\caption{Vista Funcional}
+\end{figure}

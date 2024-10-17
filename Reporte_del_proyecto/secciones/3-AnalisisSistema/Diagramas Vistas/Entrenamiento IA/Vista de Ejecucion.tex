@@ -1,0 +1,27 @@
+\subsubsection{Vista de Ejecucion}
+\begin{figure}[H]
+\centering
+\begin{adjustbox}{width=0.5\textwidth}
+
+\begin{tikzpicture}[
+    server/.style={rectangle, draw, minimum height=1cm, minimum width=3.5cm, align=center}
+]
+
+\node[server] (rec) {Recopilación de Datos};
+\node[server, below=of rec] (preproc) {Preprocesamiento};
+\node[server, below=of preproc] (train) {Entrenamiento de IA};
+\node[server, below=of train] (eval) {Evaluación del Modelo};
+\node[server, below=of eval] (adjust) {Ajuste de Parámetros};
+\node[server, below=of adjust] (deploy) {Implementación del Modelo};
+
+% Arrows between servers
+\draw (rec) -> (preproc);
+\draw (preproc) -> (train);
+\draw (train) -> (eval);
+\draw (eval) -> (adjust);
+\draw (adjust) -> (deploy);
+
+\end{tikzpicture}
+\end{adjustbox}
+\caption{Vista de Ejecucion}
+\end{figure}

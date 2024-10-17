@@ -1,0 +1,32 @@
+\subsubsection{Vista  de Despliegue}
+Este diagrama asegura que los roles y responsabilidades de los componentes estén claramente separados, con el servidor encargado de la lógica pesada y el cliente enfocado en la interacción con el jugador.
+\begin{figure}[H]
+\centering
+\begin{adjustbox}{width=0.6\textwidth}
+\begin{tikzpicture}[
+    server/.style={rectangle, draw, text centered, minimum width=4cm, minimum height=1cm, fill=blue!20},
+    client/.style={rectangle, draw, text centered, minimum width=4cm, minimum height=1cm, fill=green!20},
+    connection/.style={->, thick, >=Stealth}
+]
+
+% Components
+\node (server) [server] {Servidor del Juego\\(Motor Procedural, Sistema de IA)};
+\node (client) [client, below=2cm of server] {Cliente (Jugador)\\(Dispositivo del Jugador)};
+
+% Entities on server
+\node (nivel) [right=0.5cm of server, align=center] {Entidad Nivel};
+\node (ia_modelo) [right=0.5cm of nivel, align=center] {Entidad IA\\Modelo};
+
+% Entities on client
+\node (jugador) [right=0.5cm of client, align=center] {Entidad Jugador};
+
+% Connections
+\draw[connection] (client) -- node[midway, right] {Interacción con el sistema} (server);
+\draw[connection] (server) -- (nivel);
+\draw[connection] (server) -- (ia_modelo);
+\draw[connection] (client) -- (jugador);
+
+\end{tikzpicture}
+\end{adjustbox}
+\caption{Vista de Despliegue}
+\end{figure}

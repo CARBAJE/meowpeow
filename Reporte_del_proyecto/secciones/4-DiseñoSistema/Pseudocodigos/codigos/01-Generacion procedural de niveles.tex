@@ -1,0 +1,170 @@
+\subsubsection{Algoritmos del proceso de \textit{Generación procedural de niveles}.}
+
+
+\subsubsection*{Algoritmo de Generación Procedural de Entornos}
+
+\textbf{Problemática}: Crear entornos variados pero coherentes. Mantener un equilibrio entre la variedad y la jugabilidad puede ser un reto, ya que demasiada aleatoriedad puede generar niveles desequilibrados o imposibles de completar.
+
+\textbf{Posible solución}: Utilización de algoritmos como \textit{Perlin Noise} o \textit{Simplex Noise} para generar terrenos o plataformas con una coherencia visual y de estructura. También se pueden emplear \textit{gramáticas de espacio} para la disposición de ambientes más estructurados.
+
+\textbf{Desafío técnico}: Mantener un balance entre la generación aleatoria y las reglas del diseño de niveles. Es necesario verificar que los niveles generados sean accesibles y jugables (sin zonas inalcanzables).
+
+\begin{algorithm}
+\caption{Inicializar Generador de Terrenos (e.g., Perlin Noise)\;}
+\SetAlgoLined
+\ForEach{sector del nivel}{
+    Definir parámetros de terreno (altura, bioma, etc.)\;
+    Generar altura usando ruido (Perlin Noise)\;
+    \If{bioma == 'agua'}{
+        Establecer zona como agua\;
+    }
+    \ElseIf{bioma == 'montaña'}{
+        Establecer elevación adicional\;
+    }
+}
+Verificar que no haya zonas inalcanzables\;
+\ForEach{punto de inicio y final}{
+    \If{distancia(punto inicio, punto final) no es accesible}{
+        Ajustar terreno o generar puente/plataforma\;
+    }
+}
+\Return{entorno generado}
+\end{algorithm}
+
+\subsubsection*{Algoritmo de Distribución de Obstáculos}
+
+\textbf{Problemática}: La colocación de obstáculos debe respetar reglas de accesibilidad, sin hacer el nivel demasiado difícil ni demasiado fácil.
+
+\textbf{Posible solución}: Algoritmos de \textit{optimización espacial} como \textit{temple simulado (simulated annealing)} o algoritmos genéticos pueden ser útiles para iterar sobre las colocaciones de obstáculos y ajustar la dificultad, evitando repeticiones no deseadas y respetando restricciones de espacio.
+
+\textbf{Desafío técnico}: La necesidad de verificar constantemente que la disposición de los obstáculos no bloquee el progreso del jugador y que ofrezca un reto adecuado.
+
+\begin{algorithm}
+\SetAlgoLined
+\caption{Inicializar Lista de Obstáculos (paredes, trampas, bloques)};
+Definir la cantidad máxima de obstáculos según la dificultad\;
+\ForEach{sector del nivel}{
+    Seleccionar una ubicación aleatoria\;
+    Verificar que la ubicación sea accesible\;
+    Colocar obstáculo\;
+    Evaluar balance de dificultad\;
+    \If{dificultad > límite superior}{
+        Eliminar obstáculos o reubicar\;
+    }
+}
+Iterar hasta lograr una distribución óptima usando algoritmo de temple simulado\;
+Ajustar distribución según las restricciones (accesibilidad, dificultad)\;
+\Return{obstáculos distribuidos}
+\end{algorithm}
+
+\subsubsection*{Algoritmo de Distribución de Enemigos}
+
+\textbf{Problemática}: Colocar enemigos de manera estratégica en el nivel, ajustando su comportamiento según la dificultad del jugador, puede volverse complicado en niveles más avanzados o con enemigos complejos.
+
+\textbf{Posible solución}: Usar una \textit{red neuronal o aprendizaje profundo} para ajustar dinámicamente la colocación y el comportamiento de los enemigos basándose en el estilo de juego del usuario (un enfoque de dificultad adaptativa). Alternativamente, un enfoque de \textit{clusterización jerárquica} podría agrupar enemigos según el espacio disponible o su dificultad para asegurarse de que no se concentren en un solo punto.
+
+\textbf{Desafío técnico}: El cálculo eficiente y adaptativo del comportamiento enemigo en tiempo real, asegurando que los enemigos estén bien distribuidos pero sin predecir el comportamiento del jugador con demasiada precisión, lo que podría hacer el juego frustrante o repetitivo.
+
+\begin{algorithm}
+\caption{Inicializar Lista de Enemigos disponibles};
+\SetAlgoLined
+Definir cantidad y tipo de enemigos según la dificultad del jugador\;
+\ForEach{sector del nivel}{
+    Seleccionar una posición estratégica aleatoria\;
+    Colocar enemigo en la posición\;
+}
+Ajustar el comportamiento enemigo según la dificultad del jugador\;
+\If{jugador es avanzado}{
+    Aumentar agresividad y velocidad\;
+}
+\ElseIf{jugador es novato}{
+    Reducir agresividad y añadir enemigos más fáciles\;
+}
+Verificar que los enemigos estén bien distribuidos\;
+\If{enemigos están demasiado cerca o concentrados}{
+    Reubicar algunos de ellos\;
+}
+\Return{nivel con enemigos colocados};
+\end{algorithm}
+\subsubsection*{Algoritmo de Ajuste Dinámico de Dificultad}
+
+\textbf{Problemática}: Ajustar la dificultad en función del rendimiento del jugador sin hacer el juego ni demasiado fácil ni demasiado difícil.
+
+\textbf{Posible solución}: Se puede usar un sistema de \textit{aprendizaje reforzado} que ajuste los parámetros del juego (como la cantidad de enemigos, su agresividad o la cantidad de obstáculos) en función del comportamiento del jugador. Este sistema podría aprender del jugador en tiempo real y ajustar las condiciones del nivel en consecuencia.
+
+\textbf{Desafío técnico}: El ajuste de dificultad debe realizarse de manera sutil para que el jugador no perciba cambios drásticos, lo que podría afectar la inmersión. También es crucial evitar la creación de “picos” de dificultad que hagan el juego injustamente complicado.
+
+\begin{algorithm}
+\caption{Inicializar parámetros de dificultad (agresividad, cantidad de enemigos, velocidad, etc.).}
+\SetAlgoLined
+Monitorear el desempeño del jugador (e.g., precisión, tiempo de reacción)\;
+\ForEach{nivel generado}{
+    Ajustar dificultad dinámicamente\;
+    \If{jugador progresa muy rápido}{
+        Incrementar cantidad de enemigos o agresividad\;
+    }
+    \ElseIf{jugador tiene dificultades}{
+        Reducir la cantidad de enemigos o facilitar obstáculos\;
+    }
+}
+Aplicar los ajustes al nivel en tiempo real\;
+\Return{nivel ajustado con la dificultad adaptada}\;
+\end{algorithm}
+
+\subsubsection*{Algoritmo de Verificación de Reglas}
+
+\textbf{Problemática}: Asegurar que el nivel generado sea jugable y cumpla con las reglas establecidas (accesibilidad, distribución de enemigos y obstáculos, etc.).
+
+\textbf{Posible solución}: Un \textit{algoritmo de búsqueda} como \textit{A* (A-star)} o \textit{algoritmos basados en grafos} para verificar que cada parte del nivel sea accesible y jugable. El algoritmo puede validar la disposición de los obstáculos y enemigos y confirmar que el jugador puede completar el nivel sin quedar atrapado o encontrarse en situaciones imposibles.
+
+\textbf{Desafío técnico}: Verificar las reglas sin impactar negativamente en el rendimiento del juego, especialmente en niveles muy complejos o con una gran cantidad de elementos.
+
+\begin{algorithm}
+\caption{Algoritmo de verificación de Reglas}
+\SetAlgoLined
+\ForEach{sector del nivel generado}{
+    Generar un grafo representando el mapa\;
+    Ejecutar el algoritmo A* para verificar rutas accesibles\;
+    \If{ruta no es accesible}{
+        Ajustar el terreno o reubicar obstáculos\;
+    }
+    Verificar la distribución de enemigos y obstáculos\;
+    \If{enemigos u obstáculos bloquean el progreso}{
+        Reubicar elementos\;
+    }
+}
+\If{el nivel cumple con las reglas de jugabilidad}{
+    \Return{``Verificación exitosa''}\;
+}
+\Else{
+    \Return{``Ajustes necesarios''}\;
+}
+\end{algorithm}
+
+\subsubsection*{Algoritmo de Generación de Entornos Jugables}
+
+\textbf{Problemática}: Asegurarse de que los niveles generados sean divertidos, equilibrados y no repetitivos, mientras se ajustan a las reglas de diseño establecidas.
+
+\textbf{Posible solución}: \textit{Algoritmos basados en evolución procedural} (PCG - Procedural Content Generation) que usan \textit{gramáticas generativas} o métodos como \textit{Markov Chains} para crear niveles con ciertas estructuras reconocibles, pero que aún mantienen variedad.
+
+\textbf{Desafío técnico}: Evitar la monotonía, asegurando que el sistema pueda generar suficientes variaciones interesantes en los niveles para que el jugador no perciba repetición en la experiencia.
+
+\begin{algorithm}
+\caption{Generación Procedural de un Nivel Jugable}
+\SetAlgoLined
+
+Inicializar gramática procedural para generar estructuras reconocibles\;
+\ForEach{sector del nivel}{
+    Generar secciones del nivel utilizando gramáticas\;
+    Validar la jugabilidad de cada sección (rutas, obstáculos, enemigos)\;
+}
+Evaluar el balance de dificultad y variedad\;
+\If{sección es muy repetitiva}{
+    Cambiar parámetros para generar una variación\;
+}
+Verificar accesibilidad\;
+\If{alguna sección no es accesible}{
+    Ajustar su generación\;
+}
+\Return{Entorno jugable generado}\;
+\end{algorithm}

@@ -1,0 +1,38 @@
+\subsubsection{Vista  de Desempeño y Escalabilidad}
+Este diagrama representa la Vista de Desempeño o Escalabilidad del sistema, destacando los procesos clave que aseguran un rendimiento adecuado en tiempo real sin afectar la fluidez del juego.
+\begin{figure}[H]
+\centering
+\begin{adjustbox}{width=0.8\textwidth}
+\begin{tikzpicture}[
+    process/.style={rectangle, draw, minimum height=1cm, minimum width=3cm, align=center, rounded corners},
+    entity/.style={ellipse, draw, minimum height=1cm, minimum width=2.5cm, align=center},
+    check/.style={diamond, draw, aspect=2, minimum width=3cm, align=center},
+    relation/.style={-Stealth, thick}
+]
+
+% Nodes (Processes)
+\node[process] (ajustar) {Ajuste Procedural en Tiempo Real};
+\node[process, below=of ajustar, yshift=-2cm] (verificar) {Verificar Desempeño del Nivel};
+\node[process, below=of verificar, yshift=-2cm] (optimizar) {Optimizar Rendimiento del Juego};
+
+% Entities
+\node[entity, left=of ajustar, xshift=-2cm] (ia_modelo) {IA\_Modelo};
+\node[entity, below left=of verificar, xshift=-1cm, yshift=-1cm] (enemigo) {Enemigo};
+\node[entity, below right=of verificar, xshift=1cm, yshift=-1cm] (nivel) {Nivel};
+
+% Relations between processes
+\draw[relation] (ajustar) -- (verificar);
+\draw[relation] (verificar) -- (optimizar);
+
+% Relations to entities
+\draw[relation, dashed] (ia_modelo) -- (ajustar);
+\draw[relation, dashed] (enemigo) -- (verificar);
+\draw[relation, dashed] (nivel) -- (optimizar);
+
+% Additional Labels
+\node[below=of optimizar, yshift=-0.5cm, align=center] (note) {Asegura fluidez \\ incluso con niveles complejos};
+
+\end{tikzpicture}
+\end{adjustbox}
+\caption{Vista de Desempeño y Escalabilidad}
+\end{figure}

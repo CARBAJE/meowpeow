@@ -1,0 +1,54 @@
+\subsection{Diagrama de Arquitectura.}
+
+\begin{figure}[htbp]
+    \centering
+    \adjustbox{width=\textwidth}{
+        \begin{tikzpicture}[font=\sffamily,every label/.append
+        style={font=\small\sffamily,align=center}]
+        \node[cylinder, cylinder uses custom fill, cylinder end fill=blue!25,
+        cylinder body fill=blue!50,shape border rotate=90,text=white,
+        aspect=0.4,minimum width=1cm,minimum height=1.4cm](Store){BD};
+        \node[right=1cm of Store,regular polygon,regular polygon sides=6,fill=orange,
+        xscale=1.2,text=white] (Router) {Model IA};
+        \node[fit=(Store) (Router)](fit1){};
+        \node[below=1cm of fit1,tape, draw,thin, tape bend top=none,fill=purple,
+        text=white,minimum width=2.2cm,double copy shadow,minimum height=1.5cm]
+        (Components) {Componentes};
+        \node[draw,dashed,rounded corners,fit=(Store) (Router) (Components),inner
+        sep=10pt,label={above:{Universal\\ Application Code}}](fit2){};
+        \node[right=1cm of fit2,doc] (js) {código};
+        \node[above right=1cm of js,doc] (Server) {Entidad del\\dispositivo};
+        \node[below right=1cm of js,doc] (Client) {Entidad del\\Usuario};
+        \draw(fit2.east) -- (js);
+        \draw[-latex] (js) |- (Server);
+        \draw[-latex] (js) |- (Client);
+        \draw[-] (Client) -- ++ (1,0) |- (Server) coordinate[pos=0.25] (aux1);
+        \node[draw,dashed,rounded corners,fit=(fit2) (aux1),inner
+        xsep=10pt,inner ysep=30pt,label={above:{Source}}](fit3){};
+        %
+        \pic[right=2cm of aux1,local bounding box=Webpack,scale=2] (Webpack) {pack};
+        \node[below=1mm of Webpack,font=\small\sffamily,align=center]{Applicación\\funcional};
+        %
+        \node[above right=1cm and 2cm of Webpack.east,doc,fill=red!10] (ServerBundle)
+        {Paquete de\\Modelos IA};
+        \node[below right=1cm and 2cm of Webpack.east,doc,fill=red!10] (ClientBundle) {Paquete de\\Usuarios};
+        \node[right=2cm of ServerBundle,parallelepiped,draw=yellow,fill=red!80,
+          minimum width=2cm,minimum height=1.5cm,align=center,text=white]
+          (BundleRenderer)   {Paquete de\\Paetidas};
+        \node[right=2cm of ClientBundle,doc,fill=yellow,minimum width=2cm,minimum height=1.5cm] (HTML) {Estadisticas};
+        \draw[-latex] (aux1) -- (Webpack);
+        \draw[-latex] (Webpack) -- ++ (2,0) coordinate(aux2) |- (ServerBundle);
+        \draw[-latex] (aux2) |- (ClientBundle);
+        \draw[-latex] (ClientBundle) -- (HTML) node[midway,below,font=\small\sffamily]{Hydrate};
+        \draw (ServerBundle) -- (BundleRenderer);
+        \draw[-latex] (BundleRenderer) -- (HTML) node[midway,right,font=\small\sffamily]{Render};
+        % 
+        \node[draw,dashed,rounded corners,fit=(ServerBundle) (BundleRenderer),inner
+        sep=10pt,label={above:{Model server}}](fit4){};
+        \node[draw,dashed,rounded corners,fit=(ClientBundle) (HTML),inner
+        sep=10pt,label={below:{Statistics Extraction}}](fit5){};
+        \end{tikzpicture}
+    }
+    \caption{Diagrama de la arquitectura de la aplicación.}
+    \label{fig:architecture}
+\end{figure}

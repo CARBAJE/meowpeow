@@ -1,0 +1,147 @@
+digraph G {
+    // Ajustes generales del grafo
+    graph [rankdir=LR, ranksep=15, nodesep=15];  // Cambia a LR para dirección horizontal
+
+    // Estilo de las conexiones
+    edge [style="simple relation"];
+
+    // Estilos personalizados
+    node [style="rounded", fontsize=12, shape=rectangle, width=2.5]; // Cambia el tamaño de los nodos
+
+    // Entidades
+    Jugador [style="entity", label="Jugador"];
+    Jid [style="attribute", label="\underline{J\_ID}"];
+    Nombre [style="attribute", label="Name"];
+
+    Partida [style="entity", label="Partida"];
+    Pid [style="attribute", label="\underline{ID}"];
+    PuntajePartida [style="attribute", label="Pje_P"];
+    vPerd [style="attribute", label="HP\_Lost"];
+    tJug [style="attribute", label="T\_Jgd"];
+
+    Nivel [style="entity", label="Nivel"];
+    Nid [style="attribute", label="\underline{ID}"];
+    pObt [style="attribute", label="Pts\_Obt"];
+    eGen [style="attribute", label="E\_Gen"];
+    eElim [style="derived attribute", label="E\_Del"];
+    oGen [style="attribute", label="Obs\_Gen"];
+    dNiv [style="attribute", label="N\_Difi"];
+    VelScroll [style="attribute", label="Vel\_Scroll"]; // Corregido "Sreoll"
+
+    Enemigo [style="entity", label="Enemigos"];
+    Eid [style="attribute", label="\underline{ID}"];
+    Tipo [style="attribute", label="T\_En"];
+    vEnm [style="attribute", label="E\_Enmy"];
+
+    Ataque [style="weak entity"];
+    IdAtq [style="attribute", label="\dashedunderline{ID}"];
+    PtnAtq [style="multi attribute", label="Ptn\_Atq"];
+    FreqAtq [style="attribute", label="Freq\_Atq"];
+    PowAtq [style="attribute", label="Pow\_Atq"];
+
+    IA_Modelo [style="entity", label="Modelo\_IA"];
+    Mid [style="attribute", label="\underline{ID}"];
+    Metricas [style="attribute", label="Metricas"]; //Añadido label
+    TasaAjuste [style="attribute", label="Tasa\_Ajst"];
+    TiempoAdpt [style="attribute", label="Tm\_Adapt"];
+    DestEstDif [style="attribute", label="DesvEst"];
+    Heuristica [style="attribute", label="Heuristica"];
+
+    Estadisticas [style="weak entity"];
+    idEstad [style="attribute", label="\dashedunderline{ID}"];
+    MScore [style="attribute", label="M\_Sc"];
+    PuntajePartida [style="attribute", label="Ptj\_Ptj"];
+    MejorPuntaje [style="attribute", label="Best\_Ptj"];
+    TtlTiempo [style="attribute", label="Ttl\_Tiempo"];
+    TiempoMedio [style="attribute", label="Tm\_media"];
+    PresicionJdr [style="attribute", label="PrecisionJdr"];
+    estrategiaMov [style="attribute", label="EstrategiaMov"];
+
+    // Relaciones
+    juega [style="relationship"];
+    posee [style="relationship"];
+    TtlEnDel [style="derived attribute"];
+    tiene [style="relationship"];
+    disparaJdr [style="weak relationship", label="dispara"];
+    disparaEne [style="weak relationship", label="dispara"];
+    modifica [style="relationship"];
+    cambia [style="relationship"];
+    transforma [style="relationship"];
+
+    genera [style="weak relationship"];
+    usa [style="weak relationship"];
+
+    // Conexiones
+    Jugador -> Jid;
+    Jugador -> Nombre;
+
+    Partida -> Pid;
+    Partida -> PuntajePartida;
+    Partida -> vPerd;
+    Partida -> tJug;
+
+    Nivel -> Nid;
+    Nivel -> eGen;
+    Nivel -> eElim;
+    Nivel -> oGen;
+    Nivel -> dNiv;
+    Nivel -> VelScroll;
+    Nivel -> pObt;
+
+    Enemigo -> Eid;
+    Enemigo -> Tipo;
+    Enemigo -> vEnm;
+
+    Ataque -> IdAtq;
+    Ataque -> PtnAtq;
+    Ataque -> FreqAtq;
+    Ataque -> PowAtq;
+
+    Estadisticas -> idEstad;
+    Estadisticas -> MScore;
+    Estadisticas -> PuntajePartida;
+    Estadisticas -> MejorPuntaje;
+    Estadisticas -> TtlTiempo;
+    Estadisticas -> TiempoMedio;
+    Estadisticas -> PresicionJdr;
+    Estadisticas -> estrategiaMov;
+
+    IA_Modelo -> Mid;
+    IA_Modelo -> Metricas;
+    IA_Modelo -> Metricas -> TasaAjuste;
+    IA_Modelo -> Metricas -> TiempoAdpt;
+    IA_Modelo -> Metricas -> DestEstDif;
+    IA_Modelo -> Heuristica;
+
+    // Relaciones
+    Jugador -> juega [label="1"];
+    Partida -> juega [style="total relation", label="N"];
+
+    Partida -> posee [style="total relation", label="1"];
+    Nivel -> posee [style="total relation", label="N"];
+    posee -> TtlEnDel;
+
+    Enemigo -> tiene [label="M"];
+    Nivel -> tiene [style="total relation", label="N"];
+
+    Jugador -> disparaJdr [style="total relation", label="1"];
+    Ataque -> disparaJdr [label="1"];
+
+    Enemigo -> disparaEne [style="total relation", label="N"];
+    Ataque -> disparaEne [label="M"];
+
+    IA_Modelo -> modifica [style="total relation", label="N"];
+    Enemigo -> modifica [label="M"];
+
+    IA_Modelo -> cambia [style="total relation", label="N"];
+    Nivel -> cambia [label="M"];
+
+    Jugador -> genera [label="1"];
+    IA_Modelo -> genera [style="total relation", label="M"];
+
+    Partida -> usa [label="N"]; // Corregido "Usa" -> "usa"
+    IA_Modelo -> usa [label="1"];
+
+    Estadisticas -> transforma [label="N"];
+    IA_Modelo -> transforma [label="1"];
+}

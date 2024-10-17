@@ -1,0 +1,54 @@
+\subsubsection{Diagrama de Vistas de la Escalabilidad del Algoritmo de IA}
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[
+    scale=0.55,  % Escalar todo el diagrama
+    class/.style={rectangle, draw, minimum height=0.8cm, minimum width=2cm, align=center},
+    decision/.style={diamond, draw, aspect=2, text width=2cm, align=center},
+    node distance=0.7cm  % Reducir la distancia entre nodos
+]
+
+% Definir las clases con texto más pequeño
+\node[class] (recopilarDatos) {\small Recopilar Datos\\ de Rendimiento};
+\node[class, below=of recopilarDatos] (nuevasVariables) {\small Identificar Nuevas\\ Variables o Métricas};
+\node[class, below=of nuevasVariables] (evaluar) {\small Evaluar Relevancia\\ de Nuevas Variables};
+\node[class, below=of evaluar] (analizar) {\small Analizar Impacto\\ de Nuevas Variables};
+\node[class, below=of analizar] (diseñar) {\small Diseñar Adaptación\\ del Sistema de IA};
+
+% Decisión de escalabilidad
+\node[decision, below=of diseñar] (escalable) {\small ¿Adaptación Exitosa?};
+
+% Clases posteriores a la decisión
+\node[class, below=of escalable, xshift=-3cm] (implementar) {\small Implementar Nuevas\\ Variables en el Algoritmo};
+\node[class, below=of implementar] (probar) {\small Probar la Integración\\ de Nuevas Variables};
+\node[class, below=of probar] (reentrenar) {\small Reentrenar el Modelo\\ de IA};
+\node[class, below=of reentrenar] (validar) {\small Validar Resultados};
+
+% Decisión de resultados
+\node[decision, below=of validar] (ajustar) {\small ¿Resultados\\ Satisfactorios?};
+
+% Fin
+\node[class, below=of ajustar] (fin) {\small Fin};
+
+% Clases para el flujo "No"
+\node[class, below=of escalable, xshift=3cm] (noAdaptacion) {\small Revisar\\ Algoritmo};
+\node[class, below=of ajustar, xshift=3cm] (mejorar) {\small Mejorar\\ Algoritmo};
+
+% Conectar las clases
+\draw (recopilarDatos) -> (nuevasVariables);
+\draw (nuevasVariables) -> (evaluar);
+\draw (evaluar) -> (analizar);
+\draw (analizar) -> (diseñar);
+\draw (diseñar) -> (escalable);
+\draw (escalable) -- node[right] {\small Sí} (implementar);
+\draw (escalable.east) --++(1.5,0) node [above] {\small No} --++(0,-2.5) |- (noAdaptacion);  % Flujo de "No"
+\draw (implementar) -> (probar);
+\draw (probar) -> (reentrenar);
+\draw (reentrenar) -> (validar);
+\draw (validar) -> (ajustar);
+\draw (ajustar) -- node[left] {\small Sí} (fin);
+\draw (ajustar.east) --++(1.5,0) node [above] {\small No} --++(0,-5) |- (mejorar);  % Ajustar la distancia
+
+\end{tikzpicture}
+\caption{Vista de Desarrollo de la Escalabilidad del Algoritmo de IA}
+\end{figure}

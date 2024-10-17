@@ -1,0 +1,168 @@
+\subsubsection{Algoritmos del proceso del \textit{modelo de IA}}
+\subsubsection*{Algoritmo de Validación de Datos Históricos (Vista Lógica y Física)}
+\textbf{Problemática}: Verificar que los datos de las partidas sean válidos y consistentes antes de usarlos en el modelo de IA.
+
+\begin{algorithm}[H]
+\caption{Validación de Datos Históricos}
+\SetAlgoLined
+\KwIn{Datos\_Históricos}
+\ForEach{partida en Datos\_Históricos}{
+    \If{partida.puntuacion < 0 \textbf{or} partida.precision < 0 \textbf{or} partida.tiempo\_jugado <= 0}{
+        Descartar partida\;
+    }
+    \If{partida.vidas\_perdidas < 0 \textbf{or} partida.enemigos\_eliminados < 0}{
+        Descartar partida\;
+    }
+    \If{datos inconsistentes encontrados}{
+        Notificar error y corregir\;
+    }
+}
+\Return{Datos\_Históricos\_Validados}
+\end{algorithm}
+
+\subsubsection*{Algoritmo de Preprocesamiento de Datos.}
+\textbf{Problemática}: Preparar los datos recopilados para ser utilizados en el entrenamiento del modelo de IA, mediante normalización y generación de nuevas características.
+
+\begin{algorithm}[H]
+\caption{Preprocesamiento de Datos}
+\SetAlgoLined
+\KwIn{Datos\_Históricos\_Validados}
+Datos\_Normalizados = Normalizar(Datos\_Históricos\_Validados)\;
+Caracteristicas\_Adicionales = Generar\_Caracteristicas(Datos\_Normalizados)\;
+\ForEach{partida en Caracteristicas\_Adicionales}{
+    tendencia = Calcular\_Tendencia(partida.puntuacion, partida.precision, partida.vidas\_perdidas)\;
+    Agregar tendencia a partida\;
+}
+\Return{Datos\_Preprocesados}
+\end{algorithm}
+
+\begin{algorithm}[H]
+\caption{Normalización de Datos}
+\SetAlgoLined
+\KwIn{Datos}
+\ForEach{dato en Datos}{
+    dato.normalizado = $\frac{dato.valor - min(dato)}{max(dato) - min(dato)}$\;
+}
+\Return{Datos\_Normalizados}
+\end{algorithm}
+
+\begin{algorithm}[H]
+\caption{Generación de Características}
+\SetAlgoLined
+\KwIn{Datos}
+Crear nuevas características basadas en estadísticas (p. ej., mejora del rendimiento del jugador en cada partida)\;
+\Return{Datos con características adicionales}
+\end{algorithm}
+
+\subsubsection*{Algoritmo de Entrenamiento del Modelo.}
+\textbf{Problemática}: Entrenar un modelo de red neuronal basado en los datos preprocesados, ajustando los pesos mediante retropropagación.
+
+\begin{algorithm}[H]
+\caption{Entrenamiento del Modelo}
+\SetAlgoLined
+\KwIn{Datos\_Preprocesados}
+Inicializar modelo con pesos aleatorios\;
+\ForEach{época}{
+    \ForEach{entrada en Datos\_Preprocesados}{
+        salida\_predicha = Propagar\_Adelante(entrada, modelo)\;
+        error = Calcular\_Error(salida\_predicha, entrada.objetivo)\;
+        Ajustar\_Pesos(error, modelo)\;
+        Retropropagar(error, modelo)\;
+    }
+}
+\Return{Modelo\_Entrenado}
+\end{algorithm}
+
+\begin{algorithm}[H]
+\caption{Propagación Adelante}
+\SetAlgoLined
+\KwIn{entrada, modelo}
+\ForEach{capa en modelo}{
+    entrada = Activacion(Suma\_Pesos(entrada, capa.pesos))\;
+}
+\Return{entrada como salida\_predicha}
+\end{algorithm}
+
+\begin{algorithm}[H]
+\caption{Ajuste de Pesos}
+\SetAlgoLined
+\KwIn{error, modelo}
+\ForEach{capa en modelo}{
+    Actualizar pesos basándose en error y tasa de aprendizaje\;
+}
+\end{algorithm}
+
+\begin{algorithm}[H]
+\caption{Retropropagación}
+\SetAlgoLined
+\KwIn{error, modelo}
+Propagar el error hacia atrás ajustando pesos de capas anteriores\;
+\end{algorithm}
+
+\subsubsection*{Algoritmo de Evaluación del Modelo.}
+\textbf{Problemática}: Evaluar el rendimiento del modelo entrenado utilizando métricas clave.
+
+\begin{algorithm}[H]
+\caption{Evaluación del Modelo}
+\SetAlgoLined
+\KwIn{Modelo\_Entrenado, Datos\_Validacion}
+métrica\_precision = 0\;
+métrica\_tiempo\_respuesta = 0\;
+\ForEach{entrada en Datos\_Validacion}{
+    predicción = Modelo\_Entrenado.Propagar\_Adelante(entrada)\;
+    métrica\_precision += Comparar\_Prediccion(predicción, entrada.objetivo)\;
+    métrica\_tiempo\_respuesta += Calcular\_Tiempo\_Respuesta(predicción)\;
+}
+Calcular\_Métricas\_Finales(métrica\_precision, métrica\_tiempo\_respuesta)\;
+\Return{Métricas}
+\end{algorithm}
+
+\begin{algorithm}[H]
+\caption{Comparación de Predicción}
+\SetAlgoLined
+\KwIn{predicción, objetivo}
+\If{predicción es correcta}{
+    \Return{1}\;
+}
+\Else{
+    \Return{0}\;
+}
+\end{algorithm}
+
+\begin{algorithm}[H]
+\caption{Cálculo del Tiempo de Respuesta}
+\SetAlgoLined
+\KwIn{predicción}
+Medir tiempo que tomó la predicción\;
+\Return{tiempo}
+\end{algorithm}
+
+\subsubsection*{Algoritmo de Ajuste de Parámetros.}
+\textbf{Problemática}: Ajustar los parámetros del modelo si el rendimiento es subóptimo según las métricas evaluadas.
+
+\begin{algorithm}[H]
+\caption{Ajuste de Parámetros del Modelo}
+\SetAlgoLined
+\KwIn{Modelo\_Entrenado, Métricas}
+\If{Métricas.precision < umbral \textbf{or} Métricas.tiempo\_respuesta > limite}{
+    Ajustar tasa\_de\_aprendizaje en Modelo\_Entrenado\;
+    Aumentar número de iteraciones si es necesario\;
+    Reentrenar el modelo con los nuevos parámetros\;
+}
+\Return{Modelo\_Ajustado}
+\end{algorithm}
+
+\subsubsection*{Algoritmo de Implementación del Modelo Actualizado.}
+\textbf{Problemática}: Integrar el modelo actualizado en el sistema de juego para ajustar la dificultad en tiempo real.
+
+\begin{algorithm}[H]
+\caption{Implementación del Modelo}
+\SetAlgoLined
+\KwIn{Modelo\_Ajustado}
+Sistema\_Juego.Cargar\_Modelo(Modelo\_Ajustado)\;
+\While{juego esté activo}{
+    Datos\_Actuales = Recopilar\_Datos\_Juego()\;
+    dificultad\_ajustada = Modelo\_Ajustado.Prediccion(Datos\_Actuales)\;
+    Sistema\_Juego.Ajustar\_Dificultad(dificultad\_ajustada)\;
+}
+\end{algorithm}

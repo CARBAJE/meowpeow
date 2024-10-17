@@ -1,0 +1,52 @@
+\subsubsection{Escalabilidad del Algoritmo de IA}
+\begin{figure}[H]
+\centering
+\begin{adjustbox}{scale=0.8} % Cambia el valor de escala según sea necesari
+\begin{tikzpicture}[node distance=1.5cm, auto, thick, 
+  every node/.style={rectangle, draw=black, align=center, minimum height=0.5cm, minimum width=2.5cm},
+  startstop/.style = {ellipse, draw=black, fill=red!30},
+  process/.style = {rectangle, draw=black, fill=yellow!30},
+  decision/.style = {diamond, draw=black, fill=green!10, aspect=2, text width=3cm, align=center},
+  line/.style = {draw, -{Stealth[scale=1.2]}}
+]
+
+% Start node
+\node (start) [startstop] {Inicio};
+
+% Activity nodes
+\node (recopilarDatos) [process, below of=start] {Recopilar datos de rendimiento};
+\node (nuevasVariables) [process, below of=recopilarDatos] {Identificar nuevas variables o métricas del juego};
+\node (evaluar) [process, below of=nuevasVariables] {Evaluar relevancia de nuevas variables};
+\node (analizar) [process, below of=evaluar] {Analizar impacto de nuevas variables};
+\node (diseñar) [process, below of=analizar] {Diseñar adaptación del sistema de IA};
+
+\node (escalable) [decision, below of=diseñar] {¿Adaptación exitosa?};
+\node (implementar) [process, below of=escalable] {Implementar nuevas variables en el algoritmo de IA};
+\node (probar) [process, below of=implementar] {Probar la integración de nuevas variables};
+\node (reentrenar) [process, below of=probar] {Reentrenar el modelo de IA};
+\node (validar) [process, below of=reentrenar] {Validar resultados};
+
+\node (ajustar) [decision, below of=validar] {¿Resultados satisfactorios?};
+
+% End node
+\node (fin) [startstop, below of=ajustar] {Fin};
+
+% Drawing arrows
+\draw [line] (start) -- (recopilarDatos);
+\draw [line] (recopilarDatos) -- (nuevasVariables);
+\draw [line] (nuevasVariables) -- (evaluar);
+\draw [line] (evaluar) -- (analizar);
+\draw [line] (analizar) -- (diseñar);
+\draw [line] (diseñar) -- (escalable);
+\draw [line] (escalable) -- node [left] {Sí} (implementar);
+\draw [line] (implementar) -- (probar);
+\draw [line] (probar) -- (reentrenar);
+\draw [line] (reentrenar) -- (validar);
+\draw [line] (validar) -- (ajustar);
+\draw [line] (ajustar) -- node [left] {Sí} (fin);
+\draw [line] (ajustar.east) --++(1.5,0) node [above] {No} |- (fin);
+
+\end{tikzpicture}
+\end{adjustbox}
+\caption{Diagrama de Procesos para la Escalabilidad del Algoritmo de IA}
+\end{figure}

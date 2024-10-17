@@ -1,0 +1,87 @@
+%\renewcommand\sfdefault{phv}
+%\renewcommand\mddefault{mc}
+%\renewcommand\bfdefault{bc}
+
+\setganttlinklabel{s-s}{START-TO-START}
+\setganttlinklabel{f-s}{FINISH-TO-START}
+\setganttlinklabel{f-f}{FINISH-TO-FINISH}
+
+\begin{figure}[H]
+    \centering
+    \begin{adjustbox}{width=0.75\textwidth}
+        % Cambia la tipografía aquí
+        \begin{ganttchart}[
+            canvas/.append style={fill=none, draw=black!5, line width=.75pt},
+            hgrid style/.style={draw=black!5, line width=.75pt},
+            vgrid={*1{draw=black!5, line width=.75pt}},
+            time slot unit=week,  % Escala por semana
+            today=3,  % Semana actual
+            today rule/.style={
+                draw=black!64,
+                dash pattern=on 3.5pt off 4.5pt,
+                line width=1.5pt
+            },
+            today label font=\small\bfseries,
+            title/.style={draw=none, fill=none},
+            title label font=\bfseries\footnotesize,
+            title label node/.append style={below=7pt},
+            include title in canvas=false,
+            bar label font=\mdseries\small\color{black!70},
+            bar label node/.append style={left=2cm},
+            bar/.append style={draw=none, fill=black!63},
+            bar incomplete/.append style={fill=barblue},
+            bar progress label font=\mdseries\footnotesize\color{black!70},
+            group incomplete/.append style={fill=groupblue},
+            group left shift=0,
+            group right shift=0,
+            group height=.5,
+            group peaks tip position=0,
+            group label node/.append style={left=.6cm},
+            group progress label font=\bfseries\small,
+            link/.style={-latex, line width=1.5pt, linkred},
+            link label font=\scriptsize\bfseries,
+            link label node/.append style={below left=-2pt and 0pt}
+        ]{1}{13}  % 13 semanas en total
+
+        % Encabezado por semana
+        \gantttitle{Weeks}{1} 
+        \gantttitlelist{1,...,13}{1} \\
+
+        % Definir hitos y tareas por semanas con duración y colores
+        \ganttbar[progress=100, name=E1, bar/.append style={fill=groupblue}] 
+            {Propuesta de Proyecto}{1}{1} \\  % Semana 1
+        \ganttbar[progress=100, name=E2, bar/.append style={fill=groupblue}]
+            {Planificación del Proyecto}{2}{2} \\  % Semana 2
+        \ganttbar[progress=100, name=E3, bar/.append style={fill=groupblue}]
+            {Análisis Inicial del Proyecto}{3}{3} \\  % Semana 3
+        \ganttbar[progress=0, name=E4, bar/.append style={fill=barblue}]
+            {Análisis del Sistema}{4}{4} \\  % Semana 4
+        \ganttbar[progress=0, name=E5, bar/.append style={fill=groupblue}]
+            {Diseño Inicial del Proyecto}{5}{5} \\  % Semana 5
+        \ganttbar[progress=0, name=E6, bar/.append style={fill=barblue}]
+            {Diseño del Sistema}{6}{6} \\  % Semana 6
+        \ganttbar[progress=0, name=E7, bar/.append style={fill=groupblue}]
+            {Desarrollo o Implementación}{7}{8} \\  % Semanas 7-8
+        \ganttbar[progress=0, name=E8, bar/.append style={fill=barblue}]
+            {Pruebas del Sistema}{9}{9} \\  % Semana 9
+        \ganttbar[progress=0, name=E9, bar/.append style={fill=groupblue}]
+            {Modelo de Calidad}{10}{11} \\  % Semanas 10-11
+        \ganttbar[progress=0, name=E10, bar/.append style={fill=barblue}]
+            {Puesta en Operación/Mejora Continua}{12}{13} \\  % Semanas 12-13
+
+        % Enlaces entre las fases
+        \ganttlink[link type=f-s]{E1}{E2}
+        \ganttlink[link type=f-s]{E2}{E3}
+        \ganttlink[link type=f-s]{E3}{E4}
+        \ganttlink[link type=f-s]{E4}{E5}
+        \ganttlink[link type=f-s]{E5}{E6}
+        \ganttlink[link type=f-s]{E6}{E7}
+        \ganttlink[link type=f-s]{E7}{E8}
+        \ganttlink[link type=f-s]{E8}{E9}
+        \ganttlink[link type=f-s]{E9}{E10}
+
+        \end{ganttchart}
+    \end{adjustbox}
+    \caption{Cronograma de tiempo \textit{Milestone}}
+    \label{Cronograma}
+\end{figure}

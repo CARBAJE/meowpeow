@@ -1,0 +1,176 @@
+\subsection{Diccionario de Datos}
+
+\subsubsection{Entidad: Jugador}
+Esta entidad representa a los jugadores en el sistema, almacenando información básica sobre su identidad y desempeño en el juego.
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|c|c|}
+\hline
+\textbf{Atributo} & \textbf{Tipo de Dato} & \textbf{Descripción} \\ \hline
+J\_ID & \texttt{int} & Identificador único del jugador \\ \hline
+Nombre & \texttt{varchar} & Nombre del jugador \\ \hline
+Precision & \texttt{float} & Precisión del jugador durante la partida \\ \hline
+\end{tabular}
+\caption{Entidad Jugador}
+\end{table}
+
+\subsubsection{Entidad: Partida}
+Esta entidad representa una sesión individual de juego, almacenando datos específicos de cada partida jugada.
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|c|c|}
+\hline
+\textbf{Atributo} & \textbf{Tipo de Dato} & \textbf{Descripción} \\ \hline
+ID & \texttt{int} & Identificador único de la partida \\ \hline
+Pje\_P & \texttt{int} & Puntaje obtenido en la partida \\ \hline
+HP\_Lost & \texttt{int} & Total de vidas perdidas durante la partida \\ \hline
+T\_Jgd & \texttt{float} & Tiempo jugado en minutos \\ \hline
+\end{tabular}
+\caption{Entidad Partida}
+\end{table}
+
+\subsubsection{Entidad: Nivel}
+Esta entidad define las características de cada nivel dentro del juego, como su dificultad, enemigos y obstáculos generados.
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|c|c|}
+\hline
+\textbf{Atributo} & \textbf{Tipo de Dato} & \textbf{Descripción} \\ \hline
+ID & \texttt{int} & Identificador único del nivel \\ \hline
+Pts\_Obt & \texttt{int} & Puntos obtenidos en el nivel \\ \hline
+E\_Gen & \texttt{int} & Enemigos generados en el nivel \\ \hline
+E\_Del & \texttt{int} & Enemigos eliminados en el nivel \\ \hline
+Obs\_Gen & \texttt{int} & Obstáculos generados en el nivel \\ \hline
+N\_Difi & \texttt{int} & Dificultad del nivel \\ \hline
+Vel\_Scroll & \texttt{float} & Velocidad de desplazamiento del nivel \\ \hline
+\end{tabular}
+\caption{Entidad Nivel}
+\end{table}
+
+\subsubsection{Entidad: Enemigo}
+Esta entidad describe los enemigos que aparecen en el juego, incluyendo su tipo y cantidad de vida.
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|c|c|}
+\hline
+\textbf{Atributo} & \textbf{Tipo de Dato} & \textbf{Descripción} \\ \hline
+ID & \texttt{int} & Identificador único del enemigo \\ \hline
+T\_En & \texttt{varchar} & Tipo de enemigo \\ \hline
+E\_Enmy & \texttt{int} & Vida del enemigo \\ \hline
+\end{tabular}
+\caption{Entidad Enemigo}
+\end{table}
+
+\subsubsection{Entidad: Ataque}
+Esta entidad almacena los datos relativos a los ataques en el juego, como el patrón, frecuencia y potencia del ataque.
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|c|c|}
+\hline
+\textbf{Atributo} & \textbf{Tipo de Dato} & \textbf{Descripción} \\ \hline
+ID & \texttt{int} & Identificador único del ataque \\ \hline
+Ptn\_Atq & \texttt{json} & Patrón de ataque \\ \hline
+Freq\_Atq & \texttt{int} & Frecuencia de ataque \\ \hline
+Pow\_Atq & \texttt{int} & Potencia del ataque \\ \hline
+\end{tabular}
+\caption{Entidad Ataque}
+\end{table}
+
+\subsubsection{Entidad: IA\_Modelo}
+Esta entidad contiene los datos relacionados con el modelo de inteligencia artificial utilizado para ajustar la dificultad del juego.
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|c|c|}
+\hline
+\textbf{Atributo} & \textbf{Tipo de Dato} & \textbf{Descripción} \\ \hline
+ID & \texttt{int} & Identificador único del modelo de IA \\ \hline
+Metricas & \texttt{json} & Métricas utilizadas por el modelo de IA \\ \hline
+Tasa\_Ajst & \texttt{float} & Tasa de ajuste de dificultad \\ \hline
+Tm\_Adapt & \texttt{float} & Tiempo de adaptación del modelo \\ \hline
+DesvEst & \texttt{float} & Desviación estándar de la dificultad \\ \hline
+Heuristica & \texttt{json} & Datos heurísticos utilizados por la IA \\ \hline
+\end{tabular}
+\caption{Entidad Modelo IA}
+\end{table}
+
+\subsubsection{Entidad: Estadísticas}
+Esta entidad almacena estadísticas globales y específicas del jugador, como puntajes y precisión, para el análisis del rendimiento.
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|c|c|}
+\hline
+\textbf{Atributo} & \textbf{Tipo de Dato} & \textbf{Descripción} \\ \hline
+ID & \texttt{int} & Identificador único de las estadísticas \\ \hline
+M\_Sc & \texttt{int} & Mejor puntaje alcanzado \\ \hline
+Ptj\_Ptj & \texttt{int} & Puntaje obtenido en la partida \\ \hline
+Best\_Ptj & \texttt{int} & Mejor puntaje registrado \\ \hline
+Ttl\_Tiempo & \texttt{float} & Tiempo total jugado \\ \hline
+Tm\_media & \texttt{float} & Tiempo medio por partida \\ \hline
+PrecisionJdr & \texttt{float} & Precisión promedio del jugador \\ \hline
+EstrategiaMov & \texttt{json} & Estrategia de movimiento utilizada por el jugador \\ \hline
+\end{tabular}
+\caption{Entidad Estadísticas}
+\end{table}
+
+\subsection{Relaciones}
+
+\subsubsection{Relación: Juega}
+Representa la relación entre un jugador y las partidas que ha jugado. Un jugador puede jugar varias partidas.
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|c|c|}
+\hline
+\textbf{Entidad 1} & \textbf{Entidad 2} & \textbf{Cardinalidad} \\ \hline
+Jugador & Partida & 1:N \\ \hline
+\end{tabular}
+\caption{Relación Juega entre Jugador y Partida}
+\end{table}
+
+\subsubsection{Relación: Posee}
+Define la relación entre una partida y los niveles jugados. Una partida puede tener varios niveles.
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|c|c|}
+\hline
+\textbf{Entidad 1} & \textbf{Entidad 2} & \textbf{Cardinalidad} \\ \hline
+Partida & Nivel & 1:N \\ \hline
+\end{tabular}
+\caption{Relación Posee entre Partida y Nivel}
+\end{table}
+
+\subsubsection{Relación: Dispara}
+Representa la relación entre un jugador o un enemigo y los ataques que realizan. Un jugador o enemigo puede realizar varios ataques, y un ataque puede ser utilizado por varios enemigos.
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|c|c|}
+\hline
+\textbf{Entidad 1} & \textbf{Entidad 2} & \textbf{Cardinalidad} \\ \hline
+Jugador & Ataque & 1:N \\ \hline
+Enemigo & Ataque & N:M \\ \hline
+\end{tabular}
+\caption{Relación Dispara entre Jugador/Enemigo y Ataque}
+\end{table}
+
+\subsubsection{Relación: Modifica}
+Define la relación entre el modelo de IA y los enemigos, indicando que el modelo de IA puede modificar varios enemigos, y un enemigo puede ser modificado por varios modelos de IA.
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|c|c|}
+\hline
+\textbf{Entidad 1} & \textbf{Entidad 2} & \textbf{Cardinalidad} \\ \hline
+IA\_Modelo & Enemigo & 1:N \\ \hline
+\end{tabular}
+\caption{Relación Modifica entre IA\_Modelo y Enemigo}
+\end{table}
+
+\subsubsection{Relación: Genera}
+Representa la relación entre la IA y las estadísticas generadas a partir del comportamiento de los jugadores. El modelo de IA puede generar varias estadísticas.
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|c|c|}
+\hline
+\textbf{Entidad 1} & \textbf{Entidad 2} & \textbf{Cardinalidad} \\ \hline
+IA\_Modelo & Estadísticas & 1:N \\ \hline
+\end{tabular}
+\caption{Relación Genera entre IA\_Modelo y Estadísticas}
+\end{table}

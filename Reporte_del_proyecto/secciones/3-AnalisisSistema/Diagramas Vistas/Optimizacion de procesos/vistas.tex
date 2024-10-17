@@ -1,0 +1,31 @@
+\subsubsection{Diagrama de Vistas de la Optimización del Rendimiento}
+\begin{figure}[H]
+\centering
+\begin{adjustbox}{width=0.6\textwidth}
+\begin{tikzpicture}[
+    class/.style={rectangle, draw, minimum height=1cm, minimum width=3cm, align=center}
+]
+
+% Definir las clases
+\node[class] (recursos) {Obtener Recursos\\ del Juego};
+\node[class, below=of recursos] (carga) {Monitorear Carga\\ del Sistema};
+\node[class, below=of carga] (frame) {Verificar Frame\\ Rate Actual};
+\node[class, below=of frame] (ajustar) {Ajustar\\ Rendimiento};
+\node[class, below=of ajustar] (optimizar) {Optimizar\\ Rendimiento};
+
+% Conectar las clases
+\draw (recursos) -> (carga);
+\draw (carga) -> (frame);
+\draw (frame) -> (ajustar);
+\draw (ajustar) -> (optimizar);
+
+% Añadir decisiones
+\node[class, right=of ajustar] (decision) {¿Frame Rate < 60 FPS?};
+\draw (ajustar.east) -- (decision);
+\draw (decision.east) --++(1,0) node [above] {Sí} |- (optimizar);
+\draw (decision.east) --++(1,0) node [below] {No} --++(0,-1) |- (optimizar.east);
+
+\end{tikzpicture}
+\end{adjustbox}
+\caption{Vista de Desarrollo de la Optimización del Rendimiento}
+\end{figure}

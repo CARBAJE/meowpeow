@@ -1,0 +1,24 @@
+\subsubsection{Vista de Desarrollo}
+\begin{figure}[H]
+\centering
+\begin{adjustbox}{width=0.8\textwidth}
+\begin{tikzpicture}[
+    class/.style={rectangle, draw, minimum height=1cm, minimum width=3cm, align=center}
+]
+
+\node[class] (data) {Recoleccion de datos};
+\node[class, below=of data] (preproc) {Pre-procesamiento};
+\node[class, below=of preproc] (trainer) {Modulo de\\Entrenamiento};
+\node[class, right=of trainer] (eval) {Modulo de\\Evaluación};
+\node[class, left=of trainer] (adjust) {Ajustador de\\Parámetros};
+
+% Arrows between classes
+\draw (data) -> (preproc);
+\draw (preproc) -> (trainer);
+\draw (trainer) -> (eval);
+\draw (adjust) -> (trainer);
+
+\end{tikzpicture}
+\end{adjustbox}
+\caption{Vista de Desarrollo}
+\end{figure}

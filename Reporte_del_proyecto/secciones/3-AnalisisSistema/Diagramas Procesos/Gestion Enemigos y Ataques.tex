@@ -1,0 +1,49 @@
+\subsubsection{Gestión de Enemigos y Patrones de Ataque}
+\begin{figure}[H]
+\centering
+\begin{adjustbox}{scale=0.6} % Ajusta el diagrama al ancho de la página
+\begin{tikzpicture}[node distance=2.5cm, auto, thick,
+    every node/.style={rectangle, draw=black, align=center, minimum height=0.5cm, minimum width=2.5cm},
+    startstop/.style={ellipse, draw=black, fill=red!30},
+    process/.style={rectangle, draw=black, fill=yellow!30},
+    decision/.style={diamond, draw=black, fill=green!10, aspect=2, text width=3cm, align=center},
+    sync/.style={rectangle, draw=black, fill=blue!20},
+    line/.style={draw, -{Stealth[scale=1.2]}}
+]
+
+% Nodo de inicio
+\node (start) [startstop] {Inicio \\ (Gestión de Enemigos y Patrones de Ataque)};
+
+% Actividades
+\node (recopilar) [process, below of=start] {Recopilación de Variables de Dificultad y Tipo de Enemigos};
+\node (seleccion) [process, below of=recopilar] {Selección de Enemigos};
+\node (patrones) [process, below of=seleccion] {Generación de Patrones de Ataque};
+\node (ajuste) [process, below of=patrones] {Ajuste Procedural de los Patrones de Ataque};
+\node (decision1) [decision, below of=ajuste] {¿Patrones Validados?};
+\node (verificacion) [process, below of=decision1, yshift=-0.5cm] {Verificación de Reglas de Juego};
+\node (decision2) [decision, below of=verificacion] {¿Cumple con Reglas?};
+\node (implementacion) [process, below of=decision2, yshift=-0.5cm] {Implementación de Enemigos en el Juego};
+\node (end) [startstop, below of=implementacion] {Fin \\ (Enemigos implementados y listos)};
+
+% Sincronizaciones
+\node (sync1) [sync, right of=ajuste, xshift=3cm] {Sincronización de Patrones};
+\node (sync2) [sync, right of=verificacion, xshift=3cm] {Sincronización de Reglas};
+
+% Conexiones
+\draw [line] (start) -- (recopilar);
+\draw [line] (recopilar) -- (seleccion);
+\draw [line] (seleccion) -- (patrones);
+\draw [line] (patrones) -- (ajuste);
+\draw [line] (ajuste) -- (sync1);
+\draw [line] (sync1) -- (decision1);
+\draw [line] (decision1.east) --++(1.5,0) node [right] {Sí} |- (verificacion.west);
+\draw [line] (decision1.west) --++(-1.5,0) node [left] {No} |- (end.east);
+\draw [line] (verificacion) -- (decision2);
+\draw [line] (decision2.east) --++(1.5,0) node [right] {Sí} |- (implementacion.west);
+\draw [line] (decision2.west) --++(-1.5,0) node [left] {No} |- (end.east);
+\draw [line] (implementacion) -- (end);
+
+\end{tikzpicture}
+\end{adjustbox}
+\caption{Diagrama de Actividades de Gestión de Enemigos y Patrones de Ataque}
+\end{figure}

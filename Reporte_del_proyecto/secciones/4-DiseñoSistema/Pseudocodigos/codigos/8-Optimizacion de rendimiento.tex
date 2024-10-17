@@ -1,0 +1,22 @@
+\subsubsection{Optimización de rendimiento}
+
+\begin{verbatim}
+// Pseudocódigo para la optimización del rendimiento
+void optimizarRendimiento() {
+    float frameRate = obtenerFrameRate();
+
+    if (frameRate < 60) {
+        reducirCalidadGrafica();
+        ajustarResolucion();
+    }
+    liberarRecursosNoUsados();
+}
+
+// Función de monitoreo
+void monitorearSistema() {
+    while (true) {
+        optimizarRendimiento();
+        esperar(100); // Esperar 100 ms antes de la siguiente comprobación
+    }
+}
+\end{verbatim}

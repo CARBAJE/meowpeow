@@ -1,0 +1,38 @@
+\subsubsection{Vista  de Verificación y Validación}
+Este diagrama ilustra el proceso de verificación de las reglas dentro del sistema de juego, para asegurarse de que los patrones de ataque y los enemigos seleccionados sean viables y cumplan con las normas de jugabilidad.
+\begin{figure}[H]
+\centering
+\begin{adjustbox}{width=\textwidth}
+\begin{tikzpicture}[
+    process/.style={rectangle, draw, minimum height=1cm, minimum width=3cm, align=center, rounded corners},
+    entity/.style={ellipse, draw, minimum height=1cm, minimum width=2.5cm, align=center},
+    validation/.style={diamond, draw, aspect=2, minimum width=3cm, align=center},
+    relation/.style={-Stealth, thick}
+]
+
+% Nodes (Processes)
+\node[process] (generar) {Generar Patrones de Ataque};
+\node[process, below=of generar, yshift=-2cm] (seleccionar) {Seleccionar Enemigos};
+\node[validation, right=of generar, xshift=2cm] (verificar) {Verificación de Reglas};
+
+% Entities
+\node[entity, left=of generar, xshift=-2cm] (ataque) {Ataque};
+\node[entity, below left=of seleccionar, xshift=-1cm, yshift=-1cm] (enemigo) {Enemigo};
+\node[entity, below right=of seleccionar, xshift=1cm, yshift=-1cm] (nivel) {Nivel};
+
+% Relations between processes
+\draw[relation] (generar) -- (verificar);
+\draw[relation] (seleccionar) -- (verificar);
+
+% Relations to entities
+\draw[relation, dashed] (ataque) -- (generar);
+\draw[relation, dashed] (enemigo) -- (seleccionar);
+\draw[relation, dashed] (nivel) -- (verificar);
+
+% Additional Labels
+\node[below=of verificar, yshift=-0.5cm, align=center] (validation_note) {Verificación: \\ Patrones viables y respetan reglas del juego};
+
+\end{tikzpicture}
+\end{adjustbox}
+\caption{Vista de Verificación y Validación}
+\end{figure}

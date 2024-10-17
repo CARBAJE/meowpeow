@@ -1,0 +1,60 @@
+\subsection{Requerimientos Funcionales}
+
+\subsubsection{Generación Procedural de Niveles}
+\begin{itemize}
+    \item El sistema debe generar un nivel único y dinámico cada vez que el jugador comience una nueva partida.
+    \item La generación debe incluir la disposición de enemigos, obstáculos y otros elementos del entorno.
+\end{itemize}
+
+\subsubsection{Ajuste Dinámico de Dificultad}
+\begin{itemize}
+    \item La inteligencia artificial debe ajustar la dificultad del juego en tiempo real, en función del rendimiento del jugador durante la partida.
+    \item El ajuste de la dificultad debe tener en cuenta variables como la precisión, número de vidas perdidas, y puntuación obtenida.
+\end{itemize}
+
+\subsubsection{Algoritmo de Aprendizaje Automático}
+\begin{itemize}
+    \item El sistema debe recopilar datos de las últimas 15 partidas del jugador para entrenar el modelo de IA.
+    \item El modelo debe ser capaz de evolucionar según las mejoras o retrocesos en las habilidades del jugador.
+\end{itemize}
+
+\subsubsection{Sistema de Feedback Visual y Sonoro}
+\begin{itemize}
+    \item El sistema debe proporcionar feedback visual y sonoro para indicar cambios en la dificultad (por ejemplo, un aumento de velocidad en los enemigos o más poder de fuego en el jugador).
+\end{itemize}
+
+\subsubsection{Múltiples Tipos de Enemigos y Patrón de Ataques}
+\begin{itemize}
+    \item El juego debe contar con una variedad de enemigos con diferentes patrones de ataque, que se adapten en dificultad según la experiencia del jugador.
+    \item Los patrones de ataque de los enemigos se deben ajustar a correspondencia del nivel de dificultad y tipo de enemigo.
+    %\item Los patrones de ataque también deben poder ajustarse de manera procedural en función de los niveles generados.
+\end{itemize}
+
+\subsubsection{Sistema de Puntuación y Métricas}
+\begin{itemize}
+    \item El juego debe registrar estadísticas detalladas (puntuación, enemigos eliminados, tiempo jugado, etc.) que puedan ser utilizadas para ajustar la dificultad.
+    \item Debe mostrar estas estadísticas al jugador al final de cada partida.
+\end{itemize}
+
+\subsubsection{Manejo de Guardado de Datos}
+\begin{itemize}
+    \item El sistema debe ser capaz de guardar y cargar datos del progreso del jugador, así como las configuraciones de IA para partidas futuras.
+\end{itemize}
+
+\subsection{Requerimientos No Funcionales}
+
+\subsubsection{Rendimiento}
+\begin{itemize}
+    \item El juego debe funcionar de manera fluida, con un frame rate mínimo de 60 FPS en condiciones estándar.
+\end{itemize}
+
+\subsubsection{Escalabilidad del Algoritmo de IA}
+\begin{itemize}
+    \item Debe permitir la integración de nuevas variables de juego sin necesidad de rediseñar el sistema.
+\end{itemize}
+
+\subsubsection{Usabilidad}
+\begin{itemize}
+    \item El juego debe ofrecer una interfaz intuitiva para que los jugadores de cualquier nivel puedan entender los controles y mecánicas del juego.
+    \item El sistema de ajuste de dificultad debe ser transparente para el jugador, sin necesidad de intervención manual.
+\end{itemize}

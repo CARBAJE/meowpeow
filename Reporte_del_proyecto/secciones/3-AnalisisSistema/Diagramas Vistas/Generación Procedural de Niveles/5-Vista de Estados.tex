@@ -1,0 +1,30 @@
+\subsubsection{Vista  de Estados}
+Este Diagrama de Estados muestra los estados por los que pasa un nivel durante su generación procedural en el sistema.
+\begin{figure}[H]
+\centering
+\begin{adjustbox}{width=0.5\textwidth}
+\begin{tikzpicture}[
+    ->, >=Stealth, 
+    node distance=2cm, 
+    state/.style={rectangle, draw, minimum width=3cm, align=center, rounded corners}
+]
+
+% States
+\node[state] (esperando) {EsperandoInicio\\(Entidad Jugador)};
+\node[state] (generando) [below=of esperando] {GenerandoEntorno\\(Entidad Nivel)};
+\node[state] (obstaculos) [below=of generando] {DistribuyendoObstáculos\\(Entidad Nivel)};
+\node[state] (enemigos) [below=of obstaculos] {DistribuyendoEnemigos\\(Entidad Enemigo)};
+\node[state] (verificando) [below=of enemigos] {VerificandoReglas\\(Entidad Nivel)};
+\node[state] (listo) [below=of verificando] {NivelListo\\(Entidad Nivel)};
+
+% Transitions
+\draw (esperando) edge[bend left] node[right] {Iniciar Partida} (generando);
+\draw (generando) edge[bend left] node[right] {Entorno Generado} (obstaculos);
+\draw (obstaculos) edge[bend left] node[right] {Obstáculos Colocados} (enemigos);
+\draw (enemigos) edge[bend left] node[right] {Enemigos Posicionados} (verificando);
+\draw (verificando) edge[bend left] node[right] {Reglas Validadas} (listo);
+
+\end{tikzpicture}
+\end{adjustbox}
+\caption{Vista de Estados}
+\end{figure}

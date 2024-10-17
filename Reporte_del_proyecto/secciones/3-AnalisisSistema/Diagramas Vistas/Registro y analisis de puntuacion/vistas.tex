@@ -1,0 +1,29 @@
+\subsubsection{Diagrama de Vistas del Registro y Análisis de Puntuación}
+\begin{figure}[H]
+\centering
+\begin{adjustbox}{width=0.6\textwidth}
+\begin{tikzpicture}[
+    class/.style={rectangle, draw, minimum height=1cm, minimum width=3cm, align=center}
+]
+
+% Definir las clases
+\node[class] (registro) {Registro de\\ Puntuaciones};
+\node[class, below=of registro] (validar) {Validación de\\ Puntuaciones};
+\node[class, below=of validar] (guardar) {Guardar\\ Puntuaciones};
+\node[class, below=of guardar] (analizar) {Análisis de\\ Puntuaciones};
+\node[class, below=of analizar] (ajustar) {Ajustar\\ Dificultad};
+\node[class, left=of ajustar] (modificar) {Modificar\\ Parámetros};
+\node[class, right=of ajustar] (descartar) {Descartar\\ Puntuaciones};
+
+% Conectar las clases
+\draw (registro) -> (validar);
+\draw (validar) -> (guardar);
+\draw (guardar) -> (analizar);
+\draw (analizar) -> (ajustar);
+\draw (ajustar) -> (modificar);
+\draw (validar.east) -- ++(1,0) |- (descartar);
+
+\end{tikzpicture}
+\end{adjustbox}
+\caption{Vista de Desarrollo del Registro y Análisis de Puntuación}
+\end{figure}

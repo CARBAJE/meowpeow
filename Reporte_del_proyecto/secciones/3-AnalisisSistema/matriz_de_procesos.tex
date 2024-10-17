@@ -1,0 +1,41 @@
+\subsection{Matriz de procesos}
+
+\begin{table}[H]
+    \centering
+    \begin{adjustbox}{width=\textwidth}
+        \begin{tabular}{|p{4cm}|p{5cm}|p{4cm}|p{4cm}|p{4cm}|}
+        \hline
+        \textbf{Proceso} & \textbf{Descripción} & \textbf{Entradas} & \textbf{Salidas} & \textbf{Actores} \\
+        \hline
+        \textbf{Generación Procedural de Niveles} & Genera niveles dinámicos cada vez que el jugador comienza una nueva partida. & Parámetros de generación (enemigos, obstáculos, entorno). & Nivel único y dinámico con enemigos y obstáculos distribuidos proceduralmente. & Motor procedural, sistema de IA. \\
+        \hline
+        \textbf{Ajuste Dinámico de Dificultad} & Ajusta la dificultad del juego en tiempo real según el rendimiento del jugador. & Datos en tiempo real del jugador (vidas perdidas, precisión, puntuación). & Modificaciones en la dificultad (número de enemigos, velocidad, patrones). & Sistema de IA, motor de juego. \\
+        \hline
+        \textbf{Entrenamiento del Algoritmo de IA} & Entrena el modelo de IA basado en las últimas 15 partidas del jugador. & Datos históricos de las últimas 15 partidas (estadísticas, acciones). & Modelo de IA actualizado para ajustar la dificultad adaptativamente. & Sistema de IA, motor de aprendizaje. \\
+        \hline
+        \textbf{Sistema de Feedback Visual y Sonoro} & Proporciona retroalimentación visual y sonora durante la partida. & Eventos del juego (derrotas, cambios en dificultad, logros, avance). & Indicaciones visuales y sonoras de cambios en el juego (sprites, efectos). & Motor gráfico, motor de sonido. \\
+        \hline
+        \textbf{Gestión de Enemigos y Patrones de Ataque} & Gestiona la creación de enemigos con patrones de ataque adaptativos. & Variables de dificultad, tipo de enemigos, nivel del jugador. & Enemigos con patrones de ataque ajustados a la dificultad. & Sistema de IA, motor procedural. \\
+        \hline
+        \textbf{Registro y Análisis de Puntuación} & Registra las métricas y estadísticas del jugador durante la partida. & Estadísticas de la partida (puntuación, tiempo, enemigos eliminados). & Tabla de estadísticas mostrada al final de la partida. & Sistema de estadísticas, interfaz. \\
+        \hline
+        \textbf{Manejo de Guardado de Datos} & Guarda y carga los datos de progreso y configuraciones de IA. & Estado del jugador, configuración de IA. & Datos guardados para cargar en futuras partidas. & Sistema de almacenamiento. \\
+        \hline
+        \textbf{Optimización del Rendimiento} & Asegura un funcionamiento fluido del juego a 60 FPS o más. & Recursos del juego, carga del sistema, frame rate actual. & Juego fluido y sin caídas de frame rate. & Motor gráfico, sistema de rendimiento. \\
+        \hline
+        \textbf{Escalabilidad del Algoritmo de IA} & Permite añadir nuevas variables sin rediseñar el sistema. & Nuevas variables o métricas del juego. & Algoritmo de IA escalable que soporte nuevas variables. & Sistema de IA, motor de aprendizaje. \\
+        \hline
+        \textbf{Interfaz de Usuario y Usabilidad} & Proporciona una interfaz clara y fácil de usar para cualquier tipo de jugador. & Diseño de la interfaz, controles de usuario. & Interfaz intuitiva y accesible, ajustes automáticos de dificultad. & Sistema de interfaz de usuario. \\
+        \hline
+        \end{tabular}
+    \end{adjustbox}
+    \caption{Matriz de procesos}
+    \label{tab:proyecto_procesos}
+\end{table}
+
+\subsubsection*{Explicación de la Matriz}
+\begin{itemize}
+    \item \textbf{Entradas:} Son los datos o parámetros que el sistema requiere para realizar cada proceso.
+    \item \textbf{Salidas:} Son los resultados obtenidos después de completar el proceso.
+    \item \textbf{Actores:} Identifican los sistemas, módulos o actores involucrados en ejecutar el proceso.
+\end{itemize}

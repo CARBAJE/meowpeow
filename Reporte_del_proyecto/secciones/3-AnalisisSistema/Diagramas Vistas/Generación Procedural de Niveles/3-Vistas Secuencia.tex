@@ -1,0 +1,30 @@
+\subsubsection{Vista  de Secuencia}
+Este Diagrama de Secuencia muestra la interacción y el flujo de mensajes entre los actores principales y los componentes del sistema durante la generación de un nivel procedimental. Además de mostrar cómo las interacciones temporales entre los componentes del sistema aseguran que el nivel generado sea jugable y esté ajustado adecuadamente en cuanto a dificultad y distribución de enemigos.
+\begin{figure}[H]
+\centering
+\begin{adjustbox}{width=0.6\textwidth}
+
+\begin{tikzpicture}[
+    actor/.style={rectangle, draw, text centered, minimum width=2.5cm, minimum height=1cm},
+    message/.style={->, thick, >=Stealth},
+    every node/.style={align=center}
+]
+
+% Actors
+\node (jugador) [actor] {Jugador};
+\node (ia) [actor, right=3cm of jugador] {Sistema de IA};
+\node (procedural) [actor, right=3cm of ia] {Motor Procedural};
+\node (nivel) [actor, right=3cm of procedural] {Nivel};
+
+% Messages
+\draw[message] (jugador) -- node[above] {Inicia Partida} (ia);
+\draw[message] (ia) -- node[above] {Recibe Parámetros} (procedural);
+\draw[message] (procedural) -- node[above] {Genera Entorno} (nivel);
+\draw[message] (ia) -- +(0,-1.5) -| node[below] {Distribuye Enemigos \\ Ajusta Dificultad} (nivel);
+\draw[message] (nivel) -- node[below] {Verifica Reglas} (ia);
+\draw[message] (nivel) -- node[below] {Nivel Listo para Jugar} (jugador);
+
+\end{tikzpicture}
+\end{adjustbox}
+\caption{Vista de Secuencia}
+\end{figure}

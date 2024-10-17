@@ -1,0 +1,131 @@
+\subsubsection{Algoritmos del proceso de \textit{Gyardar y Cargar datos y Configuraciones de IA}}
+
+\subsection*{Problemática}
+En los videojuegos que utilizan inteligencia artificial (IA) para ajustar la dificultad o adaptar la jugabilidad, es fundamental poder guardar el estado del jugador y las configuraciones de la IA para continuar la partida en el futuro. Si los datos del jugador y la IA no se guardan correctamente, se pierde todo el progreso realizado y la IA no puede ajustar adecuadamente su comportamiento en función de las partidas anteriores. Los principales problemas son:
+\begin{itemize}
+    \item Pérdida de datos críticos del jugador o de la configuración de la IA.
+    \item Incompatibilidad entre versiones de los datos guardados.
+    \item Desincronización entre el progreso del jugador y el estado de la IA.
+\end{itemize}
+
+\subsection*{Posible Solución}
+El algoritmo de guardado y carga de datos del proceso y configuraciones de IA debe:
+\begin{itemize}
+    \item \textbf{Guardar datos críticos del jugador:} Registrar el estado actual del jugador, como su puntuación, nivel alcanzado, vidas restantes y cualquier otro progreso relevante.
+    \item \textbf{Guardar configuraciones de la IA:} Almacenar las configuraciones actuales de la IA, incluyendo los ajustes dinámicos realizados en la dificultad o patrones de comportamiento.
+    \item \textbf{Cargar datos en futuras partidas:} Al iniciar una nueva sesión de juego, el sistema debe ser capaz de restaurar tanto el progreso del jugador como la configuración de la IA, para continuar el juego en el mismo estado.
+    \item \textbf{Sincronización con el sistema de almacenamiento:} El algoritmo debe interactuar con el sistema de almacenamiento del juego para leer y escribir datos sin errores.
+\end{itemize}
+
+\subsection*{Desafío Técnico}
+Implementar un sistema eficaz para guardar y cargar datos del proceso y configuraciones de IA presenta varios desafíos técnicos:
+
+\textbf{Integridad de los datos}
+Es esencial que el sistema de guardado y carga mantenga la integridad de los datos. Cualquier corrupción en los archivos de guardado o inconsistencia entre los datos del jugador y las configuraciones de la IA puede llevar a comportamientos inesperados o la pérdida de progreso.
+
+\textbf{Compatibilidad de versiones}
+Cuando se actualiza un juego, es posible que la estructura de los datos guardados cambie. El sistema debe ser capaz de manejar estos cambios para asegurar que los datos guardados en versiones anteriores sean compatibles con versiones más nuevas del juego.
+
+\textbf{Rendimiento y tiempo de carga}
+El proceso de guardar y cargar datos debe ser eficiente, de manera que no interrumpa la experiencia de juego. Cargar el estado del jugador y la IA debe ser rápido, especialmente en juegos donde los jugadores pueden cargar partidas frecuentemente.
+
+\textbf{Seguridad de los datos}
+Es importante garantizar que los archivos de guardado no puedan ser manipulados por usuarios para obtener ventajas indebidas en el juego. Implementar medidas de seguridad, como encriptación o verificación de integridad, es crucial para prevenir trampas.
+
+\textbf{Escalabilidad}
+En juegos más complejos, donde el estado del jugador y la IA pueden ser muy detallados, el sistema de guardado y carga debe escalar adecuadamente. Esto implica ser capaz de manejar grandes volúmenes de datos sin afectar el rendimiento.
+
+
+\subsection*{Entradas:}
+\begin{itemize}
+    \item Estado del jugador:
+    \begin{itemize}
+        \item nivel
+        \item puntuacion
+        \item vidas
+        \item progreso
+    \end{itemize}
+    \item Configuración de la IA:
+    \begin{itemize}
+        \item dificultad_actual
+        \item parametros_IA (velocidad, número de enemigos, patrones)
+    \end{itemize}
+\end{itemize}
+
+\subsection*{Salidas:}
+\begin{itemize}
+    \item Datos guardados:
+    \begin{itemize}
+        \item estado\_jugador\_guardado
+        \item configuracion\_IA\_guardada
+    \end{itemize}
+\end{itemize}
+
+\subsection*{Actores:}
+\begin{itemize}
+    \item Sistema de almacenamiento
+\end{itemize}
+
+\subsection*{Pseudocódigo:}
+\begin{algorithm}[H]
+\caption{Guardar y Cargar Datos del Proceso y Configuraciones de IA}
+\SetAlgoLined
+
+\KwIn{estado\_jugador, configuracion\_IA}
+\KwOut{datos\_guardados}
+
+\SetKwFunction{GuardarProgreso}{guardar\_progreso}
+\SetKwFunction{CargarProgreso}{cargar\_progreso}
+
+\BlankLine
+\GuardarProgreso{}{
+    \tcp{Recopilar el estado del jugador}
+    estado\_jugador $\leftarrow$ \{nivel, puntuacion, vidas, progreso\}\;
+
+    \tcp{Recopilar la configuración de la IA}
+    configuracion\_IA $\leftarrow$ \{dificultad\_actual, parametros\_IA\}\;
+
+    \tcp{Abrir archivo para guardar los datos}
+    archivo\_guardado $\leftarrow$ abrir\_archivo("datos\_guardados.dat", "escritura")\;
+
+    \tcp{Escribir datos en el archivo}
+    escribir\_archivo(archivo\_guardado, estado\_jugador, configuracion\_IA)\;
+
+    \tcp{Cerrar el archivo}
+    cerrar\_archivo(archivo\_guardado)\;
+}
+
+\BlankLine
+\CargarProgreso{}{
+    \tcp{Abrir archivo para cargar los datos guardados}
+    archivo\_guardado $\leftarrow$ abrir\_archivo("datos\_guardados.dat", "lectura")\;
+
+    \tcp{Leer datos del archivo}
+    datos\_guardados $\leftarrow$ leer\_archivo(archivo\_guardado)\;
+
+    \tcp{Cerrar el archivo}
+    cerrar\_archivo(archivo\_guardado)\;
+
+    \tcp{Restaurar el estado del jugador}
+    nivel $\leftarrow$ datos\_guardados["estado\_jugador"]["nivel"]\;
+    puntuacion $\leftarrow$ datos\_guardados["estado\_jugador"]["puntuacion"]\;
+    vidas $\leftarrow$ datos\_guardados["estado\_jugador"]["vidas"]\;
+    progreso $\leftarrow$ datos\_guardados["estado\_jugador"]["progreso"]\;
+
+    \tcp{Restaurar la configuración de la IA}
+    dificultad\_actual $\leftarrow$ datos\_guardados["configuracion\_IA"]["dificultad\_actual"]\;
+    parametros\_IA $\leftarrow$ datos\_guardados["configuracion\_IA"]["parametros\_IA"]\;
+
+    \tcp{Aplicar el estado y configuración restaurados}
+    actualizar\_estado\_jugador(nivel, puntuacion, vidas, progreso)\;
+    actualizar\_configuracion\_IA(dificultad\_actual, parametros\_IA)\;
+}
+
+\end{algorithm}
+
+
+\subsection*{Explicación:}
+El pseudocódigo cubre dos funciones principales: guardar el estado actual del jugador y la configuración de la IA en un archivo, y luego cargar esos datos para restaurar el progreso y las configuraciones en futuras sesiones.
+- El sistema de almacenamiento utiliza funciones para abrir, leer y escribir archivos, permitiendo la persistencia de datos.
+- Los datos incluyen tanto el estado del jugador (nivel, puntuación, vidas, etc.) como las configuraciones de IA (dificultad, velocidad de enemigos, etc.).
+- En la función de carga, los datos se restauran y aplican al sistema del juego para continuar desde donde se dejó.

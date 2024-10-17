@@ -1,0 +1,20 @@
+\subsubsection{Vista de Infraestructura}
+\begin{figure}[H]
+\centering
+\begin{adjustbox}{width=\textwidth}
+\begin{tikzpicture}[
+    server/.style={rectangle, draw, minimum height=1cm, minimum width=2.5cm, align=center}
+]
+
+\node[server] (data) {Servidor de Datos};
+\node[server, right=of data] (train) {Servidor de IA/Entrenamiento};
+\node[server, right=of train] (client) {Cliente del Juego};
+
+% Arrows between servers
+\draw (data) -> (train);
+\draw (train) -> (client);
+
+\end{tikzpicture}
+\end{adjustbox}
+\caption{Vista de Infraestructura del proceso}
+\end{figure}

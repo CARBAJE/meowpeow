@@ -1,0 +1,36 @@
+\section{Propuesta de Proyecto.}
+    \subsection{Introducción}
+    Los juegos \textit{shoot 'em up} son un subgénero de los videojuegos de acción donde se controla a un personaje o vehículo que dispara proyectiles a enemigos en hordas o individualmente que van apareciendo mientras esquiva disparos.
+    En la actualidad, los videojuegos de tipo \textit{shoot 'em up} han experimentado una gran evolución, desde mecánicas básicas hasta experiencias enriquecidas con gráficos avanzados y complejas estrategias. Sin embargo, uno de los desafíos más persistentes es el balance de la dificultad, que puede llevar a la frustración o aburrimiento del jugador si no está bien calibrada, además que usualmente se basan en memorizar niveles y patrones de repetición. Este proyecto propone un videojuego \textit{shoot 'em up} procedural, con una inteligencia artificial adaptativa que ajuste la dificultad a las habilidades y estilo de juego del usuario, proporcionando una experiencia personalizada y dinámica en cada partida.
+
+    \subsection{Problemática}
+    Muchos videojuegos actuales ofrecen niveles de dificultad predefinidos que no siempre satisfacen a los jugadores, especialmente cuando estos tienen diferentes niveles de habilidad o estilos de juego. La falta de una dificultad ajustable personalizada para el jugador puede generar experiencias frustrantes para algunos usuarios, mientras que para otros, el juego puede volverse demasiado predecible y monótono. Además, la dificultad incremental tradicional no siempre garantiza un desafío adecuado, ya que no considera el rendimiento histórico del jugador ni sus preferencias. Esta situación crea una necesidad de sistemas más avanzados que puedan adaptar la experiencia de juego en función del comportamiento del usuario.
+    
+    \subsection{Objetivo}
+    
+    Desarrollar un videojuego \textit{shoot 'em up} procedural que ajuste dinámicamente su dificultad mediante una inteligencia artificial basada en aprendizaje automático. El sistema buscará equilibrar la experiencia de juego en función de las habilidades y preferencias del jugador, aumentando la rejugabilidad y asegurando que cada partida ofrezca un reto adecuado. La IA se entrenará con los datos recopilados de las últimas 15 partidas del usuario, utilizando una combinación de aprendizaje por refuerzo y redes neuronales para ajustar los parámetros del juego.
+    
+    \subsection{Solución Propuesta}
+    
+    La solución consiste en un videojuego con las siguientes características:
+    \begin{itemize}
+        \item \textbf{Generación Procedural:} Los escenarios, enemigos y jefes serán generados de manera procedural, ofreciendo una experiencia diferente en cada partida.
+        \item \textbf{Dificultad Adaptativa:} La dificultad se ajustará en tiempo real mediante una IA que analizará el rendimiento del jugador en sus últimas partidas. Esto permitirá una experiencia personalizada para cada jugador.
+        \item \textbf{Retroalimentación Multisensorial:} El juego contará con retroalimentación visual y sonora para indicar la progresión del jugador. Los \textit{sprites} de los enemigos cambiarán según su nivel, y el tono al derrotar a un jefe reforzará el sentido de logro.
+        \item \textbf{Curva de Dificultad Gradual:} La dificultad aumentará gradualmente, especialmente durante las fases de los jefes, para mantener un balance entre el desafío y la frustración del jugador.
+        \item \textbf{Heurística y Aleatoriedad:} El juego utilizará heurísticas para añadir elementos de aleatoriedad, evitando que el jugador memorice patrones de ataque o comportamiento de los enemigos, incrementando la rejugabilidad.
+    \end{itemize}
+    
+    \subsection{Alcance del Proyecto}
+    
+    El proyecto abarcará las siguientes fases:
+    \begin{enumerate}
+        \item \textbf{Desarrollo del Motor Procedural:} Crear un sistema de generación procedural de escenarios y enemigos.
+        \item \textbf{Implementación de la IA Adaptativa:} Desarrollar y entrenar una red neuronal que ajuste la dificultad en tiempo real, basada en el análisis del rendimiento del jugador.
+        \item \textbf{Retroalimentación Visual y Sonora:} Implementar un sistema que comunique al jugador su progreso a través de cambios visuales y auditivos.
+        \item \textbf{Curva de Dificultad y Balance:} Definir una curva de dificultad que sea accesible para jugadores principiantes y desafiante para jugadores avanzados.
+        \item \textbf{Pruebas y Ajustes:} Realizar pruebas de usuario para recoger \textit{feedback} y ajustar los parámetros del juego, mejorando la experiencia de juego final.
+    \end{enumerate}
+    
+    Este proyecto tiene el potencial de innovar en la forma en que se gestionan los niveles de dificultad en los videojuegos, ofreciendo una experiencia de juego más atractiva, dinámica y equilibrada.
+    

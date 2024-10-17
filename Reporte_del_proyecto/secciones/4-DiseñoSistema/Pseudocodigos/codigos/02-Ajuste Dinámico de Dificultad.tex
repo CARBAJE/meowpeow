@@ -1,0 +1,86 @@
+\subsubsection{Algoritmos del proceso de \textit{Ajuste Dinamico de Dificultad.}}
+\subsubsection*{Algoritmo de Ajuste Dinámico de Dificultad}
+
+\textbf{Problemática}: Ajustar la dificultad en función del rendimiento del jugador sin hacer el juego ni demasiado fácil ni demasiado difícil.
+
+\textbf{Posible solución}: Se puede usar un sistema de \textit{aprendizaje reforzado} que ajuste los parámetros del juego (como la cantidad de enemigos, su agresividad o la cantidad de obstáculos) en función del comportamiento del jugador. Este sistema podría aprender del jugador en tiempo real y ajustar las condiciones del nivel en consecuencia.
+
+\textbf{Desafío técnico}: El ajuste de dificultad debe realizarse de manera sutil para que el jugador no perciba cambios drásticos, lo que podría afectar la inmersión. También es crucial evitar la creación de “picos” de dificultad que hagan el juego injustamente complicado.
+
+
+\subsection*{Entradas:}
+\begin{itemize}
+    \item Datos del jugador:
+    \begin{itemize}
+        \item vidas\_perdidas
+        \item precision
+        \item puntuacion
+    \end{itemize}
+\end{itemize}
+
+\subsection*{Salidas:}
+\begin{itemize}
+    \item Modificaciones de la dificultad:
+    \begin{itemize}
+        \item numero\_enemigos
+        \item velocidad\_enemigos
+        \item patrones\_enemigos
+    \end{itemize}
+\end{itemize}
+
+\subsection*{Actores:}
+\begin{itemize}
+    \item Sistema de IA
+    \item Motor de aprendizaje
+\end{itemize}
+
+\subsection*{Pseudocódigo:}
+\begin{algorithm}[H]
+\caption{Ajuste Dinámico de la Dificultad del Juego}
+\SetAlgoLined
+\KwIn{vidas\_perdidas, precision, puntuacion}
+\KwOut{numero\_enemigos, velocidad\_enemigos, patrones\_enemigos}
+
+\BlankLine
+\tcp{Inicialización de parámetros}
+dificultad\_base $\leftarrow$ 1.0\;
+incremento\_dificultad $\leftarrow$ 0.1\;
+vidas\_max $\leftarrow$ 3\;
+precision\_esperada $\leftarrow$ 0.75\;
+puntuacion\_esperada $\leftarrow$ 1000\;
+
+\While{el juego esté en ejecución}{
+    \tcp{Leer datos del jugador}
+    leer(vidas\_perdidas, precision, puntuacion)\;
+
+    \If{vidas\_perdidas > 0}{
+        dificultad\_base $\leftarrow$ dificultad\_base - \dfrac{vidas\_perdidas}{vidas\_max}\;
+    }
+
+    \If{precision < precision\_esperada}{
+        dificultad\_base $\leftarrow$ dificultad\_base - incremento\_dificultad\;
+    }
+
+    \If{puntuacion $\geq$ puntuacion\_esperada}{
+        dificultad\_base $\leftarrow$ dificultad\_base + incremento\_dificultad\;
+    }
+
+    \tcp{Aplicar límites a la dificultad}
+    dificultad\_base $\leftarrow$ \texttt{max}(0.5, \texttt{min}(dificultad\_base, 2.0))\;
+
+    \tcp{Modificar parámetros de enemigos según la dificultad}
+    numero\_enemigos $\leftarrow$ base\_enemigos * dificultad\_base\;
+    velocidad\_enemigos $\leftarrow$ base\_velocidad * dificultad\_base\;
+    patrones\_enemigos $\leftarrow$ seleccionar\_patrones(dificultad\_base)\;
+
+    \tcp{Enviar parámetros ajustados al motor de juego}
+    enviar\_parametros(numero\_enemigos, velocidad\_enemigos, patrones\_enemigos)\;
+
+    \tcp{Actualizar datos del jugador con retroalimentación del sistema IA y motor de aprendizaje}
+    actualizar\_datos\_jugador()\;
+}
+
+\end{algorithm}
+
+\subsection*{Explicación:}
+El sistema ajusta dinámicamente la dificultad del juego basándose en el rendimiento del jugador. Si el jugador pierde vidas o su precisión cae por debajo del umbral esperado, la dificultad se reduce. Si la puntuación supera la esperada, la dificultad aumenta. El ajuste se aplica a los enemigos, modificando su número, velocidad y patrones. El motor de aprendizaje recibe retroalimentación para mejorar la adaptación del sistema a largo plazo.

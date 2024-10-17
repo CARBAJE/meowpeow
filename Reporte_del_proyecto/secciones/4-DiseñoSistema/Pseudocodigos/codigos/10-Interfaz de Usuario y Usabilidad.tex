@@ -1,0 +1,37 @@
+\subsubsection{Interfaz de Usuario y Usabilidad}
+
+\begin{verbatim}
+// Inicializar la ventana de la interfaz
+sf::RenderWindow ventana(sf::VideoMode(800, 600), "Juego Procedural");
+
+// Diseñar la interfaz y los controles
+void inicializarInterfaz() {
+    // Crear botones, texto y otros elementos de la interfaz
+}
+
+// Probar la interfaz para asegurar usabilidad
+void probarInterfaz() {
+    // Realizar pruebas de usabilidad y ajustar elementos según sea necesario
+}
+
+// Ajustar la interfaz y los controles
+void ajustarInterfaz() {
+    // Modificar la interfaz para mejor experiencia de usuario
+}
+
+// Ejecutar el bucle principal del juego
+void ejecutarJuego() {
+    while (ventana.isOpen()) {
+        sf::Event evento;
+        while (ventana.pollEvent(evento)) {
+            if (evento.type == sf::Event::Closed)
+                ventana.close();
+        }
+
+        ventana.clear();
+        // Dibujar elementos de la interfaz aquí
+        ventana.display();
+    }
+}
+\end{verbatim}
+

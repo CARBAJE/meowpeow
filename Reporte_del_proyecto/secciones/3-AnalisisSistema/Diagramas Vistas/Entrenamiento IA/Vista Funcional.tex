@@ -1,0 +1,23 @@
+\subsubsection{Vista Funcional}
+\begin{figure}[H]
+\centering
+\begin{adjustbox}{width=0.5\textwidth}
+\begin{tikzpicture}[
+    actor/.style={circle, draw, minimum height=1cm, align=center},
+    case/.style={rectangle, draw, minimum height=1cm, minimum width=3cm, align=center}
+]
+
+\node[actor] (player) {Jugador};
+\node[case, right=of player] (train) {Entrenar IA};
+\node[case, below=of train] (eval) {Evaluar IA};
+\node[case, below=of eval] (adjust) {Ajustar IA};
+
+% Arrows between actor and use cases
+\draw (player) -> (train);
+\draw (train) -> (eval);
+\draw (eval) -> (adjust);
+
+\end{tikzpicture}
+\end{adjustbox}
+\caption{Vista Funcional}
+\end{figure}

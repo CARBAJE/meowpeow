@@ -1,0 +1,41 @@
+\subsubsection{Vista  de Comportamientos}
+Este diagrama destaca cómo el sistema de IA responde al rendimiento del jugador y ajusta dinámicamente tanto los enemigos como los patrones de ataque para mantener la jugabilidad equilibrada.
+\begin{figure}[H]
+\centering
+\begin{adjustbox}{width=0.75\textwidth}
+\begin{tikzpicture}[
+    process/.style={rectangle, draw, minimum height=1cm, minimum width=4cm, align=center},
+    entity/.style={ellipse, draw, minimum height=1cm, minimum width=2.5cm, align=center},
+    relation/.style={-Stealth, thick}
+]
+
+% Entities
+\node[entity] (jugador) {Jugador};
+\node[entity, right=of jugador, xshift=3cm] (ia) {IA\_Modelo};
+\node[entity, below=of ia] (enemigo) {Enemigo};
+\node[entity, below=of enemigo] (ataque) {Ataque};
+
+% Processes
+\node[process, below=of jugador] (analisis) {Análisis del Rendimiento del Jugador};
+\node[process, below=of analisis] (ajusteDificultad) {Ajuste de Dificultad};
+\node[process, below=of ajusteDificultad] (ajustePatrones) {Ajuste Procedural de Patrones de Ataque};
+
+% Arrows between processes
+\draw[relation] (analisis) -- (ajusteDificultad);
+\draw[relation] (ajusteDificultad) -- (ajustePatrones);
+
+% Arrows between entities and processes
+\draw[relation] (jugador) -- (analisis);
+\draw[relation] (ia) -- (ajusteDificultad);
+\draw[relation] (ia) -- (ajustePatrones);
+\draw[relation] (ajusteDificultad) -- (enemigo);
+\draw[relation] (ajustePatrones) -- (ataque);
+
+% Relationships
+\draw[relation, dashed] (ia) -- (enemigo) node[midway, right] {Modifica};
+\draw[relation, dashed] (enemigo) -- (ataque) node[midway, right] {Dispara};
+
+\end{tikzpicture}
+\end{adjustbox}
+\caption{Vista de Comportamientos}
+\end{figure}

@@ -1,0 +1,46 @@
+\subsubsection{Registro y análisis de puntuación}
+\begin{figure}[H]
+\centering
+\begin{adjustbox}{scale=0.8}
+\begin{tikzpicture}[node distance=2.5cm, auto, thick, 
+  every node/.style={rectangle, draw=black, align=center, minimum height=0.5cm, minimum width=2.5cm},
+  startstop/.style = {ellipse, draw=black, fill=red!30},
+  process/.style = {rectangle, draw=black, fill=yellow!30},
+  decision/.style = {diamond, draw=black, fill=green!10, aspect=2, text width=3cm, align=center},
+  line/.style = {draw, -{Stealth[scale=1.2]}}
+]
+
+% Start node
+\node (start) [startstop] {Inicio};
+
+% Activity nodes
+\node (registro) [process, below of=start, yshift=-0.5cm] {Registrar puntuaciones};
+\node (validar) [decision, below of=registro, yshift=-0.5cm] {¿Puntuaciones válidas?};
+\node (descartar) [process, right of=validar, xshift=4.5cm, yshift=0.5cm] {Descartar puntuaciones};
+
+\node (guardar) [process, below of=validar, yshift=-0.8cm] {Guardar puntuaciones};
+\node (analizar) [process, below of=guardar, yshift=-0.8cm] {Analizar puntuaciones};
+
+\node (ajustar) [decision, below of=analizar, yshift=-0.8cm] {¿Ajustar dificultad?};
+\node (modificar) [process, left of=ajustar, xshift=-4.5cm, yshift=0.5cm] {Modificar parámetros del juego};
+
+% End node
+\node (fin) [startstop, below of=ajustar, yshift=-0.8cm] {Fin};
+
+% Drawing arrows
+\draw [line] (start) -- (registro);
+\draw [line] (registro) -- (validar);
+\draw [line] (validar) -- node [left] {Sí} (guardar);
+\draw [line] (validar.east) --++(2.5,0) node [above] {No} |- (descartar);
+
+\draw [line] (guardar) -- (analizar);
+\draw [line] (analizar) -- (ajustar);
+
+\draw [line] (ajustar) -- node [left] {No} (fin);
+\draw [line] (ajustar.west) --++(-2.5,0) node [above] {Sí} -- (modificar);
+\draw [line] (modificar) |- (analizar);
+
+\end{tikzpicture}
+\end{adjustbox}
+\caption{Diagrama de Actividades del Registro y Análisis de Puntuación}
+\end{figure}

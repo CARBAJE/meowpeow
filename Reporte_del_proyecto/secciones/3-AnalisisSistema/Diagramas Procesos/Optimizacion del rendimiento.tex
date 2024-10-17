@@ -1,0 +1,38 @@
+\subsubsection{Optimización del Rendimiento}
+\begin{figure}[H]
+\centering
+\begin{adjustbox}{scale=0.8}
+\begin{tikzpicture}[node distance=2.5cm, auto, thick, 
+  every node/.style={rectangle, draw=black, align=center, minimum height=0.5cm, minimum width=2.5cm},
+  startstop/.style = {ellipse, draw=black, fill=red!30},
+  process/.style = {rectangle, draw=black, fill=yellow!30},
+  decision/.style = {diamond, draw=black, fill=green!10, aspect=2, text width=3cm, align=center},
+  line/.style = {draw, -{Stealth[scale=1.2]}}
+]
+
+% Start node
+\node (start) [startstop] {Inicio};
+
+% Activity nodes
+\node (recursos) [process, below of=start, yshift=-0.5cm] {Obtener recursos del juego};
+\node (carga) [process, below of=recursos, yshift=-0.5cm] {Monitorear carga del sistema};
+\node (frame) [process, below of=carga, yshift=-0.5cm] {Verificar frame rate actual};
+
+\node (ajustar) [decision, below of=frame, yshift=-0.8cm] {¿Frame rate < 60 FPS?};
+\node (optimizar) [process, below of=ajustar, yshift=-0.8cm] {Optimizar rendimiento};
+
+% End node
+\node (fin) [startstop, below of=optimizar, yshift=-0.8cm] {Fin};
+
+% Drawing arrows
+\draw [line] (start) -- (recursos);
+\draw [line] (recursos) -- (carga);
+\draw [line] (carga) -- (frame);
+\draw [line] (frame) -- (ajustar);
+\draw [line] (ajustar) -- node [left] {Sí} (optimizar);
+\draw [line] (ajustar.east) --++(2.5,0) node [above] {No} |- (fin);
+
+\end{tikzpicture}
+\end{adjustbox}
+\caption{Diagrama de Procesos para la Optimización del Rendimiento}
+\end{figure}

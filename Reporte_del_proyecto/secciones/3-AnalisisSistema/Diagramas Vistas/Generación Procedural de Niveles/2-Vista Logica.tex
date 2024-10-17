@@ -1,0 +1,45 @@
+\subsubsection{Vista  Lógica}
+Este diagrama representa la Vista Lógica (Diagrama de Clases) para el sistema de generación procedural de niveles, mostrando las principales clases y sus interacciones. A su ves proporciona una visión clara de cómo las distintas clases y componentes del sistema interactúan entre sí en el contexto de la generación procedural de niveles.
+\begin{figure}[H]
+\centering
+\begin{adjustbox}{width=0.6\textwidth}
+\begin{tikzpicture}[
+    class/.style={rectangle, draw, minimum width=3cm, minimum height=1.5cm, align=center},
+    relationship/.style={-Stealth, thick}
+]
+
+% Classes
+\node[class] (nivel) {Nivel\\
+\textbf{Atributos:}\\
+ID\\
+Puntos Obtenidos\\
+Enemigos Generados\\
+Dificultad};
+
+\node[class, below=of nivel] (motor_procedural) {MotorProcedural\\
+\textbf{Atributos:}\\
+Obstáculos Generados\\
+Vel\_Scroll};
+
+\node[class, right=of nivel, xshift=3cm] (sistema_ia) {SistemaIA\\
+\textbf{Atributos:}\\
+Métricas\\
+Tasa\_Ajst\\
+Tiempo de Adaptación};
+
+\node[class, below=of motor_procedural] (jugador) {Jugador\\
+\textbf{Atributos:}\\
+J\_ID\\
+Nombre\\
+Precisión};
+
+% Relationships
+\draw[relationship] (nivel) -- (motor_procedural) node[midway, right] {depende de};
+\draw[relationship] (nivel) -- (sistema_ia) node[midway, above] {interactúa con};
+\draw[relationship] (jugador) -- (sistema_ia) node[midway, right] {influye en};
+\draw[relationship] (jugador) -- (motor_procedural) node[midway, right] {influye en};
+
+\end{tikzpicture}
+\end{adjustbox}
+\caption{Vista Lógica}
+\end{figure}

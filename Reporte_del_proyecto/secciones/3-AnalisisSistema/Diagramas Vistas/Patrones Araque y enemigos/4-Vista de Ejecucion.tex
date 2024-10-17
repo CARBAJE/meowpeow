@@ -1,0 +1,44 @@
+\subsubsection{Vista  de Ejecución}
+Este diagrama muestra los pasos que sigue el sistema para el entrenamiento del modelo de IA, centrado en el flujo de trabajo y la interacción entre las diferentes entidades involucradas.
+\begin{figure}[H]
+\centering
+\begin{adjustbox}{width=0.75\textwidth}
+\begin{tikzpicture}[
+    process/.style={rectangle, draw, minimum height=1cm, minimum width=3cm, align=center, rounded corners},
+    entity/.style={ellipse, draw, minimum height=1cm, minimum width=2.5cm, align=center},
+    relation/.style={-Stealth, thick}
+]
+
+% Nodes (Steps in the process)
+\node[process] (recopilacion) {Recopilación de Datos Históricos};
+\node[process, below=of recopilacion] (preprocesamiento) {Preprocesamiento de Datos};
+\node[process, below=of preprocesamiento] (entrenamiento) {Entrenamiento de la IA};
+\node[process, below=of entrenamiento] (evaluacion) {Evaluación del Modelo};
+\node[process, below=of evaluacion] (ajuste) {Ajuste de Parámetros};
+\node[process, below=of ajuste] (implementacion) {Implementación del Modelo};
+
+% Entities
+\node[entity, left=of preprocesamiento, xshift=-2cm] (nivel) {Nivel};
+\node[entity, right=of preprocesamiento, xshift=2cm] (partida) {Partida};
+\node[entity, left=of entrenamiento, xshift=-2cm] (jugador) {Jugador};
+\node[entity, right=of evaluacion, xshift=2cm] (estadisticas) {Estadísticas};
+\node[entity, left=of implementacion, xshift=-2cm] (ia_modelo) {IA\_Modelo};
+
+% Relations between steps (process flow)
+\draw[relation] (recopilacion) -- (preprocesamiento);
+\draw[relation] (preprocesamiento) -- (entrenamiento);
+\draw[relation] (entrenamiento) -- (evaluacion);
+\draw[relation] (evaluacion) -- (ajuste);
+\draw[relation] (ajuste) -- (implementacion);
+
+% Relationships to entities
+\draw[relation, dashed] (nivel) -- (preprocesamiento);
+\draw[relation, dashed] (partida) -- (preprocesamiento);
+\draw[relation, dashed] (jugador) -- (entrenamiento);
+\draw[relation, dashed] (estadisticas) -- (evaluacion);
+\draw[relation, dashed] (ia_modelo) -- (implementacion);
+
+\end{tikzpicture}
+\end{adjustbox}
+\caption{Vista de Ejecución}
+\end{figure}

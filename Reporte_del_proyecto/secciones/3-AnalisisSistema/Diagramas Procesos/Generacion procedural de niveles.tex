@@ -1,0 +1,52 @@
+\subsubsection{Diagrama de Actividades de Generación Procedural de Niveles}
+\begin{figure}[H]
+\centering
+\begin{adjustbox}{scale=0.6} % Ajusta el diagrama al ancho de la página
+\begin{tikzpicture}[node distance=2.5cm, auto, thick, 
+  every node/.style={rectangle, draw=black, align=center, minimum height=0.5cm, minimum width=2.5cm},
+  startstop/.style={ellipse, draw=black, fill=red!30},
+  process/.style={rectangle, draw=black, fill=yellow!30},
+  decision/.style={diamond, draw=black, fill=green!10, aspect=2, text width=3cm, align=center},
+  sync/.style={rectangle, draw=black, fill=blue!20},
+  line/.style={draw, -{Stealth[scale=1.2]}}
+]
+
+% Nodo de inicio
+\node (start) [startstop] {Inicio \\ (El jugador comienza una nueva partida)};
+
+% Actividades
+\node (collect) [process, below of=start] {Recopilación de Parámetros de Generación \\ (Enemigos, Obstáculos, Entorno)};
+\node (gen_env) [process, below of=collect] {Generación del Entorno \\ (Motor Procedural)};
+\node (decision1) [decision, below of=gen_env] {¿Reglas de accesibilidad cumplen?};
+\node (sync1) [sync, below of=decision1, yshift=-0.5cm] {Sincronización};
+
+% Bifurcación para distribución
+\node (gen_obs) [process, left of=sync1, xshift=-3cm] {Distribución de Obstáculos \\ (Colocación basada en reglas)};
+\node (gen_enemies) [process, right of=sync1, xshift=3cm] {Distribución de Enemigos \\ (Sistema de IA)};
+\node (decision2) [decision, below of=sync1] {¿Dificultad adecuada?};
+\node (difficulty) [process, below of=decision2, yshift=-0.5cm] {Ajuste Dinámico de Dificultad \\ (IA ajusta la dificultad)};
+\node (sync2) [sync, below of=difficulty, yshift=-0.5cm] {Sincronización};
+\node (verify) [process, below of=sync2] {Verificación de Reglas de Juego \\ (Motor Procedural)};
+\node (final) [process, below of=verify] {Finalización de la Generación \\ (Nivel listo para el motor de juego)};
+\node (end) [startstop, below of=final] {Fin \\ (Nivel generado y listo)};
+
+% Conexiones
+\draw [line] (start) -- (collect);
+\draw [line] (collect) -- (gen_env);
+\draw [line] (gen_env) -- (decision1);
+\draw [line] (decision1.east) --++(1.5,0) node [right] {Sí} |- (gen_enemies.west);
+\draw [line] (decision1.west) --++(-1.5,0) node [left] {No} |- (gen_obs.east);
+\draw [line] (gen_obs) -- (sync1);
+\draw [line] (gen_enemies) -- (sync1);
+\draw [line] (sync1) -- (decision2);
+\draw [line] (decision2) -- node [left] {No} (difficulty);
+\draw [line] (decision2.east) --++(1.5,0) node [right] {Sí} |- (sync2);
+\draw [line] (difficulty) -- (sync2);
+\draw [line] (sync2) -- (verify);
+\draw [line] (verify) -- (final);
+\draw [line] (final) -- (end);
+
+\end{tikzpicture}
+\end{adjustbox}
+\caption{Diagrama de Actividades de Generación Procedural de Niveles}
+\end{figure}

@@ -1,0 +1,40 @@
+\subsubsection{Vista  de Integración}
+Este diagrama muestra cómo el proceso de Gestión de Enemigos y Patrones de Ataque se integra con otros procesos importantes dentro del sistema para garantizar una experiencia de juego cohesiva y adaptativa.
+\begin{figure}[H]
+\centering
+\begin{adjustbox}{width=\textwidth}
+\begin{tikzpicture}[
+    process/.style={rectangle, draw, minimum height=1cm, minimum width=3cm, align=center, rounded corners},
+    entity/.style={ellipse, draw, minimum height=1cm, minimum width=2.5cm, align=center},
+    relation/.style={-Stealth, thick}
+]
+
+% Nodes (Processes)
+\node[process] (gestion) {Gestión de Enemigos y Patrones de Ataque};
+\node[process, above left=of gestion, xshift=-1cm, yshift=2cm] (generacion) {Generación Procedural de Niveles};
+\node[process, above right=of gestion, xshift=1cm, yshift=2cm] (ajuste) {Ajuste Dinámico de Dificultad};
+\node[process, below=of gestion, yshift=-2cm] (interfaz) {Interfaz de Usuario};
+
+% Entities
+\node[entity, below left=of gestion, xshift=-1cm] (nivel) {Nivel};
+\node[entity, below right=of gestion, xshift=1cm] (partida) {Partida};
+\node[entity, below=of interfaz, yshift=-1cm] (jugador) {Jugador};
+\node[entity, below=of partida, yshift=-1cm] (estadisticas) {Estadísticas};
+\node[entity, right=of ajuste, xshift=2cm] (ia_modelo) {IA\_Modelo};
+
+% Relations between processes
+\draw[relation] (generacion) -- (gestion);
+\draw[relation] (ajuste) -- (gestion);
+\draw[relation] (gestion) -- (interfaz);
+
+% Relations to entities
+\draw[relation, dashed] (nivel) -- (gestion);
+\draw[relation, dashed] (partida) -- (gestion);
+\draw[relation, dashed] (jugador) -- (interfaz);
+\draw[relation, dashed] (estadisticas) -- (gestion);
+\draw[relation, dashed] (ia_modelo) -- (ajuste);
+
+\end{tikzpicture}
+\end{adjustbox}
+\caption{Vista de Integración}
+\end{figure}

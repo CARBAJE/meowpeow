@@ -1,0 +1,65 @@
+\subsection{Diagrama de Actividades}
+
+\begin{figure}[H]
+\centering
+\begin{adjustbox}{scale=0.6} % Ajusta el diagrama al ancho de la página
+\begin{tikzpicture}[node distance=2cm, auto, thick, 
+  every node/.style={rectangle, draw=black, align=center, minimum height=0.5cm, minimum width=2.5cm},
+  startstop/.style = {ellipse, draw=black, fill=red!30},
+  process/.style = {rectangle, draw=black, fill=yellow!30},
+  decision/.style = {diamond, draw=black, fill=green!10, aspect=2, text width=3cm, align=center
+  },
+  line/.style = {draw, -{Stealth[scale=1.2]}}
+]
+
+% Start node
+\node (start) [startstop] {Inicio};
+
+% Activity nodes
+\node (generacion) [process, below of=start] {Generación Procedural de Niveles};
+\node (check_dificultad) [decision, below of=generacion, yshift=-1cm] {¿Ajustar Dificultad?};
+\node (ajuste) [process, below of=check_dificultad, yshift=-1cm] {Ajuste Dinámico de Dificultad};
+
+\node (check_entrenamiento) [decision, below of=ajuste, yshift=-1cm] {¿Entrenar IA?};
+\node (entrenamiento) [process, below of=check_entrenamiento, yshift=-1cm] {Entrenamiento del Algoritmo de IA};
+
+\node (feedback) [process, right of=entrenamiento, xshift=5cm] {Sistema de Feedback Visual y Sonoro};
+
+\node (check_rendimiento) [decision, below of=entrenamiento, yshift=-1cm] {¿Optimizar Rendimiento?};
+\node (optimizacion) [process, below of=check_rendimiento, yshift=-1cm] {Optimización del Rendimiento};
+
+\node (check_escalabilidad) [decision, right of=optimizacion, xshift=5cm] {¿Ajustar IA por Nuevas Variables?};
+\node (escalabilidad) [process, below of=check_escalabilidad, yshift=-1cm] {Escalabilidad del Algoritmo de IA};
+
+\node (interfaz) [process, below of=escalabilidad, yshift=-1cm] {Interfaz de Usuario y Usabilidad};
+
+% End node
+\node (end) [startstop, below of=interfaz, yshift=-1cm] {Fin};
+
+% Drawing arrows
+\draw [line] (start) -- (generacion);
+\draw [line] (generacion) -- (check_dificultad);
+\draw [line] (check_dificultad) -- node [left] {Sí} (ajuste);
+\draw [line] (check_dificultad.east) --++(1.5,0) node [right] {No} |- (feedback);
+
+\draw [line] (ajuste) -- (check_entrenamiento);
+\draw [line] (check_entrenamiento) -- node [left] {Sí} (entrenamiento);
+\draw [line] (check_entrenamiento.east) --++(1.5,0) node [right] {No} |- (feedback);
+
+\draw [line] (feedback) -- (check_rendimiento);
+
+\draw [line] (entrenamiento) -- (check_rendimiento);
+\draw [line] (check_rendimiento) -- node [left] {Sí} (optimizacion);
+\draw [line] (check_rendimiento.east) --++(1.5,0) node [right] {No} |- (check_escalabilidad);
+
+\draw [line] (optimizacion) -- (check_escalabilidad);
+\draw [line] (check_escalabilidad) -- node [left] {Sí} (escalabilidad);
+\draw [line] (check_escalabilidad.east) --++(1.5,0) node [right] {No} |- (interfaz);
+
+\draw [line] (escalabilidad) -- (interfaz);
+\draw [line] (interfaz) -- (end);
+
+\end{tikzpicture}
+\end{adjustbox}
+\caption{Diagrama de Actividades General}
+\end{figure}

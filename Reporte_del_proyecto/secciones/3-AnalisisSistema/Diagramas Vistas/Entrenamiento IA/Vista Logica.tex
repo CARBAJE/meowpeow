@@ -1,0 +1,25 @@
+\subsubsection{Vista Lógica}
+
+\begin{figure}[H]
+\centering
+\begin{adjustbox}{width=\textwidth}
+\begin{tikzpicture}[
+    component/.style={rectangle, draw, minimum height=1cm, minimum width=2.5cm, align=center}
+]
+
+\node[component] (ia) {Motor de IA};
+\node[component, above=of ia] (preproc) {Módulo de Preprocesamiento};
+\node[component, below=of ia] (rednn) {Red Neuronal};
+\node[component, left=of ia] (eval) {Módulo de Evaluación};
+\node[component, right=of ia] (param) {Módulo de Ajuste de\\Parámetros};
+
+% Arrows between components
+\draw (preproc) -> (ia);
+\draw (ia) -> (rednn);
+\draw (eval) -> (ia);
+\draw (param) -> (ia);
+
+\end{tikzpicture}
+\end{adjustbox}
+\caption{Vista Lógica del Sistema}
+\end{figure}

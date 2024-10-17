@@ -1,0 +1,152 @@
+\subsubsection{Algoritmos del proceso d\textit{Gestión de enemigos y patrón de ataques}}
+
+\subsubsection*{Algoritmo de Selección de Enemigos y Patrones de Ataque}
+\textbf{Problemática}: Seleccionar enemigos adecuados y generar patrones de ataque en tiempo real basados en variables de dificultad.\\
+\textbf{Algoritmo}: Se puede usar una \textit{heurística de selección} combinada con un \textit{algoritmo de búsqueda} como \textit{algoritmo genético}. Los enemigos y sus patrones de ataque se seleccionan según la dificultad, iterando sobre un conjunto de posibles combinaciones y eligiendo las más optimizadas según el nivel actual.\\
+\textbf{Desafío}: Adaptarse en tiempo real a los cambios en la dificultad y garantizar que los patrones generados no sean repetitivos ni imposibles.
+
+\begin{algorithm}[H]
+\caption{Algoritmo Genético para Selección de Enemigos y Patrones de Ataque}
+\SetAlgoLined
+
+Inicializar población con N configuraciones de enemigos y patrones\;
+\ForEach{configuración en la población}{
+    Evaluar cada configuración en base a:
+    \begin{itemize}
+        \item Dificultad deseada
+        \item Diversidad de patrones
+        \item Repetición de ataques
+    \end{itemize}
+}
+
+\For{cada iteración hasta el número máximo de generaciones}{
+    Seleccionar configuraciones más óptimas (por ejemplo, mediante torneo)\;
+    Cruzar las configuraciones seleccionadas para generar nuevas combinaciones\;
+    Mutar aleatoriamente algunos patrones en las nuevas configuraciones\;
+    Evaluar nuevas configuraciones\;
+    \If{se encuentra una configuración óptima o se alcanzan las generaciones máximas}{
+        Salir del bucle\;
+    }
+}
+\Return{configuración más adecuada para la situación actual del juego}\;
+
+\end{algorithm}
+
+\subsubsection*{Algoritmo de Ajuste Dinámico de Ataques}
+\textbf{Problemática}: Ajustar el comportamiento de los enemigos y sus patrones de ataque en función del rendimiento del jugador en tiempo real.\\
+\textbf{Algoritmo}: El uso de un \textit{sistema basado en aprendizaje reforzado} o un \textit{modelo predictivo} que ajuste patrones de ataque dinámicamente, aprendiendo del estilo de juego del usuario y modificando la dificultad de manera progresiva.\\
+\textbf{Desafío}: Mantener una transición suave en los ajustes, evitando cambios bruscos que puedan desbalancear la jugabilidad.
+
+\begin{algorithm}[H]
+\caption{Ajuste dinámico de ataques basado en Aprendizaje Reforzado}
+\SetAlgoLined
+
+Inicializar un modelo de Aprendizaje Reforzado (Q-learning o similar)\;
+Definir estados (niveles de rendimiento del jugador)\;
+Definir acciones (ajustes en patrones de ataque: más agresivo, más defensivo, etc.)\;
+Definir recompensas (basado en si el jugador mejora o empeora)\;
+
+\While{el juego esté en progreso}{
+    Observar el rendimiento del jugador\;
+    Determinar el estado actual del jugador\;
+    Elegir la mejor acción basada en el modelo actual (exploración vs explotación)\;
+    Ejecutar el ajuste de patrones de ataque\;
+    Observar el resultado (mejora o empeora la experiencia del jugador)\;
+    Actualizar el modelo de aprendizaje reforzado basado en la recompensa obtenida\;
+}
+
+Actualizar patrones de ataque dinámicamente según la acción seleccionada\;
+
+\end{algorithm}
+
+
+\subsubsection*{Algoritmo de Gestión de Variables de Dificultad}
+\textbf{Problemática}: Recopilar y procesar datos como estadísticas del jugador y variables de dificultad para generar ataques adecuados.\\
+\textbf{Algoritmo}: Un \textit{algoritmo de clasificación jerárquica} podría agrupar los datos del jugador (rendimiento, estadísticas) y decidir cómo influir en los parámetros de ataque. Por ejemplo, clasificar los jugadores en diferentes niveles de habilidad para ajustar la agresividad de los enemigos.\\
+\textbf{Desafío}: Procesar los datos en tiempo real sin sobrecargar el sistema o causar retrasos en la jugabilidad.
+
+\begin{algorithm}[H]
+\caption{Algoritmo de Clasificación Jerárquica para Variables de Dificultad}
+\SetAlgoLined
+
+Inicializar datos de rendimiento del jugador (estadísticas como precisión, tiempo de reacción, etc.)\;
+Agrupar jugadores en diferentes niveles de habilidad mediante Clasificación Jerárquica\;
+
+\While{el juego esté en progreso}{
+    Recoger datos de rendimiento del jugador en tiempo real\;
+    Actualizar la clasificación del jugador si es necesario\;
+
+    \uIf{el jugador pertenece al grupo de nivel bajo}{
+        Generar patrones de ataque menos agresivos\;
+    }
+    \uElseIf{el jugador pertenece al grupo de nivel medio}{
+        Generar patrones balanceados\;
+    }
+    \ElseIf{el jugador pertenece al grupo de nivel alto}{
+        Generar patrones más agresivos\;
+    }
+}
+
+Actualizar constantemente los ataques según la nueva clasificación\;
+\end{algorithm}
+
+\subsubsection*{Algoritmo de Control de Carga}
+\textbf{Problemática}: Garantizar que el ajuste dinámico y generación de enemigos/patrones de ataque no afecte negativamente el rendimiento del juego.\\
+\textbf{Algoritmo}: Se puede implementar un \textit{algoritmo de control de rendimiento} basado en la cantidad de enemigos y la complejidad del patrón de ataque. Técnicas como el \textit{cálculo incremental} o el \textit{ajuste procedural limitado} pueden ayudar a mantener el equilibrio.\\
+\textbf{Desafío}: Lograr un rendimiento estable incluso en niveles muy complejos, con múltiples enemigos y patrones de ataque en pantalla.
+
+\begin{algorithm}[H]
+\caption{Control de Carga para Manejo de Enemigos y Patrones}
+\SetAlgoLined
+
+Definir límite máximo de enemigos y complejidad de patrones basado en los recursos del sistema\;
+Inicializar la cantidad de enemigos y la complejidad de patrones a un nivel básico\;
+
+\While{el juego esté en progreso}{
+    Medir uso de CPU y GPU del sistema\;
+
+    \uIf{el uso del sistema es bajo}{
+        Aumentar la cantidad de enemigos y la complejidad de los patrones\;
+    }
+    \uElseIf{el uso del sistema está cerca del límite}{
+        Reducir la cantidad de enemigos o simplificar los patrones de ataque\;
+    }
+}
+
+Ajustar dinámicamente la cantidad de enemigos y la complejidad según el rendimiento del sistema\;
+
+\end{algorithm}
+
+\subsubsection*{Algoritmo de Sincronización de Módulos}
+\textbf{Problemática}: Integrar la gestión de enemigos con otros sistemas como el motor procedural de niveles o el ajuste de dificultad adaptativa.\\
+\textbf{Algoritmo}: Un \textit{algoritmo de sincronización} basado en eventos podría coordinar las funciones de los diferentes módulos. Por ejemplo, cuando el nivel se genera, el sistema de enemigos debe ser notificado para colocar adecuadamente los enemigos.\\
+\textbf{Desafío}: Asegurarse de que la comunicación entre los sistemas sea eficiente y sincrónica, sin causar cuellos de botella en el rendimiento.
+
+\begin{algorithm}[H]
+\caption{Algoritmo de Sincronización de Módulos basado en eventos}
+\SetAlgoLined
+
+\When{el nivel se genera}{
+    Notificar al sistema de gestión de enemigos\;
+    Obtener la estructura del nivel generado\;
+    \ForEach{región del nivel}{
+        Asignar enemigos y patrones de ataque adecuados\;
+    }
+    Sincronizar el sistema de IA con el entorno generado\;
+    Notificar al sistema de ajuste dinámico de dificultad\;
+}
+
+\When{los parámetros del jugador cambien}{
+    Ajustar los patrones de ataque en consecuencia\;
+    Actualizar otros módulos según los nuevos parámetros (dificultad, enemigos)\;
+}
+
+Coordinar la comunicación entre módulos para asegurar consistencia\;
+
+\end{algorithm}
+
+
+\subsubsection*{Algoritmo de Verificación de Jugabilidad}
+\textbf{Problemática}: Asegurar que los patrones de ataque y enemigos generados sean jugables y no rompan las reglas del diseño del juego.\\
+\textbf{Algoritmo}: Un \textit{algoritmo de búsqueda A*} o un \textit{algoritmo basado en grafos} puede verificar la accesibilidad y jugabilidad de los patrones de ataque, asegurándose de que el jugador tenga suficiente espacio para esquivar y que los enemigos estén distribuidos de manera justa.\\
+\textbf{Desafío}: Verificar todas las combinaciones de enemigos y patrones sin causar problemas de rendimiento.

@@ -1,0 +1,28 @@
+\subsubsection{Escalabilidad del algoritmo de IA}
+
+\begin{verbatim}
+// Pseudocódigo para la escalabilidad del algoritmo de IA
+class ModeloIA {
+    vector<string> variables;
+    map<string, float> parametros;
+
+    void agregarVariable(string nuevaVariable) {
+        variables.push_back(nuevaVariable);
+    }
+
+    void ajustarModelo() {
+        for (string variable : variables) {
+            // Ajuste de parámetros basados en el rendimiento actual
+            parametros[variable] = calcularNuevoParametro(variable);
+        }
+    }
+};
+
+// Función para escalar el modelo de IA
+void escalarIA(ModeloIA& modelo, vector<string> nuevasVariables) {
+    for (string variable : nuevasVariables) {
+        modelo.agregarVariable(variable);
+    }
+    modelo.ajustarModelo();
+}
+\end{verbatim}

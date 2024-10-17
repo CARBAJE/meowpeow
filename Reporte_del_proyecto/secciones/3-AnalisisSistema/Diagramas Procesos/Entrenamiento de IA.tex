@@ -1,0 +1,56 @@
+\subsubsection{Entrenamiento de la IA}
+\begin{figure}[H]
+\centering
+\begin{adjustbox}{scale=0.8}
+\begin{tikzpicture}[node distance=2cm, auto, thick, 
+  every node/.style={rectangle, draw=black, align=center, minimum height=0.5cm, minimum width=2.5cm},
+  startstop/.style = {ellipse, draw=black, fill=red!30},
+  process/.style = {rectangle, draw=black, fill=yellow!30},
+  decision/.style = {diamond, draw=black, fill=green!10, aspect=2, text width=3cm, align=center
+  },
+  line/.style = {draw, -{Stealth[scale=1.2]}}
+]
+
+% Start node
+\node (start) [startstop] {Inicio};
+
+% Activity nodes
+\node (verificar) [decision, below of=start, yshift=-0.5cm] {¿Datos históricos disponibles?};
+\node (recopilar) [process, below of=verificar, yshift=-1cm] {Recopilar datos históricos};
+\node (validos) [decision, below of=recopilar, yshift=-1cm] {¿Datos válidos?};
+
+\node (preprocesar) [process, below of=validos, yshift=-1cm] {Preprocesar datos};
+\node (features) [process, right of=preprocesar, xshift=5cm] {Crear nuevas características};
+
+\node (entrenar) [process, below of=preprocesar, yshift=-1.5cm] {Entrenar modelo de IA};
+\node (evaluar) [process, below of=entrenar, yshift=-1cm] {Evaluar rendimiento del modelo};
+
+\node (ajustar) [decision, below of=evaluar, yshift=-1cm] {¿Modelo adecuado?};
+\node (reajustar) [process, left of=ajustar, xshift=-5cm] {Ajustar parámetros};
+
+% End node
+\node (fin) [startstop, below of=ajustar, yshift=-1cm] {Fin};
+
+% Drawing arrows
+\draw [line] (start) -- (verificar);
+\draw [line] (verificar) -- node [left] {Sí} (recopilar);
+\draw [line] (verificar.east) --++(2.5,0) node [right] {No} |- (fin);
+
+\draw [line] (recopilar) -- (validos);
+\draw [line] (validos) -- node [left] {Sí} (preprocesar);
+\draw [line] (validos.east) --++(2.5,0) node [right] {No} |- (fin);
+
+\draw [line] (preprocesar) -- (entrenar);
+\draw [line] (features) |- (entrenar);
+
+\draw [line] (entrenar) -- (evaluar);
+\draw [line] (evaluar) -- (ajustar);
+
+\draw [line] (ajustar) -- node [left] {Sí} (fin);
+\draw [line] (ajustar.west) --++(-2.5,0) node [above] {No} -- (reajustar);
+\draw [line] (reajustar) |- (entrenar);
+
+\end{tikzpicture}
+\end{adjustbox}
+\caption{Diagrama de Actividades del Entrenamiento de IA}
+\end{figure}
