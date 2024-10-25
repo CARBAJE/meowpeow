@@ -69,38 +69,24 @@ include CMakeFiles/meowpeow.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/meowpeow.dir/flags.make
 
-CMakeFiles/meowpeow.dir/source_files/scene.cpp.o: CMakeFiles/meowpeow.dir/flags.make
-CMakeFiles/meowpeow.dir/source_files/scene.cpp.o: /home/carbaje/Documents/meowpeow/codes/source_files/scene.cpp
-CMakeFiles/meowpeow.dir/source_files/scene.cpp.o: CMakeFiles/meowpeow.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/carbaje/Documents/meowpeow/codes/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/meowpeow.dir/source_files/scene.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/meowpeow.dir/source_files/scene.cpp.o -MF CMakeFiles/meowpeow.dir/source_files/scene.cpp.o.d -o CMakeFiles/meowpeow.dir/source_files/scene.cpp.o -c /home/carbaje/Documents/meowpeow/codes/source_files/scene.cpp
+CMakeFiles/meowpeow.dir/source_files/app.cpp.o: CMakeFiles/meowpeow.dir/flags.make
+CMakeFiles/meowpeow.dir/source_files/app.cpp.o: /home/carbaje/Documents/meowpeow/codes/source_files/app.cpp
+CMakeFiles/meowpeow.dir/source_files/app.cpp.o: CMakeFiles/meowpeow.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/carbaje/Documents/meowpeow/codes/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/meowpeow.dir/source_files/app.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/meowpeow.dir/source_files/app.cpp.o -MF CMakeFiles/meowpeow.dir/source_files/app.cpp.o.d -o CMakeFiles/meowpeow.dir/source_files/app.cpp.o -c /home/carbaje/Documents/meowpeow/codes/source_files/app.cpp
 
-CMakeFiles/meowpeow.dir/source_files/scene.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/meowpeow.dir/source_files/scene.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/carbaje/Documents/meowpeow/codes/source_files/scene.cpp > CMakeFiles/meowpeow.dir/source_files/scene.cpp.i
+CMakeFiles/meowpeow.dir/source_files/app.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/meowpeow.dir/source_files/app.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/carbaje/Documents/meowpeow/codes/source_files/app.cpp > CMakeFiles/meowpeow.dir/source_files/app.cpp.i
 
-CMakeFiles/meowpeow.dir/source_files/scene.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/meowpeow.dir/source_files/scene.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/carbaje/Documents/meowpeow/codes/source_files/scene.cpp -o CMakeFiles/meowpeow.dir/source_files/scene.cpp.s
-
-CMakeFiles/meowpeow.dir/source_files/game_object.cpp.o: CMakeFiles/meowpeow.dir/flags.make
-CMakeFiles/meowpeow.dir/source_files/game_object.cpp.o: /home/carbaje/Documents/meowpeow/codes/source_files/game_object.cpp
-CMakeFiles/meowpeow.dir/source_files/game_object.cpp.o: CMakeFiles/meowpeow.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/carbaje/Documents/meowpeow/codes/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/meowpeow.dir/source_files/game_object.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/meowpeow.dir/source_files/game_object.cpp.o -MF CMakeFiles/meowpeow.dir/source_files/game_object.cpp.o.d -o CMakeFiles/meowpeow.dir/source_files/game_object.cpp.o -c /home/carbaje/Documents/meowpeow/codes/source_files/game_object.cpp
-
-CMakeFiles/meowpeow.dir/source_files/game_object.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/meowpeow.dir/source_files/game_object.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/carbaje/Documents/meowpeow/codes/source_files/game_object.cpp > CMakeFiles/meowpeow.dir/source_files/game_object.cpp.i
-
-CMakeFiles/meowpeow.dir/source_files/game_object.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/meowpeow.dir/source_files/game_object.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/carbaje/Documents/meowpeow/codes/source_files/game_object.cpp -o CMakeFiles/meowpeow.dir/source_files/game_object.cpp.s
+CMakeFiles/meowpeow.dir/source_files/app.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/meowpeow.dir/source_files/app.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/carbaje/Documents/meowpeow/codes/source_files/app.cpp -o CMakeFiles/meowpeow.dir/source_files/app.cpp.s
 
 CMakeFiles/meowpeow.dir/source_files/assets.cpp.o: CMakeFiles/meowpeow.dir/flags.make
 CMakeFiles/meowpeow.dir/source_files/assets.cpp.o: /home/carbaje/Documents/meowpeow/codes/source_files/assets.cpp
 CMakeFiles/meowpeow.dir/source_files/assets.cpp.o: CMakeFiles/meowpeow.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/carbaje/Documents/meowpeow/codes/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/meowpeow.dir/source_files/assets.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/carbaje/Documents/meowpeow/codes/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/meowpeow.dir/source_files/assets.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/meowpeow.dir/source_files/assets.cpp.o -MF CMakeFiles/meowpeow.dir/source_files/assets.cpp.o.d -o CMakeFiles/meowpeow.dir/source_files/assets.cpp.o -c /home/carbaje/Documents/meowpeow/codes/source_files/assets.cpp
 
 CMakeFiles/meowpeow.dir/source_files/assets.cpp.i: cmake_force
@@ -110,6 +96,20 @@ CMakeFiles/meowpeow.dir/source_files/assets.cpp.i: cmake_force
 CMakeFiles/meowpeow.dir/source_files/assets.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/meowpeow.dir/source_files/assets.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/carbaje/Documents/meowpeow/codes/source_files/assets.cpp -o CMakeFiles/meowpeow.dir/source_files/assets.cpp.s
+
+CMakeFiles/meowpeow.dir/source_files/game_object.cpp.o: CMakeFiles/meowpeow.dir/flags.make
+CMakeFiles/meowpeow.dir/source_files/game_object.cpp.o: /home/carbaje/Documents/meowpeow/codes/source_files/game_object.cpp
+CMakeFiles/meowpeow.dir/source_files/game_object.cpp.o: CMakeFiles/meowpeow.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/carbaje/Documents/meowpeow/codes/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/meowpeow.dir/source_files/game_object.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/meowpeow.dir/source_files/game_object.cpp.o -MF CMakeFiles/meowpeow.dir/source_files/game_object.cpp.o.d -o CMakeFiles/meowpeow.dir/source_files/game_object.cpp.o -c /home/carbaje/Documents/meowpeow/codes/source_files/game_object.cpp
+
+CMakeFiles/meowpeow.dir/source_files/game_object.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/meowpeow.dir/source_files/game_object.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/carbaje/Documents/meowpeow/codes/source_files/game_object.cpp > CMakeFiles/meowpeow.dir/source_files/game_object.cpp.i
+
+CMakeFiles/meowpeow.dir/source_files/game_object.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/meowpeow.dir/source_files/game_object.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/carbaje/Documents/meowpeow/codes/source_files/game_object.cpp -o CMakeFiles/meowpeow.dir/source_files/game_object.cpp.s
 
 CMakeFiles/meowpeow.dir/source_files/player.cpp.o: CMakeFiles/meowpeow.dir/flags.make
 CMakeFiles/meowpeow.dir/source_files/player.cpp.o: /home/carbaje/Documents/meowpeow/codes/source_files/player.cpp
@@ -125,40 +125,56 @@ CMakeFiles/meowpeow.dir/source_files/player.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/meowpeow.dir/source_files/player.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/carbaje/Documents/meowpeow/codes/source_files/player.cpp -o CMakeFiles/meowpeow.dir/source_files/player.cpp.s
 
-CMakeFiles/meowpeow.dir/source_files/app.cpp.o: CMakeFiles/meowpeow.dir/flags.make
-CMakeFiles/meowpeow.dir/source_files/app.cpp.o: /home/carbaje/Documents/meowpeow/codes/source_files/app.cpp
-CMakeFiles/meowpeow.dir/source_files/app.cpp.o: CMakeFiles/meowpeow.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/carbaje/Documents/meowpeow/codes/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/meowpeow.dir/source_files/app.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/meowpeow.dir/source_files/app.cpp.o -MF CMakeFiles/meowpeow.dir/source_files/app.cpp.o.d -o CMakeFiles/meowpeow.dir/source_files/app.cpp.o -c /home/carbaje/Documents/meowpeow/codes/source_files/app.cpp
+CMakeFiles/meowpeow.dir/source_files/player_projectile.cpp.o: CMakeFiles/meowpeow.dir/flags.make
+CMakeFiles/meowpeow.dir/source_files/player_projectile.cpp.o: /home/carbaje/Documents/meowpeow/codes/source_files/player_projectile.cpp
+CMakeFiles/meowpeow.dir/source_files/player_projectile.cpp.o: CMakeFiles/meowpeow.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/carbaje/Documents/meowpeow/codes/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/meowpeow.dir/source_files/player_projectile.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/meowpeow.dir/source_files/player_projectile.cpp.o -MF CMakeFiles/meowpeow.dir/source_files/player_projectile.cpp.o.d -o CMakeFiles/meowpeow.dir/source_files/player_projectile.cpp.o -c /home/carbaje/Documents/meowpeow/codes/source_files/player_projectile.cpp
 
-CMakeFiles/meowpeow.dir/source_files/app.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/meowpeow.dir/source_files/app.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/carbaje/Documents/meowpeow/codes/source_files/app.cpp > CMakeFiles/meowpeow.dir/source_files/app.cpp.i
+CMakeFiles/meowpeow.dir/source_files/player_projectile.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/meowpeow.dir/source_files/player_projectile.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/carbaje/Documents/meowpeow/codes/source_files/player_projectile.cpp > CMakeFiles/meowpeow.dir/source_files/player_projectile.cpp.i
 
-CMakeFiles/meowpeow.dir/source_files/app.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/meowpeow.dir/source_files/app.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/carbaje/Documents/meowpeow/codes/source_files/app.cpp -o CMakeFiles/meowpeow.dir/source_files/app.cpp.s
+CMakeFiles/meowpeow.dir/source_files/player_projectile.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/meowpeow.dir/source_files/player_projectile.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/carbaje/Documents/meowpeow/codes/source_files/player_projectile.cpp -o CMakeFiles/meowpeow.dir/source_files/player_projectile.cpp.s
+
+CMakeFiles/meowpeow.dir/source_files/scene.cpp.o: CMakeFiles/meowpeow.dir/flags.make
+CMakeFiles/meowpeow.dir/source_files/scene.cpp.o: /home/carbaje/Documents/meowpeow/codes/source_files/scene.cpp
+CMakeFiles/meowpeow.dir/source_files/scene.cpp.o: CMakeFiles/meowpeow.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/carbaje/Documents/meowpeow/codes/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/meowpeow.dir/source_files/scene.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/meowpeow.dir/source_files/scene.cpp.o -MF CMakeFiles/meowpeow.dir/source_files/scene.cpp.o.d -o CMakeFiles/meowpeow.dir/source_files/scene.cpp.o -c /home/carbaje/Documents/meowpeow/codes/source_files/scene.cpp
+
+CMakeFiles/meowpeow.dir/source_files/scene.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/meowpeow.dir/source_files/scene.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/carbaje/Documents/meowpeow/codes/source_files/scene.cpp > CMakeFiles/meowpeow.dir/source_files/scene.cpp.i
+
+CMakeFiles/meowpeow.dir/source_files/scene.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/meowpeow.dir/source_files/scene.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/carbaje/Documents/meowpeow/codes/source_files/scene.cpp -o CMakeFiles/meowpeow.dir/source_files/scene.cpp.s
 
 # Object files for target meowpeow
 meowpeow_OBJECTS = \
-"CMakeFiles/meowpeow.dir/source_files/scene.cpp.o" \
-"CMakeFiles/meowpeow.dir/source_files/game_object.cpp.o" \
+"CMakeFiles/meowpeow.dir/source_files/app.cpp.o" \
 "CMakeFiles/meowpeow.dir/source_files/assets.cpp.o" \
+"CMakeFiles/meowpeow.dir/source_files/game_object.cpp.o" \
 "CMakeFiles/meowpeow.dir/source_files/player.cpp.o" \
-"CMakeFiles/meowpeow.dir/source_files/app.cpp.o"
+"CMakeFiles/meowpeow.dir/source_files/player_projectile.cpp.o" \
+"CMakeFiles/meowpeow.dir/source_files/scene.cpp.o"
 
 # External object files for target meowpeow
 meowpeow_EXTERNAL_OBJECTS =
 
-meowpeow: CMakeFiles/meowpeow.dir/source_files/scene.cpp.o
-meowpeow: CMakeFiles/meowpeow.dir/source_files/game_object.cpp.o
-meowpeow: CMakeFiles/meowpeow.dir/source_files/assets.cpp.o
-meowpeow: CMakeFiles/meowpeow.dir/source_files/player.cpp.o
 meowpeow: CMakeFiles/meowpeow.dir/source_files/app.cpp.o
+meowpeow: CMakeFiles/meowpeow.dir/source_files/assets.cpp.o
+meowpeow: CMakeFiles/meowpeow.dir/source_files/game_object.cpp.o
+meowpeow: CMakeFiles/meowpeow.dir/source_files/player.cpp.o
+meowpeow: CMakeFiles/meowpeow.dir/source_files/player_projectile.cpp.o
+meowpeow: CMakeFiles/meowpeow.dir/source_files/scene.cpp.o
 meowpeow: CMakeFiles/meowpeow.dir/build.make
 meowpeow: /usr/local/lib64/libraylib.so
 meowpeow: CMakeFiles/meowpeow.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/carbaje/Documents/meowpeow/codes/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable meowpeow"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/carbaje/Documents/meowpeow/codes/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable meowpeow"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/meowpeow.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

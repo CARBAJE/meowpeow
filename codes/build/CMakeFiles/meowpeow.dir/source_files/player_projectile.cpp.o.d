@@ -1,7 +1,7 @@
-CMakeFiles/meowpeow.dir/source_files/player.cpp.o: \
- /home/carbaje/Documents/meowpeow/codes/source_files/player.cpp \
+CMakeFiles/meowpeow.dir/source_files/player_projectile.cpp.o: \
+ /home/carbaje/Documents/meowpeow/codes/source_files/player_projectile.cpp \
  /usr/include/stdc-predef.h \
- /home/carbaje/Documents/meowpeow/codes/source_files/../classes/player.hpp \
+ /home/carbaje/Documents/meowpeow/codes/source_files/../classes/player_projectile.hpp \
  /usr/local/include/raylib.h \
  /usr/lib/gcc/x86_64-redhat-linux/14/include/stdarg.h \
  /home/carbaje/Documents/meowpeow/codes/source_files/../classes/game_object.hpp \
@@ -57,7 +57,6 @@ CMakeFiles/meowpeow.dir/source_files/player.cpp.o: \
  /usr/include/c++/14/bits/uses_allocator_args.h /usr/include/c++/14/tuple \
  /home/carbaje/Documents/meowpeow/codes/source_files/../classes/math.hpp \
  /home/carbaje/Documents/meowpeow/codes/source_files/../classes/texture_details.hpp \
- /home/carbaje/Documents/meowpeow/codes/source_files/../classes/player_projectile.hpp \
  /home/carbaje/Documents/meowpeow/codes/source_files/../classes/input.hpp \
  /home/carbaje/Documents/meowpeow/codes/source_files/../classes/assets.hpp \
  /usr/include/c++/14/string /usr/include/c++/14/bits/stringfwd.h \

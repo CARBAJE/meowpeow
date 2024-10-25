@@ -2,6 +2,11 @@
 #include "../classes/game_object.hpp"
 
 void Scene::Tick(float deltaTime) {
+    for (auto& go: mPendingGameObjectsToAdd) {
+        mGameObject.push_back(go);
+    }
+    mPendingGameObjectsToAdd.clear();
+
     for (auto& go: mGameObject) {
         go -> Tick(deltaTime);
     }
@@ -14,5 +19,5 @@ void Scene::Render() {
 }
 
 void Scene::Add(GameObject* go) {
-    mGameObject.push_back(go);
+    mPendingGameObjectsToAdd.push_back(go);
 }

@@ -8,6 +8,7 @@ class GameObject;
 class Scene {
     private:
         std::vector<GameObject*> mGameObject;
+        std::vector<GameObject*> mPendingGameObjectsToAdd;
 
     public:
         void Tick(float deltaTime);

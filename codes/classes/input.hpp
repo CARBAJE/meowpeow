@@ -5,6 +5,10 @@
 
 class Input {
     public:
+        
+        static bool KeyDown(int key) {
+            return IsKeyDown(key);
+        }
         static float GetHorizontalAxis() {
             if (IsKeyDown(KEY_A) || IsKeyDown(KEY_LEFT)) {
                 return -1;

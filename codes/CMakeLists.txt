@@ -10,15 +10,8 @@ set(CMAKE_CXX_STANDARD 17)
 # Incluir las carpetas de cabeceras
 include_directories(classes)
 
-# Agregar los archivos fuente
-set(SOURCES
-    source_files/scene.cpp
-    source_files/game_object.cpp
-    source_files/assets.cpp
-    source_files/player.cpp
-    source_files/app.cpp
-)
-
+# Agregar los archivos fuente automáticamente
+file(GLOB SOURCES "source_files/*.cpp")
 # Buscar raylib
 find_package(raylib REQUIRED)
 

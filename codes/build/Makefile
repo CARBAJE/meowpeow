@@ -225,6 +225,30 @@ source_files/player.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/meowpeow.dir/build.make CMakeFiles/meowpeow.dir/source_files/player.cpp.s
 .PHONY : source_files/player.cpp.s
 
+source_files/player_projectile.o: source_files/player_projectile.cpp.o
+.PHONY : source_files/player_projectile.o
+
+# target to build an object file
+source_files/player_projectile.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/meowpeow.dir/build.make CMakeFiles/meowpeow.dir/source_files/player_projectile.cpp.o
+.PHONY : source_files/player_projectile.cpp.o
+
+source_files/player_projectile.i: source_files/player_projectile.cpp.i
+.PHONY : source_files/player_projectile.i
+
+# target to preprocess a source file
+source_files/player_projectile.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/meowpeow.dir/build.make CMakeFiles/meowpeow.dir/source_files/player_projectile.cpp.i
+.PHONY : source_files/player_projectile.cpp.i
+
+source_files/player_projectile.s: source_files/player_projectile.cpp.s
+.PHONY : source_files/player_projectile.s
+
+# target to generate assembly for a file
+source_files/player_projectile.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/meowpeow.dir/build.make CMakeFiles/meowpeow.dir/source_files/player_projectile.cpp.s
+.PHONY : source_files/player_projectile.cpp.s
+
 source_files/scene.o: source_files/scene.cpp.o
 .PHONY : source_files/scene.o
 
@@ -270,6 +294,9 @@ help:
 	@echo "... source_files/player.o"
 	@echo "... source_files/player.i"
 	@echo "... source_files/player.s"
+	@echo "... source_files/player_projectile.o"
+	@echo "... source_files/player_projectile.i"
+	@echo "... source_files/player_projectile.s"
 	@echo "... source_files/scene.o"
 	@echo "... source_files/scene.i"
 	@echo "... source_files/scene.s"

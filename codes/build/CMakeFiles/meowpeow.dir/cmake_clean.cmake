@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/meowpeow.dir/source_files/game_object.cpp.o.d"
   "CMakeFiles/meowpeow.dir/source_files/player.cpp.o"
   "CMakeFiles/meowpeow.dir/source_files/player.cpp.o.d"
+  "CMakeFiles/meowpeow.dir/source_files/player_projectile.cpp.o"
+  "CMakeFiles/meowpeow.dir/source_files/player_projectile.cpp.o.d"
   "CMakeFiles/meowpeow.dir/source_files/scene.cpp.o"
   "CMakeFiles/meowpeow.dir/source_files/scene.cpp.o.d"
   "meowpeow"

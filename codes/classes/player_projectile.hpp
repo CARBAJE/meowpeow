@@ -1,21 +1,19 @@
-#ifndef PLAYER_HPP
-#define PLAYER_HPP
+#ifndef PLAYER_PROJECTILE_HPP
+#define PLAYER_PROJECTILE_HPP
 
 #include <raylib.h>
 #include "game_object.hpp"
 #include "texture_details.hpp"
 
-class Player : public GameObject {
+class PlayerProjectile : public GameObject {
     private:
         TextureDetails mTexture;
         float mSpeed;
-        float mAttackSpeed;
-        float mAttackTime;
     public:
-        Player(Scene* scene, v2 startingPosition);
+        PlayerProjectile(Scene* scene, v2 startingPosition);
 
         virtual void Tick(float deltaTime) override;
         virtual void Render() override;
 };
 
-#endif //PLAYER_HPP
+#endif //PLAYER_PROJECTILE_HPP
