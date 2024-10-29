@@ -12,11 +12,17 @@ include_directories(classes)
 
 # Agregar los archivos fuente automáticamente
 file(GLOB SOURCES "source_files/*.cpp")
+
 # Buscar raylib
 find_package(raylib REQUIRED)
 
 # Crear el ejecutable
 add_executable(meowpeow ${SOURCES})
+
+# Opciones de compilación específicas
+if(CMAKE_CXX_COMPILER_ID MATCHES "GNU|Clang")
+    target_compile_options(meowpeow PRIVATE -march=native)
+endif()
 
 # Vincular raylib al proyecto
 target_link_libraries(meowpeow raylib)
@@ -25,4 +31,3 @@ target_link_libraries(meowpeow raylib)
 if(UNIX)
     target_link_libraries(meowpeow GL m pthread dl rt X11)
 endif()
-

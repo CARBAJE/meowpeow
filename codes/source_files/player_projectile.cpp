@@ -6,10 +6,13 @@ PlayerProjectile::PlayerProjectile(Scene* scene, v2 startingPosition)
     : GameObject(scene, startingPosition){
         mTexture = Assets::GetTexture("player_projectile");
         mSpeed = 20;
+
+        mSize = {64, 64};
+        mBounds = AABB(mPosition, mSize);
     }
 
 void PlayerProjectile::Tick(float deltaTime) {
-    mPosition.y -= mSpeed;
+    Move({0, -mSpeed});
 }
 
 void PlayerProjectile::Render() {
@@ -21,5 +24,9 @@ void PlayerProjectile::Render() {
     destination.height = 64;
 
     DrawTexturePro(mTexture.texture, mTexture.source, destination, {0, 0}, 0, WHITE);
+}
+
+void PlayerProjectile::OnCollision(GameObject* other) {
+    Delete();
 }
 

@@ -1,0 +1,139 @@
+System:
+  Kernel: 6.10.12-200.fc40.x86_64 arch: x86_64 bits: 64 compiler: gcc
+    v: 2.41-37.fc40 clocksource: tsc avail: acpi_pm
+    parameters: BOOT_IMAGE=(hd0,gpt6)/root/boot/vmlinuz-6.10.12-200.fc40.x86_64
+    root=UUID=aa4b1cc1-92f0-4be2-a7ac-9c51a6b58535 ro rootflags=subvol=root
+    rd.driver.blacklist=nouveau modprobe.blacklist=nouveau
+    rd.driver.blacklist=nouveau modprobe.blacklist=nouveau rhgb quiet
+    rd.driver.blacklist=nouveau modprobe.blacklist=nouveau
+  Desktop: Hyprland v: 0.44.0 with: waybar tools: avail: hyprlock vt: 2 dm:
+    1: GDM v: 46.2 2: SDDM note: stopped Distro: Fedora Linux 40 (Workstation
+    Edition)
+Machine:
+  Type: Laptop System: GIGABYTE product: G5 KF5 v: N/A
+    serial: <superuser required> Chassis: type: 10 serial: <superuser required>
+  Mobo: GIGABYTE model: G5 KF5 serial: <superuser required> part-nu: RC55KF5
+    uuid: <superuser required> UEFI: INSYDE v: FD06 date: 11/03/2023
+Battery:
+  ID-1: BAT0 charge: 34.5 Wh (75.2%) condition: 45.9/52.5 Wh (87.4%)
+    volts: 14.7 min: 15.4 model: Notebook BAT type: Li-ion serial: <filter>
+    status: discharging
+CPU:
+  Info: model: 13th Gen Intel Core i7-13620H bits: 64 type: MST AMCP
+    arch: Raptor Lake gen: core 13 level: v3 note: check built: 2022+
+    process: Intel 7 (10nm) family: 6 model-id: 0xBA (186) stepping: 2
+    microcode: 0x4122
+  Topology: cpus: 1x cores: 10 mt: 6 tpc: 2 st: 4 threads: 16 smt: enabled
+    cache: L1: 864 KiB desc: d-4x32 KiB, 6x48 KiB; i-6x32 KiB, 4x64 KiB
+    L2: 9.5 MiB desc: 6x1.2 MiB, 1x2 MiB L3: 24 MiB desc: 1x24 MiB
+  Speed (MHz): avg: 647 high: 1114 min/max: 400/4700:4900:3600 scaling:
+    driver: intel_pstate governor: powersave cores: 1: 638 2: 400 3: 400 4: 400
+    5: 400 6: 857 7: 1114 8: 400 9: 1101 10: 400 11: 1016 12: 400 13: 982
+    14: 1053 15: 400 16: 400 bogomips: 93388
+  Flags: avx avx2 ht lm nx pae sse sse2 sse3 sse4_1 sse4_2 ssse3 vmx
+  Vulnerabilities:
+  Type: gather_data_sampling status: Not affected
+  Type: itlb_multihit status: Not affected
+  Type: l1tf status: Not affected
+  Type: mds status: Not affected
+  Type: meltdown status: Not affected
+  Type: mmio_stale_data status: Not affected
+  Type: reg_file_data_sampling mitigation: Clear Register File
+  Type: retbleed status: Not affected
+  Type: spec_rstack_overflow status: Not affected
+  Type: spec_store_bypass mitigation: Speculative Store Bypass disabled via
+    prctl
+  Type: spectre_v1 mitigation: usercopy/swapgs barriers and __user pointer
+    sanitization
+  Type: spectre_v2 mitigation: Enhanced / Automatic IBRS; IBPB:
+    conditional; RSB filling; PBRSB-eIBRS: SW sequence; BHI: BHI_DIS_S
+  Type: srbds status: Not affected
+  Type: tsx_async_abort status: Not affected
+Graphics:
+  Device-1: Intel Raptor Lake-P [UHD Graphics] vendor: CLEVO/KAPOK
+    driver: i915 v: kernel alternate: xe arch: Gen-13 process: Intel 7 (10nm)
+    built: 2022+ ports: active: eDP-1 empty: DP-1,HDMI-A-1 bus-ID: 00:02.0
+    chip-ID: 8086:a7a8 class-ID: 0300
+  Device-2: NVIDIA AD107M [GeForce RTX 4060 Max-Q / Mobile]
+    vendor: CLEVO/KAPOK driver: nvidia v: 560.35.03
+    alternate: nouveau,nvidia_drm non-free: 550.xx+
+    status: current (as of 2024-04) arch: Lovelace code: AD1xx
+    process: TSMC n4 (5nm) built: 2022+ pcie: gen: 4 speed: 16 GT/s lanes: 8
+    ports: active: none empty: DP-2,HDMI-A-2 bus-ID: 01:00.0
+    chip-ID: 10de:28a0 class-ID: 0300
+  Device-3: Chicony USB2.0 Camera driver: uvcvideo type: USB rev: 2.0
+    speed: 480 Mb/s lanes: 1 mode: 2.0 bus-ID: 3-8:2 chip-ID: 04f2:b729
+    class-ID: fe01 serial: <filter>
+  Display: wayland server: X.org v: 1.20.14 with: Xwayland v: 24.1.3
+    compositor: Hyprland v: 0.44.0 driver: N/A display-ID: 1
+  Monitor-1: eDP-1 res: 1920x1080 size: N/A modes: N/A
+  API: EGL v: 1.5 hw: drv: intel iris drv: nvidia platforms: device: 0
+    drv: nvidia device: 1 drv: iris device: 3 drv: swrast gbm: drv: iris
+    surfaceless: drv: nvidia wayland: drv: iris x11: drv: iris
+    inactive: device-2
+  API: OpenGL v: 4.6.0 compat-v: 4.5 vendor: nvidia mesa v: 560.35.03
+    glx-v: 1.4 direct-render: yes renderer: NVIDIA GeForce RTX 4060 Laptop
+    GPU/PCIe/SSE2 memory: 7.81 GiB
+  API: Vulkan v: 1.3.290 layers: 2 device: 0 type: integrated-gpu
+    name: Intel Graphics (RPL-P) driver: N/A device-ID: 8086:a7a8
+    surfaces: xcb,xlib,wayland device: 1 type: discrete-gpu name: NVIDIA
+    GeForce RTX 4060 Laptop GPU driver: N/A device-ID: 10de:28a0
+    surfaces: xcb,xlib,wayland device: 2 type: cpu name: llvmpipe (LLVM
+    18.1.6 256 bits) driver: N/A device-ID: 10005:0000
+    surfaces: xcb,xlib,wayland
+Audio:
+  Device-1: Intel Raptor Lake-P/U/H cAVS vendor: Gigabyte
+    driver: snd_hda_intel v: kernel alternate: snd_soc_avs,snd_sof_pci_intel_tgl
+    bus-ID: 00:1f.3 chip-ID: 8086:51ca class-ID: 0403
+  Device-2: NVIDIA AD107 High Definition Audio driver: snd_hda_intel
+    v: kernel pcie: gen: 4 speed: 16 GT/s lanes: 8 bus-ID: 01:00.1
+    chip-ID: 10de:22be class-ID: 0403
+  API: ALSA v: k6.10.12-200.fc40.x86_64 status: kernel-api
+    tools: alsactl,alsamixer,amixer
+  Server-1: JACK v: 1.9.22 status: off tools: N/A
+  Server-2: PipeWire v: 1.0.8 status: active with: 1: pipewire-pulse
+    status: active 2: wireplumber status: active 3: pipewire-alsa type: plugin
+    tools: pactl,pw-cat,pw-cli,wpctl
+Network:
+  Device-1: Intel Raptor Lake PCH CNVi WiFi driver: iwlwifi v: kernel
+    bus-ID: 00:14.3 chip-ID: 8086:51f1 class-ID: 0280
+  IF: wlp0s20f3 state: up mac: <filter>
+  Device-2: Realtek RTL8111/8168/8211/8411 PCI Express Gigabit Ethernet
+    vendor: CLEVO/KAPOK driver: r8169 v: kernel pcie: gen: 1 speed: 2.5 GT/s
+    lanes: 1 port: 3000 bus-ID: 03:00.0 chip-ID: 10ec:8168 class-ID: 0200
+  IF: enp3s0 state: down mac: <filter>
+  Info: services: NetworkManager,wpa_supplicant
+Bluetooth:
+  Device-1: Intel AX211 Bluetooth driver: btusb v: 0.8 type: USB rev: 2.0
+    speed: 12 Mb/s lanes: 1 mode: 1.1 bus-ID: 3-10:3 chip-ID: 8087:0033
+    class-ID: e001
+  Report: btmgmt ID: hci0 rfk-id: 0 state: up address: <filter> bt-v: 5.3
+    lmp-v: 12 status: discoverable: no pairing: no class-ID: 6c010c
+Drives:
+  Local Storage: total: 953.87 GiB used: 49.39 GiB (5.2%)
+  SMART Message: Unable to run smartctl. Root privileges required.
+  ID-1: /dev/nvme0n1 maj-min: 259:0 vendor: Gigabyte model: AG450E1024-SI
+    size: 953.87 GiB block-size: physical: 512 B logical: 512 B speed: 63.2 Gb/s
+    lanes: 4 tech: SSD serial: <filter> fw-rev: ELFMH0.1 temp: 29.9 C
+    scheme: GPT
+Partition:
+  ID-1: / raw-size: 243 GiB size: 243 GiB (100.00%) used: 49.37 GiB (20.3%)
+    fs: btrfs dev: /dev/nvme0n1p6 maj-min: 259:6
+  ID-2: /boot/efi raw-size: 1024 MiB size: 1022 MiB (99.80%)
+    used: 19 MiB (1.9%) fs: vfat dev: /dev/nvme0n1p5 maj-min: 259:5
+Swap:
+  Kernel: swappiness: 60 (default) cache-pressure: 100 (default) zswap: no
+  ID-1: swap-1 type: zram size: 8 GiB used: 0 KiB (0.0%) priority: 100
+    comp: lzo-rle avail: lzo,lz4,lz4hc,842,zstd max-streams: 16 dev: /dev/zram0
+Sensors:
+  System Temperatures: cpu: 34.0 C mobo: N/A
+  Fan Speeds (rpm): N/A
+Info:
+  Memory: total: 64 GiB note: est. available: 62.5 GiB used: 3.42 GiB (5.5%)
+  Processes: 368 Power: uptime: 43m states: freeze,mem,disk suspend: deep
+    avail: s2idle wakeups: 0 hibernate: platform avail: shutdown, reboot,
+    suspend, test_resume image: 24.97 GiB services: power-profiles-daemon,
+    thermald, upowerd Init: systemd v: 255 target: graphical (5)
+    default: graphical tool: systemctl
+  Packages: pm: flatpak pkgs: 0 Compilers: gcc: 14.2.1 Shell: Zsh v: 5.9
+    running-in: kitty inxi: 3.3.34
