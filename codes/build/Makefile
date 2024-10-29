@@ -177,6 +177,30 @@ source_files/assets.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/meowpeow.dir/build.make CMakeFiles/meowpeow.dir/source_files/assets.cpp.s
 .PHONY : source_files/assets.cpp.s
 
+source_files/enemy_simple.o: source_files/enemy_simple.cpp.o
+.PHONY : source_files/enemy_simple.o
+
+# target to build an object file
+source_files/enemy_simple.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/meowpeow.dir/build.make CMakeFiles/meowpeow.dir/source_files/enemy_simple.cpp.o
+.PHONY : source_files/enemy_simple.cpp.o
+
+source_files/enemy_simple.i: source_files/enemy_simple.cpp.i
+.PHONY : source_files/enemy_simple.i
+
+# target to preprocess a source file
+source_files/enemy_simple.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/meowpeow.dir/build.make CMakeFiles/meowpeow.dir/source_files/enemy_simple.cpp.i
+.PHONY : source_files/enemy_simple.cpp.i
+
+source_files/enemy_simple.s: source_files/enemy_simple.cpp.s
+.PHONY : source_files/enemy_simple.s
+
+# target to generate assembly for a file
+source_files/enemy_simple.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/meowpeow.dir/build.make CMakeFiles/meowpeow.dir/source_files/enemy_simple.cpp.s
+.PHONY : source_files/enemy_simple.cpp.s
+
 source_files/game_object.o: source_files/game_object.cpp.o
 .PHONY : source_files/game_object.o
 
@@ -200,6 +224,30 @@ source_files/game_object.s: source_files/game_object.cpp.s
 source_files/game_object.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/meowpeow.dir/build.make CMakeFiles/meowpeow.dir/source_files/game_object.cpp.s
 .PHONY : source_files/game_object.cpp.s
+
+source_files/math.o: source_files/math.cpp.o
+.PHONY : source_files/math.o
+
+# target to build an object file
+source_files/math.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/meowpeow.dir/build.make CMakeFiles/meowpeow.dir/source_files/math.cpp.o
+.PHONY : source_files/math.cpp.o
+
+source_files/math.i: source_files/math.cpp.i
+.PHONY : source_files/math.i
+
+# target to preprocess a source file
+source_files/math.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/meowpeow.dir/build.make CMakeFiles/meowpeow.dir/source_files/math.cpp.i
+.PHONY : source_files/math.cpp.i
+
+source_files/math.s: source_files/math.cpp.s
+.PHONY : source_files/math.s
+
+# target to generate assembly for a file
+source_files/math.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/meowpeow.dir/build.make CMakeFiles/meowpeow.dir/source_files/math.cpp.s
+.PHONY : source_files/math.cpp.s
 
 source_files/player.o: source_files/player.cpp.o
 .PHONY : source_files/player.o
@@ -288,9 +336,15 @@ help:
 	@echo "... source_files/assets.o"
 	@echo "... source_files/assets.i"
 	@echo "... source_files/assets.s"
+	@echo "... source_files/enemy_simple.o"
+	@echo "... source_files/enemy_simple.i"
+	@echo "... source_files/enemy_simple.s"
 	@echo "... source_files/game_object.o"
 	@echo "... source_files/game_object.i"
 	@echo "... source_files/game_object.s"
+	@echo "... source_files/math.o"
+	@echo "... source_files/math.i"
+	@echo "... source_files/math.s"
 	@echo "... source_files/player.o"
 	@echo "... source_files/player.i"
 	@echo "... source_files/player.s"
