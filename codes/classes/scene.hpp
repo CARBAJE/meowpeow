@@ -14,9 +14,12 @@ class Scene {
         std::vector<GameObject*> mPendingGameObjectsToAdd;
         std::vector<GameObject*> mPendingGameObjectsToRemove;
 
+        AABB mSceneBounds;
     public:
         void Tick(float deltaTime);
         void Render();
+
+        void SetSceneBounds(v2 position, v2 size);
 
         void Add(GameObject* go);
 

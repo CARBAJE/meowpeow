@@ -13,9 +13,9 @@
 },
 {
   "directory": "/home/carbaje/Documents/meowpeow/codes/build",
-  "command": "/usr/bin/g++  -I/home/carbaje/Documents/meowpeow/codes/classes -g -std=gnu++17 -march=native -I/usr/local/include -o CMakeFiles/meowpeow.dir/source_files/enemy_simple.cpp.o -c /home/carbaje/Documents/meowpeow/codes/source_files/enemy_simple.cpp",
-  "file": "/home/carbaje/Documents/meowpeow/codes/source_files/enemy_simple.cpp",
-  "output": "CMakeFiles/meowpeow.dir/source_files/enemy_simple.cpp.o"
+  "command": "/usr/bin/g++  -I/home/carbaje/Documents/meowpeow/codes/classes -g -std=gnu++17 -march=native -I/usr/local/include -o CMakeFiles/meowpeow.dir/source_files/enemy.cpp.o -c /home/carbaje/Documents/meowpeow/codes/source_files/enemy.cpp",
+  "file": "/home/carbaje/Documents/meowpeow/codes/source_files/enemy.cpp",
+  "output": "CMakeFiles/meowpeow.dir/source_files/enemy.cpp.o"
 },
 {
   "directory": "/home/carbaje/Documents/meowpeow/codes/build",

@@ -1,6 +1,10 @@
 #include "../classes/scene.hpp"
 #include "../classes/game_object.hpp"
 
+void Scene::SetSceneBounds(v2 position, v2 size){
+    mSceneBounds.Update(position, size);
+}
+
 void Scene::Tick(float deltaTime) {
     for (auto& go: mPendingGameObjectsToAdd) {
         mGameObjects.push_back(go);
@@ -11,6 +15,9 @@ void Scene::Tick(float deltaTime) {
         go -> Tick(deltaTime);
         if (go -> IsDeleted()) {
             mPendingGameObjectsToRemove.push_back(go);
+        }
+        else if (!AABB::Intersects(mSceneBounds, go->mBounds)){
+            go -> OnSceneExit();
         }
     }
 
@@ -35,7 +42,7 @@ bool Scene::DetectCollisions(GameObject* gameObject, v2 amount) {
     bool result = false;
 
     AABB futureAABB = gameObject -> mBounds;
-    futureAABB.Update(gameObject->mPosition + amount, gameObject->mSize);
+    futureAABB.Update(gameObject->mPosition + gameObject -> mBoundsOffset + amount, gameObject->mBoundsSize);
 
     for (auto& go: mGameObjects) {
         if (go == gameObject) {

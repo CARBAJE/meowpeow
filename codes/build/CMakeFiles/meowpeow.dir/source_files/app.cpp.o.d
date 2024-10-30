@@ -82,10 +82,6 @@ CMakeFiles/meowpeow.dir/source_files/app.cpp.o: \
  /home/carbaje/Documents/meowpeow/codes/source_files/../classes/math.hpp \
  /home/carbaje/Documents/meowpeow/codes/source_files/../classes/player.hpp \
  /home/carbaje/Documents/meowpeow/codes/source_files/../classes/game_object.hpp \
- /home/carbaje/Documents/meowpeow/codes/source_files/../classes/scene.hpp \
- /home/carbaje/Documents/meowpeow/codes/source_files/../classes/texture_details.hpp \
- /home/carbaje/Documents/meowpeow/codes/source_files/../classes/enemy_simple.hpp \
- /home/carbaje/Documents/meowpeow/codes/source_files/../classes/assets.hpp \
  /usr/include/c++/14/string /usr/include/c++/14/bits/stringfwd.h \
  /usr/include/c++/14/bits/char_traits.h \
  /usr/include/c++/14/bits/postypes.h /usr/include/c++/14/cwchar \
@@ -111,8 +107,12 @@ CMakeFiles/meowpeow.dir/source_files/app.cpp.o: \
  /usr/include/linux/errno.h /usr/include/asm/errno.h \
  /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
  /usr/include/bits/types/error_t.h /usr/include/c++/14/bits/charconv.h \
- /usr/include/c++/14/bits/basic_string.tcc /usr/include/c++/14/map \
- /usr/include/c++/14/bits/stl_tree.h \
+ /usr/include/c++/14/bits/basic_string.tcc \
+ /home/carbaje/Documents/meowpeow/codes/source_files/../classes/scene.hpp \
+ /home/carbaje/Documents/meowpeow/codes/source_files/../classes/texture_details.hpp \
+ /home/carbaje/Documents/meowpeow/codes/source_files/../classes/enemy.hpp \
+ /home/carbaje/Documents/meowpeow/codes/source_files/../classes/assets.hpp \
+ /usr/include/c++/14/map /usr/include/c++/14/bits/stl_tree.h \
  /usr/include/c++/14/ext/aligned_buffer.h \
  /usr/include/c++/14/bits/node_handle.h \
  /usr/include/c++/14/bits/stl_map.h \

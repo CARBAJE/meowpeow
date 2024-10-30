@@ -5,6 +5,10 @@ struct v2 {
     float x;
     float y;
 
+    static v2 Zero() {
+        return {0, 0};
+    }
+
     v2 operator+(v2 other) {
         return {x + other.x , y + other.y};
     }

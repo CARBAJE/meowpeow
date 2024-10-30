@@ -97,19 +97,19 @@ CMakeFiles/meowpeow.dir/source_files/assets.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/meowpeow.dir/source_files/assets.cpp.s"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/carbaje/Documents/meowpeow/codes/source_files/assets.cpp -o CMakeFiles/meowpeow.dir/source_files/assets.cpp.s
 
-CMakeFiles/meowpeow.dir/source_files/enemy_simple.cpp.o: CMakeFiles/meowpeow.dir/flags.make
-CMakeFiles/meowpeow.dir/source_files/enemy_simple.cpp.o: /home/carbaje/Documents/meowpeow/codes/source_files/enemy_simple.cpp
-CMakeFiles/meowpeow.dir/source_files/enemy_simple.cpp.o: CMakeFiles/meowpeow.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/carbaje/Documents/meowpeow/codes/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/meowpeow.dir/source_files/enemy_simple.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/meowpeow.dir/source_files/enemy_simple.cpp.o -MF CMakeFiles/meowpeow.dir/source_files/enemy_simple.cpp.o.d -o CMakeFiles/meowpeow.dir/source_files/enemy_simple.cpp.o -c /home/carbaje/Documents/meowpeow/codes/source_files/enemy_simple.cpp
+CMakeFiles/meowpeow.dir/source_files/enemy.cpp.o: CMakeFiles/meowpeow.dir/flags.make
+CMakeFiles/meowpeow.dir/source_files/enemy.cpp.o: /home/carbaje/Documents/meowpeow/codes/source_files/enemy.cpp
+CMakeFiles/meowpeow.dir/source_files/enemy.cpp.o: CMakeFiles/meowpeow.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/carbaje/Documents/meowpeow/codes/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/meowpeow.dir/source_files/enemy.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/meowpeow.dir/source_files/enemy.cpp.o -MF CMakeFiles/meowpeow.dir/source_files/enemy.cpp.o.d -o CMakeFiles/meowpeow.dir/source_files/enemy.cpp.o -c /home/carbaje/Documents/meowpeow/codes/source_files/enemy.cpp
 
-CMakeFiles/meowpeow.dir/source_files/enemy_simple.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/meowpeow.dir/source_files/enemy_simple.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/carbaje/Documents/meowpeow/codes/source_files/enemy_simple.cpp > CMakeFiles/meowpeow.dir/source_files/enemy_simple.cpp.i
+CMakeFiles/meowpeow.dir/source_files/enemy.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/meowpeow.dir/source_files/enemy.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/carbaje/Documents/meowpeow/codes/source_files/enemy.cpp > CMakeFiles/meowpeow.dir/source_files/enemy.cpp.i
 
-CMakeFiles/meowpeow.dir/source_files/enemy_simple.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/meowpeow.dir/source_files/enemy_simple.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/carbaje/Documents/meowpeow/codes/source_files/enemy_simple.cpp -o CMakeFiles/meowpeow.dir/source_files/enemy_simple.cpp.s
+CMakeFiles/meowpeow.dir/source_files/enemy.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/meowpeow.dir/source_files/enemy.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/carbaje/Documents/meowpeow/codes/source_files/enemy.cpp -o CMakeFiles/meowpeow.dir/source_files/enemy.cpp.s
 
 CMakeFiles/meowpeow.dir/source_files/game_object.cpp.o: CMakeFiles/meowpeow.dir/flags.make
 CMakeFiles/meowpeow.dir/source_files/game_object.cpp.o: /home/carbaje/Documents/meowpeow/codes/source_files/game_object.cpp
@@ -185,7 +185,7 @@ CMakeFiles/meowpeow.dir/source_files/scene.cpp.s: cmake_force
 meowpeow_OBJECTS = \
 "CMakeFiles/meowpeow.dir/source_files/app.cpp.o" \
 "CMakeFiles/meowpeow.dir/source_files/assets.cpp.o" \
-"CMakeFiles/meowpeow.dir/source_files/enemy_simple.cpp.o" \
+"CMakeFiles/meowpeow.dir/source_files/enemy.cpp.o" \
 "CMakeFiles/meowpeow.dir/source_files/game_object.cpp.o" \
 "CMakeFiles/meowpeow.dir/source_files/math.cpp.o" \
 "CMakeFiles/meowpeow.dir/source_files/player.cpp.o" \
@@ -197,7 +197,7 @@ meowpeow_EXTERNAL_OBJECTS =
 
 meowpeow: CMakeFiles/meowpeow.dir/source_files/app.cpp.o
 meowpeow: CMakeFiles/meowpeow.dir/source_files/assets.cpp.o
-meowpeow: CMakeFiles/meowpeow.dir/source_files/enemy_simple.cpp.o
+meowpeow: CMakeFiles/meowpeow.dir/source_files/enemy.cpp.o
 meowpeow: CMakeFiles/meowpeow.dir/source_files/game_object.cpp.o
 meowpeow: CMakeFiles/meowpeow.dir/source_files/math.cpp.o
 meowpeow: CMakeFiles/meowpeow.dir/source_files/player.cpp.o

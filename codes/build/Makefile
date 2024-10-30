@@ -177,29 +177,29 @@ source_files/assets.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/meowpeow.dir/build.make CMakeFiles/meowpeow.dir/source_files/assets.cpp.s
 .PHONY : source_files/assets.cpp.s
 
-source_files/enemy_simple.o: source_files/enemy_simple.cpp.o
-.PHONY : source_files/enemy_simple.o
+source_files/enemy.o: source_files/enemy.cpp.o
+.PHONY : source_files/enemy.o
 
 # target to build an object file
-source_files/enemy_simple.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/meowpeow.dir/build.make CMakeFiles/meowpeow.dir/source_files/enemy_simple.cpp.o
-.PHONY : source_files/enemy_simple.cpp.o
+source_files/enemy.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/meowpeow.dir/build.make CMakeFiles/meowpeow.dir/source_files/enemy.cpp.o
+.PHONY : source_files/enemy.cpp.o
 
-source_files/enemy_simple.i: source_files/enemy_simple.cpp.i
-.PHONY : source_files/enemy_simple.i
+source_files/enemy.i: source_files/enemy.cpp.i
+.PHONY : source_files/enemy.i
 
 # target to preprocess a source file
-source_files/enemy_simple.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/meowpeow.dir/build.make CMakeFiles/meowpeow.dir/source_files/enemy_simple.cpp.i
-.PHONY : source_files/enemy_simple.cpp.i
+source_files/enemy.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/meowpeow.dir/build.make CMakeFiles/meowpeow.dir/source_files/enemy.cpp.i
+.PHONY : source_files/enemy.cpp.i
 
-source_files/enemy_simple.s: source_files/enemy_simple.cpp.s
-.PHONY : source_files/enemy_simple.s
+source_files/enemy.s: source_files/enemy.cpp.s
+.PHONY : source_files/enemy.s
 
 # target to generate assembly for a file
-source_files/enemy_simple.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/meowpeow.dir/build.make CMakeFiles/meowpeow.dir/source_files/enemy_simple.cpp.s
-.PHONY : source_files/enemy_simple.cpp.s
+source_files/enemy.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/meowpeow.dir/build.make CMakeFiles/meowpeow.dir/source_files/enemy.cpp.s
+.PHONY : source_files/enemy.cpp.s
 
 source_files/game_object.o: source_files/game_object.cpp.o
 .PHONY : source_files/game_object.o
@@ -336,9 +336,9 @@ help:
 	@echo "... source_files/assets.o"
 	@echo "... source_files/assets.i"
 	@echo "... source_files/assets.s"
-	@echo "... source_files/enemy_simple.o"
-	@echo "... source_files/enemy_simple.i"
-	@echo "... source_files/enemy_simple.s"
+	@echo "... source_files/enemy.o"
+	@echo "... source_files/enemy.i"
+	@echo "... source_files/enemy.s"
 	@echo "... source_files/game_object.o"
 	@echo "... source_files/game_object.i"
 	@echo "... source_files/game_object.s"

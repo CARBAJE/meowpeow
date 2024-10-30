@@ -2,7 +2,7 @@
 
 #include "../classes/scene.hpp"
 #include "../classes/player.hpp"
-#include "../classes/enemy_simple.hpp"
+#include "../classes/enemy.hpp"
 #include "../classes/assets.hpp"
 
 int main() {
@@ -26,9 +26,10 @@ int main() {
     SetTargetFPS(60);
 
     Scene scene;
+    scene.SetSceneBounds({0, 0}, {screenWidth, screenHeight});
 
     scene.Add(new Player(&scene, {100, 100}));
-    scene.Add(new EnemySimple(&scene, {screenWidth/4, 100}));
+    scene.Add(new Enemy(&scene, {screenWidth/4, 100}));
 
     TextureDetails backgroundAnimation[2] = {Assets::GetTexture("background_0"), Assets::GetTexture("background_1"),};
 

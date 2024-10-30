@@ -2,12 +2,13 @@
 
 GameObject::GameObject(Scene* scene, v2 startingPosition) 
     : mScene(scene), mPosition(startingPosition), mDeleted(false){
-        
+        mTag = "Empty Tag";
+        mBoundsOffset = v2::Zero();
     }
 
 bool GameObject::Move(v2 amount) {
     mPosition += amount;
-    mBounds.Update(mPosition, mSize);
+    mBounds.Update(mPosition + mBoundsOffset, mBoundsSize);
     return mScene -> DetectCollisions(this, amount);
 } 
 
@@ -20,5 +21,7 @@ bool GameObject::IsDeleted() {
 }
 
 void GameObject::OnCollision(GameObject* other) {
+}
 
+void GameObject::OnSceneExit(){
 }
