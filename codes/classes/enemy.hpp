@@ -2,21 +2,20 @@
 #define ENEMY_HPP
 
 #include <raylib.h>
+
 #include "game_object.hpp"
 #include "texture_details.hpp"
-
-class Enemy : public GameObject {
-    private:
-        TextureDetails mTexture;
+#include "entity.hpp"
+#include "animation.hpp"
+class Enemy : public Entity {
+    protected:
+  
         Color mColor;
-        v2 mDirection;
         float mSpeed;
         float mTime;
-        float mHealth;
         float mHurtTime;
     
-    protected:
-        void Death();
+        virtual void Death();
     public:
         Enemy(Scene* scene, v2 startingPosition);
 
@@ -24,9 +23,9 @@ class Enemy : public GameObject {
         virtual void Render() override;
 
         virtual void OnCollision(GameObject* other) override;
-        virtual void OnSceneExit() override;
+        virtual void OnOutsideScene() override;
 
-        virtual void ReciveDamage(float amount);
+        virtual void ReceiveDamage(float amount) ;
 };
 
 #endif //ENEMY_HPP

@@ -1,3 +1,3 @@
-/home/carbaje/Documents/meowpeow/codes/build/CMakeFiles/meowpeow.dir
-/home/carbaje/Documents/meowpeow/codes/build/CMakeFiles/edit_cache.dir
-/home/carbaje/Documents/meowpeow/codes/build/CMakeFiles/rebuild_cache.dir
+/home/oscarhu/Documents/JUEGO/meowpeow/codes/build/CMakeFiles/meowpeow.dir
+/home/oscarhu/Documents/JUEGO/meowpeow/codes/build/CMakeFiles/edit_cache.dir
+/home/oscarhu/Documents/JUEGO/meowpeow/codes/build/CMakeFiles/rebuild_cache.dir

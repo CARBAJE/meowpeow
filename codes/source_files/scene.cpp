@@ -16,9 +16,7 @@ void Scene::Tick(float deltaTime) {
         if (go -> IsDeleted()) {
             mPendingGameObjectsToRemove.push_back(go);
         }
-        else if (!AABB::Intersects(mSceneBounds, go->mBounds)){
-            go -> OnSceneExit();
-        }
+        
     }
 
     for (auto go: mPendingGameObjectsToRemove) {
@@ -55,6 +53,19 @@ bool Scene::DetectCollisions(GameObject* gameObject, v2 amount) {
             gameObject -> OnCollision(go);
         }
     }
-
+ 
     return result;
+}
+
+bool Scene::DetectOutsideOfScene(GameObject* gameObject, v2 amount) {
+    
+    AABB futureAABB = gameObject -> mBounds;
+    futureAABB.Update(gameObject->mPosition + gameObject -> mBoundsOffset + amount, gameObject->mBoundsSize);
+
+    bool outside = !AABB::Intersects( mSceneBounds, futureAABB); 
+   if (outside) {
+        gameObject->OnOutsideScene();
+    }
+
+    return outside;
 }

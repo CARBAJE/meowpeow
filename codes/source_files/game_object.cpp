@@ -3,15 +3,28 @@
 GameObject::GameObject(Scene* scene, v2 startingPosition) 
     : mScene(scene), mPosition(startingPosition), mDeleted(false){
         mTag = "Empty Tag";
+        mRestrictMovementInScene = false;
         mBoundsOffset = v2::Zero();
     }
 
 bool GameObject::Move(v2 amount) {
+    
+    mScene -> DetectCollisions(this, amount);
+    
+    bool outsideScene= mScene -> DetectOutsideOfScene(this, amount);
+    if (outsideScene) {
+        if(mRestrictMovementInScene){
+            return false;
+        }
+    }
+
     mPosition += amount;
     mBounds.Update(mPosition + mBoundsOffset, mBoundsSize);
-    return mScene -> DetectCollisions(this, amount);
+   
+    return true;
 } 
-
+void GameObject::Render() {
+}   
 void GameObject::Delete() {
     mDeleted = true;
 }
@@ -23,5 +36,5 @@ bool GameObject::IsDeleted() {
 void GameObject::OnCollision(GameObject* other) {
 }
 
-void GameObject::OnSceneExit(){
+void GameObject::OnOutsideScene(){
 }

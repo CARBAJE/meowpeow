@@ -4,6 +4,8 @@
 #include "../classes/player.hpp"
 #include "../classes/enemy.hpp"
 #include "../classes/assets.hpp"
+#include "../classes/enemy_alan.hpp"
+#include "../classes/enemy_spawner.hpp"
 
 int main() {
     const int scale = 8;
@@ -22,14 +24,18 @@ int main() {
     Assets::LoadAssetTexture("../textures/Mini Pixel Pack 3/Projectiles/Player_beam (16 x 16).png","player_projectile");
 
     Assets::LoadAssetTexture("../textures/Mini Pixel Pack 3/Enemies/Alan (16 x 16).png", "enemy_simple", 0, 0, 16, 16);
-
+    
+    Assets::LoadAssetAnimation("../textures/Mini Pixel Pack 3/Enemies/Alan (16 x 16).png", "alan_idle", 6,0.1f, 16,16); 
+    Assets::LoadAssetAnimation("../textures/Mini Pixel Pack 3/Effects/Explosion (16 x 16).png", "explosion_animation", 5,0.1f, 16,16);
     SetTargetFPS(60);
 
     Scene scene;
-    scene.SetSceneBounds({0, 0}, {screenWidth, screenHeight});
+    scene.SetSceneBounds({-0, -0}, {screenWidth+0, screenHeight+0});
 
     scene.Add(new Player(&scene, {100, 100}));
-    scene.Add(new Enemy(&scene, {screenWidth/4, 100}));
+    //scene.Add(new EnemyAlan(&scene, {screenWidth/4, 100}));
+
+    scene.Add(new EnemySpawner(&scene));
 
     TextureDetails backgroundAnimation[2] = {Assets::GetTexture("background_0"), Assets::GetTexture("background_1"),};
 

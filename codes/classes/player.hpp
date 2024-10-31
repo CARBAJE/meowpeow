@@ -4,8 +4,9 @@
 #include <raylib.h>
 #include "game_object.hpp"
 #include "texture_details.hpp"
+#include "entity.hpp"
 
-class Player : public GameObject {
+class Player : public Entity {
     private:
         TextureDetails mTexture;
         float mSpeed;
@@ -16,6 +17,8 @@ class Player : public GameObject {
 
         virtual void Tick(float deltaTime) override;
         virtual void Render() override;
+
+        virtual void ReceiveDamage(float amount) override;
 };
 
 #endif //PLAYER_HPP

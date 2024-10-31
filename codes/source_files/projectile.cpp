@@ -1,10 +1,13 @@
-#include "../classes/player_projectile.hpp"
+#include "../classes/projectile.hpp"
 #include "../classes/input.hpp"
 #include "../classes/assets.hpp"
 #include "../classes/enemy.hpp"
+#include "../classes/entity.hpp"
 
-PlayerProjectile::PlayerProjectile(Scene* scene, v2 startingPosition)
+Projectile::Projectile(Scene* scene, v2 startingPosition, GameObject* owner, const std::string& targetTag)
     : GameObject(scene, startingPosition){
+        mTargetTag = targetTag;
+        mOwner = owner;
         mTag = "Projectile";
         mTexture = Assets::GetTexture("player_projectile");
         mSpeed = 20;
@@ -14,13 +17,13 @@ PlayerProjectile::PlayerProjectile(Scene* scene, v2 startingPosition)
         mBoundsSize = {48, 40};//{64, 64};
         mBoundsOffset = {4, 4};
         mBounds = AABB(mPosition + mBoundsOffset, mBoundsSize);
-    }
+}
 
-void PlayerProjectile::Tick(float deltaTime) {
+void Projectile::Tick(float deltaTime) {
     Move({0, -mSpeed});
 }
 
-void PlayerProjectile::Render() {
+void Projectile::Render() {
 
     Rectangle destination = {};
     destination.x = mPosition.x;
@@ -33,22 +36,27 @@ void PlayerProjectile::Render() {
     //DrawRectangleLines(mBounds.x0 + mBoundsOffset.x, mBounds.y0 + mBoundsOffset.y, mBoundsSize.x, mBoundsSize.y, RED);
 }
 
-void PlayerProjectile::OnCollision(GameObject* other) {
+void Projectile::OnCollision(GameObject* other) {
+    if (other == mOwner) {
+        return;
+    }
     if (other->mTag == mTag) {
         return;
     }
-    if (other->mTag == "Enemy") {
-        Enemy* enemy = dynamic_cast<Enemy*>(other);
+    if (other->mTag == mTargetTag) {
+        Entity* enemy = dynamic_cast<Entity*>(other); //entity son las cosas que tienen vida o las que peuden ser danadas 
 
         if(!enemy) {
             return;
         }
 
-        enemy -> ReciveDamage(mDamage);
+        enemy -> ReceiveDamage(mDamage);
+
+        Delete();
     }
-    Delete();
+   
 }
 
-void PlayerProjectile::OnSceneExit() {
+void Projectile::OnOutsideScene() {
     Delete();
 }

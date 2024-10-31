@@ -2,17 +2,18 @@
 #include "../classes/enemy.hpp"
 #include "../classes/input.hpp"
 #include "../classes/assets.hpp"
+#include "../classes/entity.hpp"
+#include "../classes/explosion_particle.hpp"
 
 Enemy::Enemy(Scene* scene, v2 startingPosition)
-    : GameObject(scene, startingPosition){
-        mTexture = Assets::GetTexture("enemy_simple");
+    : Entity(scene, startingPosition, 5){
+        //mTexture = Assets::GetTexture("enemy_simple");
         mTag = "Enemy";
-        mSpeed = 10;
+        
+        mSpeed = 3;
         mTime = 0;
-        mDirection = {1, 0};
+        //mDirection = {1, 0};
         mColor = WHITE;
-
-        mHealth = 3;
 
         mBoundsSize = {50, 50};
         mBoundsOffset = {4, 4};
@@ -20,41 +21,17 @@ Enemy::Enemy(Scene* scene, v2 startingPosition)
     }
 
 void Enemy::Tick(float deltaTime) {
-    mTime += deltaTime;
-
-    //if(mTime > .5f) {
-    //    mDirection.x *= -1;
-    //    mTime = 0;
-    //}
-
-    if(mHurtTime > 0) {
-        mHurtTime -= deltaTime;
-    }
-
-    Move(mDirection * mSpeed);
+  
 }
 
-void Enemy::OnSceneExit() {
-    mDirection.x *= -1;
+void Enemy::OnOutsideScene() {
 }
 
 void Enemy::Render() {
 
-    Rectangle destination = {};
-    destination.x = mPosition.x;
-    destination.y = mPosition.y;
-    destination.width = 64;
-    destination.height = 64;
-    mColor = (mHurtTime > 0) ? RED : WHITE;
-
-    DrawTexturePro(mTexture.texture, mTexture.source, destination, {0, 0}, 0, mColor);
-    
-    DrawRectangleLines(mBounds.x0 + mBoundsOffset.x, mBounds.y0 + mBoundsOffset.y, mBoundsSize.x, mBoundsSize.y, RED);
-
-    //mColor = WHITE
 }
 
-void Enemy::ReciveDamage(float amount) {
+void Enemy::ReceiveDamage(float amount) {
     mHurtTime = 0.1f;
     mHealth -= amount;
     if (mHealth <= 0) {
@@ -64,6 +41,7 @@ void Enemy::ReciveDamage(float amount) {
 
 void Enemy::Death() {
     Delete();
+    mScene->Add(new ExplosionParticle(mScene, mPosition));
 }
 
 void Enemy::OnCollision(GameObject* other) {

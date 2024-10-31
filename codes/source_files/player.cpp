@@ -1,14 +1,20 @@
 #include "../classes/player.hpp"
-#include "../classes/player_projectile.hpp"
+#include "../classes/projectile.hpp"
 #include "../classes/input.hpp"
 #include "../classes/assets.hpp"
 
+
 Player::Player(Scene* scene, v2 startingPosition)
-    : GameObject(scene, startingPosition){
+    : Entity(scene, startingPosition, 10){ //10 de vida por ajora
         mTexture = Assets::GetTexture("player_left");
         mSpeed = 10;
         mAttackSpeed = 200.0f / 1000.0f;//1.0f / 5.0f;
         mAttackTime = 0;
+
+        mBoundsSize = {64, 64};
+        mBounds = AABB(mPosition , mBoundsSize);
+
+        mRestrictMovementInScene = true;
     }
 
 void Player::Tick(float deltaTime) {
@@ -20,12 +26,16 @@ void Player::Tick(float deltaTime) {
     }
 
     if(Input::KeyDown(KEY_SPACE) && mAttackTime <= 0) {
-        mScene->Add(new PlayerProjectile(mScene, mPosition));
+        mScene->Add(new Projectile(mScene, mPosition, this, "Enemy"));
         mAttackTime = mAttackSpeed;
     }
+
     
-    mPosition.x += h * mSpeed;
-    mPosition.y += v * mSpeed;
+    if (h!=0 || v!=0) {
+        v2 velocity = {h * mSpeed, v * mSpeed};
+        Move(velocity);
+
+    }
 
     if (h < 0) {
         mTexture = Assets::GetTexture("player_left");
@@ -49,3 +59,8 @@ void Player::Render() {
     DrawTexturePro(mTexture.texture, mTexture.source, destination, {0, 0}, 0, WHITE);
 }
 
+void Player::ReceiveDamage(float amount) {
+    mHealth -= amount;
+ 
+  
+}

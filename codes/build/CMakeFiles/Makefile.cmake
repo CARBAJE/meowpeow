@@ -7,12 +7,12 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
-  "/home/carbaje/Documents/meowpeow/codes/CMakeLists.txt"
+  "/home/oscarhu/Documents/JUEGO/meowpeow/codes/CMakeLists.txt"
   "CMakeFiles/3.28.2/CMakeCCompiler.cmake"
   "CMakeFiles/3.28.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.28.2/CMakeSystem.cmake"
-  "/usr/local/lib64/cmake/raylib/raylib-config-version.cmake"
-  "/usr/local/lib64/cmake/raylib/raylib-config.cmake"
+  "/usr/lib64/cmake/raylib/raylib-config-version.cmake"
+  "/usr/lib64/cmake/raylib/raylib-config.cmake"
   "/usr/share/cmake/Modules/CMakeCInformation.cmake"
   "/usr/share/cmake/Modules/CMakeCXXInformation.cmake"
   "/usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake"

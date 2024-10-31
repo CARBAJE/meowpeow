@@ -1,7 +1,7 @@
 CMakeFiles/meowpeow.dir/source_files/scene.cpp.o: \
- /home/carbaje/Documents/meowpeow/codes/source_files/scene.cpp \
+ /home/oscarhu/Documents/JUEGO/meowpeow/codes/source_files/scene.cpp \
  /usr/include/stdc-predef.h \
- /home/carbaje/Documents/meowpeow/codes/source_files/../classes/scene.hpp \
+ /home/oscarhu/Documents/JUEGO/meowpeow/codes/source_files/../classes/scene.hpp \
  /usr/include/c++/14/vector /usr/include/c++/14/bits/requires_hosted.h \
  /usr/include/c++/14/x86_64-redhat-linux/bits/c++config.h \
  /usr/include/bits/wordsize.h \
@@ -78,8 +78,8 @@ CMakeFiles/meowpeow.dir/source_files/scene.cpp.o: \
  /usr/include/bits/stdlib-float.h /usr/include/c++/14/bits/std_abs.h \
  /usr/include/c++/14/pstl/glue_algorithm_defs.h \
  /usr/include/c++/14/pstl/execution_defs.h \
- /home/carbaje/Documents/meowpeow/codes/source_files/../classes/math.hpp \
- /home/carbaje/Documents/meowpeow/codes/source_files/../classes/game_object.hpp \
+ /home/oscarhu/Documents/JUEGO/meowpeow/codes/source_files/../classes/math.hpp \
+ /home/oscarhu/Documents/JUEGO/meowpeow/codes/source_files/../classes/game_object.hpp \
  /usr/include/c++/14/string /usr/include/c++/14/bits/stringfwd.h \
  /usr/include/c++/14/bits/char_traits.h \
  /usr/include/c++/14/bits/postypes.h /usr/include/c++/14/cwchar \
@@ -108,4 +108,4 @@ CMakeFiles/meowpeow.dir/source_files/scene.cpp.o: \
  /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
  /usr/include/bits/types/error_t.h /usr/include/c++/14/bits/charconv.h \
  /usr/include/c++/14/bits/basic_string.tcc \
- /home/carbaje/Documents/meowpeow/codes/source_files/../classes/scene.hpp
+ /home/oscarhu/Documents/JUEGO/meowpeow/codes/source_files/../classes/scene.hpp

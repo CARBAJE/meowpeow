@@ -15,15 +15,17 @@ class GameObject {
         v2 mBoundsOffset;
         v2 mBoundsSize;
 
+        bool mRestrictMovementInScene;
+
         std::string mTag;
 
         GameObject(Scene* scene, v2 startingPosition);
 
         virtual void Tick(float deltaTime) = 0;
-        virtual void Render() = 0;
+        virtual void Render();
 
         virtual void OnCollision(GameObject* other);
-        virtual void OnSceneExit();
+        virtual void OnOutsideScene();
 
         bool IsDeleted();
     

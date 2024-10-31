@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/carbaje/Documents/meowpeow/codes
+CMAKE_SOURCE_DIR = /home/oscarhu/Documents/JUEGO/meowpeow/codes
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/carbaje/Documents/meowpeow/codes/build
+CMAKE_BINARY_DIR = /home/oscarhu/Documents/JUEGO/meowpeow/codes/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/carbaje/Documents/meowpeow/codes/build/CMakeFiles /home/carbaje/Documents/meowpeow/codes/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/oscarhu/Documents/JUEGO/meowpeow/codes/build/CMakeFiles /home/oscarhu/Documents/JUEGO/meowpeow/codes/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/carbaje/Documents/meowpeow/codes/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/oscarhu/Documents/JUEGO/meowpeow/codes/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -128,6 +128,30 @@ meowpeow: cmake_check_build_system
 meowpeow/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/meowpeow.dir/build.make CMakeFiles/meowpeow.dir/build
 .PHONY : meowpeow/fast
+
+source_files/animation.o: source_files/animation.cpp.o
+.PHONY : source_files/animation.o
+
+# target to build an object file
+source_files/animation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/meowpeow.dir/build.make CMakeFiles/meowpeow.dir/source_files/animation.cpp.o
+.PHONY : source_files/animation.cpp.o
+
+source_files/animation.i: source_files/animation.cpp.i
+.PHONY : source_files/animation.i
+
+# target to preprocess a source file
+source_files/animation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/meowpeow.dir/build.make CMakeFiles/meowpeow.dir/source_files/animation.cpp.i
+.PHONY : source_files/animation.cpp.i
+
+source_files/animation.s: source_files/animation.cpp.s
+.PHONY : source_files/animation.s
+
+# target to generate assembly for a file
+source_files/animation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/meowpeow.dir/build.make CMakeFiles/meowpeow.dir/source_files/animation.cpp.s
+.PHONY : source_files/animation.cpp.s
 
 source_files/app.o: source_files/app.cpp.o
 .PHONY : source_files/app.o
@@ -201,6 +225,78 @@ source_files/enemy.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/meowpeow.dir/build.make CMakeFiles/meowpeow.dir/source_files/enemy.cpp.s
 .PHONY : source_files/enemy.cpp.s
 
+source_files/enemy_alan.o: source_files/enemy_alan.cpp.o
+.PHONY : source_files/enemy_alan.o
+
+# target to build an object file
+source_files/enemy_alan.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/meowpeow.dir/build.make CMakeFiles/meowpeow.dir/source_files/enemy_alan.cpp.o
+.PHONY : source_files/enemy_alan.cpp.o
+
+source_files/enemy_alan.i: source_files/enemy_alan.cpp.i
+.PHONY : source_files/enemy_alan.i
+
+# target to preprocess a source file
+source_files/enemy_alan.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/meowpeow.dir/build.make CMakeFiles/meowpeow.dir/source_files/enemy_alan.cpp.i
+.PHONY : source_files/enemy_alan.cpp.i
+
+source_files/enemy_alan.s: source_files/enemy_alan.cpp.s
+.PHONY : source_files/enemy_alan.s
+
+# target to generate assembly for a file
+source_files/enemy_alan.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/meowpeow.dir/build.make CMakeFiles/meowpeow.dir/source_files/enemy_alan.cpp.s
+.PHONY : source_files/enemy_alan.cpp.s
+
+source_files/enemy_spawner.o: source_files/enemy_spawner.cpp.o
+.PHONY : source_files/enemy_spawner.o
+
+# target to build an object file
+source_files/enemy_spawner.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/meowpeow.dir/build.make CMakeFiles/meowpeow.dir/source_files/enemy_spawner.cpp.o
+.PHONY : source_files/enemy_spawner.cpp.o
+
+source_files/enemy_spawner.i: source_files/enemy_spawner.cpp.i
+.PHONY : source_files/enemy_spawner.i
+
+# target to preprocess a source file
+source_files/enemy_spawner.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/meowpeow.dir/build.make CMakeFiles/meowpeow.dir/source_files/enemy_spawner.cpp.i
+.PHONY : source_files/enemy_spawner.cpp.i
+
+source_files/enemy_spawner.s: source_files/enemy_spawner.cpp.s
+.PHONY : source_files/enemy_spawner.s
+
+# target to generate assembly for a file
+source_files/enemy_spawner.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/meowpeow.dir/build.make CMakeFiles/meowpeow.dir/source_files/enemy_spawner.cpp.s
+.PHONY : source_files/enemy_spawner.cpp.s
+
+source_files/entitiy.o: source_files/entitiy.cpp.o
+.PHONY : source_files/entitiy.o
+
+# target to build an object file
+source_files/entitiy.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/meowpeow.dir/build.make CMakeFiles/meowpeow.dir/source_files/entitiy.cpp.o
+.PHONY : source_files/entitiy.cpp.o
+
+source_files/entitiy.i: source_files/entitiy.cpp.i
+.PHONY : source_files/entitiy.i
+
+# target to preprocess a source file
+source_files/entitiy.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/meowpeow.dir/build.make CMakeFiles/meowpeow.dir/source_files/entitiy.cpp.i
+.PHONY : source_files/entitiy.cpp.i
+
+source_files/entitiy.s: source_files/entitiy.cpp.s
+.PHONY : source_files/entitiy.s
+
+# target to generate assembly for a file
+source_files/entitiy.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/meowpeow.dir/build.make CMakeFiles/meowpeow.dir/source_files/entitiy.cpp.s
+.PHONY : source_files/entitiy.cpp.s
+
 source_files/game_object.o: source_files/game_object.cpp.o
 .PHONY : source_files/game_object.o
 
@@ -273,29 +369,29 @@ source_files/player.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/meowpeow.dir/build.make CMakeFiles/meowpeow.dir/source_files/player.cpp.s
 .PHONY : source_files/player.cpp.s
 
-source_files/player_projectile.o: source_files/player_projectile.cpp.o
-.PHONY : source_files/player_projectile.o
+source_files/projectile.o: source_files/projectile.cpp.o
+.PHONY : source_files/projectile.o
 
 # target to build an object file
-source_files/player_projectile.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/meowpeow.dir/build.make CMakeFiles/meowpeow.dir/source_files/player_projectile.cpp.o
-.PHONY : source_files/player_projectile.cpp.o
+source_files/projectile.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/meowpeow.dir/build.make CMakeFiles/meowpeow.dir/source_files/projectile.cpp.o
+.PHONY : source_files/projectile.cpp.o
 
-source_files/player_projectile.i: source_files/player_projectile.cpp.i
-.PHONY : source_files/player_projectile.i
+source_files/projectile.i: source_files/projectile.cpp.i
+.PHONY : source_files/projectile.i
 
 # target to preprocess a source file
-source_files/player_projectile.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/meowpeow.dir/build.make CMakeFiles/meowpeow.dir/source_files/player_projectile.cpp.i
-.PHONY : source_files/player_projectile.cpp.i
+source_files/projectile.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/meowpeow.dir/build.make CMakeFiles/meowpeow.dir/source_files/projectile.cpp.i
+.PHONY : source_files/projectile.cpp.i
 
-source_files/player_projectile.s: source_files/player_projectile.cpp.s
-.PHONY : source_files/player_projectile.s
+source_files/projectile.s: source_files/projectile.cpp.s
+.PHONY : source_files/projectile.s
 
 # target to generate assembly for a file
-source_files/player_projectile.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/meowpeow.dir/build.make CMakeFiles/meowpeow.dir/source_files/player_projectile.cpp.s
-.PHONY : source_files/player_projectile.cpp.s
+source_files/projectile.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/meowpeow.dir/build.make CMakeFiles/meowpeow.dir/source_files/projectile.cpp.s
+.PHONY : source_files/projectile.cpp.s
 
 source_files/scene.o: source_files/scene.cpp.o
 .PHONY : source_files/scene.o
@@ -330,6 +426,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... meowpeow"
+	@echo "... source_files/animation.o"
+	@echo "... source_files/animation.i"
+	@echo "... source_files/animation.s"
 	@echo "... source_files/app.o"
 	@echo "... source_files/app.i"
 	@echo "... source_files/app.s"
@@ -339,6 +438,15 @@ help:
 	@echo "... source_files/enemy.o"
 	@echo "... source_files/enemy.i"
 	@echo "... source_files/enemy.s"
+	@echo "... source_files/enemy_alan.o"
+	@echo "... source_files/enemy_alan.i"
+	@echo "... source_files/enemy_alan.s"
+	@echo "... source_files/enemy_spawner.o"
+	@echo "... source_files/enemy_spawner.i"
+	@echo "... source_files/enemy_spawner.s"
+	@echo "... source_files/entitiy.o"
+	@echo "... source_files/entitiy.i"
+	@echo "... source_files/entitiy.s"
 	@echo "... source_files/game_object.o"
 	@echo "... source_files/game_object.i"
 	@echo "... source_files/game_object.s"
@@ -348,9 +456,9 @@ help:
 	@echo "... source_files/player.o"
 	@echo "... source_files/player.i"
 	@echo "... source_files/player.s"
-	@echo "... source_files/player_projectile.o"
-	@echo "... source_files/player_projectile.i"
-	@echo "... source_files/player_projectile.s"
+	@echo "... source_files/projectile.o"
+	@echo "... source_files/projectile.i"
+	@echo "... source_files/projectile.s"
 	@echo "... source_files/scene.o"
 	@echo "... source_files/scene.i"
 	@echo "... source_files/scene.s"

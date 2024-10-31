@@ -24,6 +24,8 @@ class Scene {
         void Add(GameObject* go);
 
         bool DetectCollisions(GameObject* gameObject, v2 amount);
+
+        bool DetectOutsideOfScene(GameObject* gameObject, v2 amount);
 };
 
 #endif //SCENE_HPP

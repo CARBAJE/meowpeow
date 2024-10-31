@@ -1,7 +1,7 @@
 CMakeFiles/meowpeow.dir/source_files/assets.cpp.o: \
- /home/carbaje/Documents/meowpeow/codes/source_files/assets.cpp \
+ /home/oscarhu/Documents/JUEGO/meowpeow/codes/source_files/assets.cpp \
  /usr/include/stdc-predef.h \
- /home/carbaje/Documents/meowpeow/codes/source_files/../classes/assets.hpp \
+ /home/oscarhu/Documents/JUEGO/meowpeow/codes/source_files/../classes/assets.hpp \
  /usr/include/c++/14/string /usr/include/c++/14/bits/requires_hosted.h \
  /usr/include/c++/14/x86_64-redhat-linux/bits/c++config.h \
  /usr/include/bits/wordsize.h \
@@ -96,11 +96,24 @@ CMakeFiles/meowpeow.dir/source_files/assets.cpp.o: \
  /usr/include/c++/14/bits/memory_resource.h /usr/include/c++/14/cstddef \
  /usr/include/c++/14/bits/uses_allocator.h \
  /usr/include/c++/14/bits/uses_allocator_args.h /usr/include/c++/14/tuple \
- /usr/local/include/raylib.h /usr/include/c++/14/map \
+ /usr/include/raylib.h /usr/include/c++/14/map \
  /usr/include/c++/14/bits/stl_tree.h \
  /usr/include/c++/14/ext/aligned_buffer.h \
  /usr/include/c++/14/bits/node_handle.h \
  /usr/include/c++/14/bits/stl_map.h \
  /usr/include/c++/14/bits/stl_multimap.h \
  /usr/include/c++/14/bits/erase_if.h \
- /home/carbaje/Documents/meowpeow/codes/source_files/../classes/texture_details.hpp
+ /home/oscarhu/Documents/JUEGO/meowpeow/codes/source_files/../classes/animation.hpp \
+ /home/oscarhu/Documents/JUEGO/meowpeow/codes/source_files/../classes/texture_details.hpp \
+ /home/oscarhu/Documents/JUEGO/meowpeow/codes/source_files/../classes/math.hpp \
+ /usr/include/c++/14/vector /usr/include/c++/14/bits/stl_uninitialized.h \
+ /usr/include/c++/14/bits/stl_vector.h \
+ /usr/include/c++/14/bits/stl_bvector.h \
+ /usr/include/c++/14/bits/vector.tcc /usr/include/c++/14/functional \
+ /usr/include/c++/14/bits/std_function.h /usr/include/c++/14/typeinfo \
+ /usr/include/c++/14/unordered_map \
+ /usr/include/c++/14/bits/unordered_map.h \
+ /usr/include/c++/14/bits/hashtable.h \
+ /usr/include/c++/14/bits/hashtable_policy.h \
+ /usr/include/c++/14/bits/enable_special_members.h \
+ /usr/include/c++/14/array /usr/include/c++/14/compare

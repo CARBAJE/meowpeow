@@ -1,10 +1,10 @@
-CMakeFiles/meowpeow.dir/source_files/enemy_simple.cpp.o: \
- /home/carbaje/Documents/meowpeow/codes/source_files/enemy_simple.cpp \
+CMakeFiles/meowpeow.dir/source_files/entitiy.cpp.o: \
+ /home/oscarhu/Documents/JUEGO/meowpeow/codes/source_files/entitiy.cpp \
  /usr/include/stdc-predef.h \
- /home/carbaje/Documents/meowpeow/codes/source_files/../classes/enemy_simple.hpp \
- /usr/local/include/raylib.h \
+ /home/oscarhu/Documents/JUEGO/meowpeow/codes/source_files/../classes/entity.hpp \
+ /usr/include/raylib.h \
  /usr/lib/gcc/x86_64-redhat-linux/14/include/stdarg.h \
- /home/carbaje/Documents/meowpeow/codes/source_files/../classes/game_object.hpp \
+ /home/oscarhu/Documents/JUEGO/meowpeow/codes/source_files/../classes/game_object.hpp \
  /usr/include/c++/14/string /usr/include/c++/14/bits/requires_hosted.h \
  /usr/include/c++/14/x86_64-redhat-linux/bits/c++config.h \
  /usr/include/bits/wordsize.h \
@@ -98,7 +98,7 @@ CMakeFiles/meowpeow.dir/source_files/enemy_simple.cpp.o: \
  /usr/include/c++/14/bits/memory_resource.h /usr/include/c++/14/cstddef \
  /usr/include/c++/14/bits/uses_allocator.h \
  /usr/include/c++/14/bits/uses_allocator_args.h /usr/include/c++/14/tuple \
- /home/carbaje/Documents/meowpeow/codes/source_files/../classes/scene.hpp \
+ /home/oscarhu/Documents/JUEGO/meowpeow/codes/source_files/../classes/scene.hpp \
  /usr/include/c++/14/vector /usr/include/c++/14/bits/stl_uninitialized.h \
  /usr/include/c++/14/bits/stl_vector.h \
  /usr/include/c++/14/bits/stl_bvector.h \
@@ -110,13 +110,5 @@ CMakeFiles/meowpeow.dir/source_files/enemy_simple.cpp.o: \
  /usr/include/c++/14/bits/stl_tempbuf.h \
  /usr/include/c++/14/pstl/glue_algorithm_defs.h \
  /usr/include/c++/14/pstl/execution_defs.h \
- /home/carbaje/Documents/meowpeow/codes/source_files/../classes/math.hpp \
- /home/carbaje/Documents/meowpeow/codes/source_files/../classes/texture_details.hpp \
- /home/carbaje/Documents/meowpeow/codes/source_files/../classes/input.hpp \
- /home/carbaje/Documents/meowpeow/codes/source_files/../classes/assets.hpp \
- /usr/include/c++/14/map /usr/include/c++/14/bits/stl_tree.h \
- /usr/include/c++/14/ext/aligned_buffer.h \
- /usr/include/c++/14/bits/node_handle.h \
- /usr/include/c++/14/bits/stl_map.h \
- /usr/include/c++/14/bits/stl_multimap.h \
- /usr/include/c++/14/bits/erase_if.h
+ /home/oscarhu/Documents/JUEGO/meowpeow/codes/source_files/../classes/math.hpp \
+ /home/oscarhu/Documents/JUEGO/meowpeow/codes/source_files/../classes/texture_details.hpp

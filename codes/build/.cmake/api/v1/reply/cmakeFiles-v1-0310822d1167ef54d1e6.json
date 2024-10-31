@@ -128,11 +128,11 @@
 		},
 		{
 			"isExternal" : true,
-			"path" : "/usr/local/lib64/cmake/raylib/raylib-config-version.cmake"
+			"path" : "/usr/lib64/cmake/raylib/raylib-config-version.cmake"
 		},
 		{
 			"isExternal" : true,
-			"path" : "/usr/local/lib64/cmake/raylib/raylib-config.cmake"
+			"path" : "/usr/lib64/cmake/raylib/raylib-config.cmake"
 		},
 		{
 			"isCMake" : true,
@@ -163,8 +163,8 @@
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "/home/carbaje/Documents/meowpeow/codes/build",
-		"source" : "/home/carbaje/Documents/meowpeow/codes"
+		"build" : "/home/oscarhu/Documents/JUEGO/meowpeow/codes/build",
+		"source" : "/home/oscarhu/Documents/JUEGO/meowpeow/codes"
 	},
 	"version" : 
 	{
