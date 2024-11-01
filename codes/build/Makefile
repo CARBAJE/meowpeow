@@ -297,6 +297,30 @@ source_files/enemy_lips.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/meowpeow.dir/build.make CMakeFiles/meowpeow.dir/source_files/enemy_lips.cpp.s
 .PHONY : source_files/enemy_lips.cpp.s
 
+source_files/enemy_projectile.o: source_files/enemy_projectile.cpp.o
+.PHONY : source_files/enemy_projectile.o
+
+# target to build an object file
+source_files/enemy_projectile.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/meowpeow.dir/build.make CMakeFiles/meowpeow.dir/source_files/enemy_projectile.cpp.o
+.PHONY : source_files/enemy_projectile.cpp.o
+
+source_files/enemy_projectile.i: source_files/enemy_projectile.cpp.i
+.PHONY : source_files/enemy_projectile.i
+
+# target to preprocess a source file
+source_files/enemy_projectile.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/meowpeow.dir/build.make CMakeFiles/meowpeow.dir/source_files/enemy_projectile.cpp.i
+.PHONY : source_files/enemy_projectile.cpp.i
+
+source_files/enemy_projectile.s: source_files/enemy_projectile.cpp.s
+.PHONY : source_files/enemy_projectile.s
+
+# target to generate assembly for a file
+source_files/enemy_projectile.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/meowpeow.dir/build.make CMakeFiles/meowpeow.dir/source_files/enemy_projectile.cpp.s
+.PHONY : source_files/enemy_projectile.cpp.s
+
 source_files/enemy_spawner.o: source_files/enemy_spawner.cpp.o
 .PHONY : source_files/enemy_spawner.o
 
@@ -495,6 +519,9 @@ help:
 	@echo "... source_files/enemy_lips.o"
 	@echo "... source_files/enemy_lips.i"
 	@echo "... source_files/enemy_lips.s"
+	@echo "... source_files/enemy_projectile.o"
+	@echo "... source_files/enemy_projectile.i"
+	@echo "... source_files/enemy_projectile.s"
 	@echo "... source_files/enemy_spawner.o"
 	@echo "... source_files/enemy_spawner.i"
 	@echo "... source_files/enemy_spawner.s"

@@ -123,7 +123,8 @@
 				10,
 				11,
 				12,
-				13
+				13,
+				14
 			]
 		}
 	],
@@ -205,7 +206,8 @@
 				10,
 				11,
 				12,
-				13
+				13,
+				14
 			]
 		}
 	],
@@ -251,6 +253,12 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "source_files/enemy_lips.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "source_files/enemy_projectile.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{

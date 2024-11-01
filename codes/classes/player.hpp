@@ -5,10 +5,16 @@
 #include "game_object.hpp"
 #include "texture_details.hpp"
 #include "entity.hpp"
+#include "animation.hpp"
 
 class Player : public Entity {
     private:
-        TextureDetails mTexture;
+        TextureDetails* mTexture;
+        Animation* mBoosters; 
+
+        TextureDetails mShipTextures[3];
+        Animation mBoostersAnimations[3];
+
         float mSpeed;
         float mAttackSpeed;
         float mAttackTime;

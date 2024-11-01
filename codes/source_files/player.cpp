@@ -6,7 +6,20 @@
 
 Player::Player(Scene* scene, v2 startingPosition)
     : Entity(scene, startingPosition, 10){ //10 de vida por ajora
-        mTexture = Assets::GetTexture("player_left");
+        mTag="Player";
+        
+        mShipTextures[0] = Assets::GetTexture("player_left");
+        mShipTextures[1] = Assets::GetTexture("player_neutral");
+        mShipTextures[2] = Assets::GetTexture("player_right");
+
+        mTexture = &mShipTextures[1];
+       
+        mBoostersAnimations[0] = Assets::GetAnimation("boosters_left_animation");
+        mBoostersAnimations[1] = Assets::GetAnimation("boosters_animation");
+        mBoostersAnimations[2] = Assets::GetAnimation("boosters_right_animation");
+
+        mBoosters = &mBoostersAnimations[1];
+       
         mSpeed = 10;
         mAttackSpeed = 200.0f / 1000.0f;//1.0f / 5.0f;
         mAttackTime = 0;
@@ -18,6 +31,8 @@ Player::Player(Scene* scene, v2 startingPosition)
     }
 
 void Player::Tick(float deltaTime) {
+    mBoosters->Tick(deltaTime);
+
     float h = Input::GetHorizontalAxis();
     float v = Input::GetVerticalAxis();
 
@@ -37,15 +52,15 @@ void Player::Tick(float deltaTime) {
 
     }
 
-    if (h < 0) {
-        mTexture = Assets::GetTexture("player_left");
-    }
-    else if (h > 0) {
-        mTexture = Assets::GetTexture("player_right");
-    }
-    else{
-        mTexture = Assets::GetTexture("player_neutral");
-    }
+
+    //-1 0 1 pero para control Xbox etc se neceista 0 1 2
+    //que solo es sumarle 1 xd 
+    //pero puede generar problemas por que el control puede tener valores medios .1 .2 etc y tendremos que redondearlo
+
+    int renderIndex = h + 1;
+    mTexture = &mShipTextures[renderIndex];
+    mBoosters = &mBoostersAnimations[renderIndex];
+
 }
 
 void Player::Render() {
@@ -56,7 +71,10 @@ void Player::Render() {
     destination.width = 64;
     destination.height = 64;
 
-    DrawTexturePro(mTexture.texture, mTexture.source, destination, {0, 0}, 0, WHITE);
+    DrawTexturePro(mTexture->texture, mTexture->source, destination, {0, 0}, 0, WHITE);
+    v2 offset = {0, 64};
+    mBoosters->Render(mPosition+offset, {64, 64}); // mBoosters.Render(mPosition+offset, {64, 64}, RED) si ponemos aqui el color (el sea) cambia la textura 
+    //asi ponemos mas colores en el booster xd
 }
 
 void Player::ReceiveDamage(float amount) {

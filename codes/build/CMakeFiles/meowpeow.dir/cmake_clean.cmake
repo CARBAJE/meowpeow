@@ -13,6 +13,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/meowpeow.dir/source_files/enemy_bonbon.cpp.o.d"
   "CMakeFiles/meowpeow.dir/source_files/enemy_lips.cpp.o"
   "CMakeFiles/meowpeow.dir/source_files/enemy_lips.cpp.o.d"
+  "CMakeFiles/meowpeow.dir/source_files/enemy_projectile.cpp.o"
+  "CMakeFiles/meowpeow.dir/source_files/enemy_projectile.cpp.o.d"
   "CMakeFiles/meowpeow.dir/source_files/enemy_spawner.cpp.o"
   "CMakeFiles/meowpeow.dir/source_files/enemy_spawner.cpp.o.d"
   "CMakeFiles/meowpeow.dir/source_files/entitiy.cpp.o"

@@ -6,7 +6,7 @@
 #include "texture_details.hpp"
 
 class Projectile : public GameObject {
-    private:
+    protected:
         TextureDetails mTexture;
         GameObject* mOwner;
         std::string mTargetTag;

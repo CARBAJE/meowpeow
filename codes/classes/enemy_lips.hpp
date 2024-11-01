@@ -7,6 +7,9 @@ class EnemyLips : public Enemy{
     private:
         Animation mIdle;
         v2 mDirection;
+        float mShootTime;
+
+        void ShootAtPlayer();
     public: 
         EnemyLips(Scene* scene, v2 startingPosition) ; 
 

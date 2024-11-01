@@ -147,4 +147,6 @@ CMakeFiles/meowpeow.dir/source_files/enemy_lips.cpp.o: \
  /home/oscarhu/Documents/JUEGO/meowpeow/codes/classes/assets.hpp \
  /usr/include/c++/14/map /usr/include/c++/14/bits/stl_tree.h \
  /usr/include/c++/14/bits/stl_map.h \
- /usr/include/c++/14/bits/stl_multimap.h
+ /usr/include/c++/14/bits/stl_multimap.h \
+ /home/oscarhu/Documents/JUEGO/meowpeow/codes/classes/enemy_projectile.hpp \
+ /home/oscarhu/Documents/JUEGO/meowpeow/codes/classes/projectile.hpp

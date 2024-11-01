@@ -1,5 +1,6 @@
 #include "enemy_lips.hpp"
 #include "assets.hpp"
+#include "enemy_projectile.hpp"
 #include <cmath>
 
 EnemyLips::EnemyLips(Scene* scene, v2 startingPosition)
@@ -10,10 +11,17 @@ EnemyLips::EnemyLips(Scene* scene, v2 startingPosition)
 
 void EnemyLips::Tick(float deltaTime) {
     mIdle.Tick(deltaTime);
+
+    mShootTime += deltaTime;
+    if(mShootTime > 3) {
+       ShootAtPlayer(); 
+        mShootTime = 0;
+    }
+
     mTime += deltaTime;
 
-    mDirection.x = std::sin(mTime*7) * mSpeed;  //circulo /ovalo
-    mDirection.y = std::cos(mTime*7) * mSpeed;
+    mDirection.x = std::sin(mTime*9) * mSpeed;  //circulo /ovalo
+    mDirection.y = std::cos(mTime*9) * mSpeed;
 
     mDirection.y+=mSpeed/10.f; //hace que vaya para abajo
     //mDirection.x+=mSpeed/10; //hace que vaya para la derecha
@@ -37,6 +45,9 @@ void EnemyLips::Render() {
     mIdle.Render(mPosition, {64, 64}, mColor);
 
 }
-
+void EnemyLips::ShootAtPlayer() {
+    v2 direction = (mScene->GetPlayer()->mPosition - mPosition).Normalized();
+    mScene->Add(new EnemyProjectile(mScene, mPosition, this, direction));
+}
 void EnemyLips::OnOutsideScene() {
 }
