@@ -110,6 +110,25 @@ CMakeFiles/meowpeow.dir/source_files/enemy_spawner.cpp.o: \
  /usr/include/c++/14/pstl/glue_algorithm_defs.h \
  /usr/include/c++/14/pstl/execution_defs.h \
  /home/oscarhu/Documents/JUEGO/meowpeow/codes/classes/math.hpp \
+ /usr/include/c++/14/cmath /usr/include/math.h \
+ /usr/include/bits/math-vector.h /usr/include/bits/libm-simd-decl-stubs.h \
+ /usr/include/bits/flt-eval-method.h /usr/include/bits/fp-logb.h \
+ /usr/include/bits/fp-fast.h \
+ /usr/include/bits/mathcalls-helper-functions.h \
+ /usr/include/bits/mathcalls.h /usr/include/bits/mathcalls-narrow.h \
+ /usr/include/bits/iscanonical.h /usr/include/c++/14/bits/specfun.h \
+ /usr/include/c++/14/limits /usr/include/c++/14/tr1/gamma.tcc \
+ /usr/include/c++/14/tr1/special_function_util.h \
+ /usr/include/c++/14/tr1/bessel_function.tcc \
+ /usr/include/c++/14/tr1/beta_function.tcc \
+ /usr/include/c++/14/tr1/ell_integral.tcc \
+ /usr/include/c++/14/tr1/exp_integral.tcc \
+ /usr/include/c++/14/tr1/hypergeometric.tcc \
+ /usr/include/c++/14/tr1/legendre_function.tcc \
+ /usr/include/c++/14/tr1/modified_bessel_func.tcc \
+ /usr/include/c++/14/tr1/poly_hermite.tcc \
+ /usr/include/c++/14/tr1/poly_laguerre.tcc \
+ /usr/include/c++/14/tr1/riemann_zeta.tcc \
  /home/oscarhu/Documents/JUEGO/meowpeow/codes/classes/enemy.hpp \
  /usr/include/raylib.h \
  /home/oscarhu/Documents/JUEGO/meowpeow/codes/classes/texture_details.hpp \
@@ -127,4 +146,6 @@ CMakeFiles/meowpeow.dir/source_files/enemy_spawner.cpp.o: \
  /usr/include/c++/14/compare /usr/include/c++/14/map \
  /usr/include/c++/14/bits/stl_tree.h /usr/include/c++/14/bits/stl_map.h \
  /usr/include/c++/14/bits/stl_multimap.h \
- /home/oscarhu/Documents/JUEGO/meowpeow/codes/classes/enemy_alan.hpp
+ /home/oscarhu/Documents/JUEGO/meowpeow/codes/classes/enemy_alan.hpp \
+ /home/oscarhu/Documents/JUEGO/meowpeow/codes/classes/enemy_lips.hpp \
+ /home/oscarhu/Documents/JUEGO/meowpeow/codes/classes/enemy_bonbon.hpp

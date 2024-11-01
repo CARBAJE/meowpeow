@@ -14,6 +14,8 @@ class Scene {
         std::vector<GameObject*> mPendingGameObjectsToAdd;
         std::vector<GameObject*> mPendingGameObjectsToRemove;
 
+        GameObject* mPlayer;
+
         AABB mSceneBounds;
     public:
         void Tick(float deltaTime);
@@ -26,6 +28,9 @@ class Scene {
         bool DetectCollisions(GameObject* gameObject, v2 amount);
 
         bool DetectOutsideOfScene(GameObject* gameObject, v2 amount);
+
+        void SetPlayer(GameObject* player);
+        GameObject* GetPlayer();
 };
 
 #endif //SCENE_HPP

@@ -5,6 +5,7 @@
 #include"enemy.hpp" 
 #include<map>
 #include<functional>
+
 class EnemyFactory{
     private: 
         std::map<std::string, std::function<Enemy*(Scene*, v2)>> mEnemyCreationMap;
@@ -14,6 +15,7 @@ class EnemyFactory{
 };
 class EnemySpawner : public GameObject {
     private:
+        std::vector<std::string> mPossibleEnemies; 
         EnemyFactory mEnemyFactory;
         float mTime;
 

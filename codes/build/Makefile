@@ -249,6 +249,54 @@ source_files/enemy_alan.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/meowpeow.dir/build.make CMakeFiles/meowpeow.dir/source_files/enemy_alan.cpp.s
 .PHONY : source_files/enemy_alan.cpp.s
 
+source_files/enemy_bonbon.o: source_files/enemy_bonbon.cpp.o
+.PHONY : source_files/enemy_bonbon.o
+
+# target to build an object file
+source_files/enemy_bonbon.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/meowpeow.dir/build.make CMakeFiles/meowpeow.dir/source_files/enemy_bonbon.cpp.o
+.PHONY : source_files/enemy_bonbon.cpp.o
+
+source_files/enemy_bonbon.i: source_files/enemy_bonbon.cpp.i
+.PHONY : source_files/enemy_bonbon.i
+
+# target to preprocess a source file
+source_files/enemy_bonbon.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/meowpeow.dir/build.make CMakeFiles/meowpeow.dir/source_files/enemy_bonbon.cpp.i
+.PHONY : source_files/enemy_bonbon.cpp.i
+
+source_files/enemy_bonbon.s: source_files/enemy_bonbon.cpp.s
+.PHONY : source_files/enemy_bonbon.s
+
+# target to generate assembly for a file
+source_files/enemy_bonbon.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/meowpeow.dir/build.make CMakeFiles/meowpeow.dir/source_files/enemy_bonbon.cpp.s
+.PHONY : source_files/enemy_bonbon.cpp.s
+
+source_files/enemy_lips.o: source_files/enemy_lips.cpp.o
+.PHONY : source_files/enemy_lips.o
+
+# target to build an object file
+source_files/enemy_lips.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/meowpeow.dir/build.make CMakeFiles/meowpeow.dir/source_files/enemy_lips.cpp.o
+.PHONY : source_files/enemy_lips.cpp.o
+
+source_files/enemy_lips.i: source_files/enemy_lips.cpp.i
+.PHONY : source_files/enemy_lips.i
+
+# target to preprocess a source file
+source_files/enemy_lips.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/meowpeow.dir/build.make CMakeFiles/meowpeow.dir/source_files/enemy_lips.cpp.i
+.PHONY : source_files/enemy_lips.cpp.i
+
+source_files/enemy_lips.s: source_files/enemy_lips.cpp.s
+.PHONY : source_files/enemy_lips.s
+
+# target to generate assembly for a file
+source_files/enemy_lips.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/meowpeow.dir/build.make CMakeFiles/meowpeow.dir/source_files/enemy_lips.cpp.s
+.PHONY : source_files/enemy_lips.cpp.s
+
 source_files/enemy_spawner.o: source_files/enemy_spawner.cpp.o
 .PHONY : source_files/enemy_spawner.o
 
@@ -441,6 +489,12 @@ help:
 	@echo "... source_files/enemy_alan.o"
 	@echo "... source_files/enemy_alan.i"
 	@echo "... source_files/enemy_alan.s"
+	@echo "... source_files/enemy_bonbon.o"
+	@echo "... source_files/enemy_bonbon.i"
+	@echo "... source_files/enemy_bonbon.s"
+	@echo "... source_files/enemy_lips.o"
+	@echo "... source_files/enemy_lips.i"
+	@echo "... source_files/enemy_lips.s"
 	@echo "... source_files/enemy_spawner.o"
 	@echo "... source_files/enemy_spawner.i"
 	@echo "... source_files/enemy_spawner.s"

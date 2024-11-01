@@ -69,3 +69,10 @@ bool Scene::DetectOutsideOfScene(GameObject* gameObject, v2 amount) {
 
     return outside;
 }
+
+void Scene::SetPlayer(GameObject* player){
+    mPlayer = player;
+}
+GameObject* Scene::GetPlayer(){
+    return mPlayer;
+}

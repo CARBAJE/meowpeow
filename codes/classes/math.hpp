@@ -1,6 +1,9 @@
 #ifndef MATH_HPP
 #define MATH_HPP
 
+
+#include <cmath>
+
 struct v2 {
     float x;
     float y;
@@ -8,9 +11,18 @@ struct v2 {
     static v2 Zero() {
         return {0, 0};
     }
-
+    float Length(){
+        return std::sqrt(x*x+y*y); 
+    }
+    v2 Normalized(){
+        float length=Length(); 
+        return {x/length,y/length};
+    }
     v2 operator+(v2 other) {
         return {x + other.x , y + other.y};
+    }
+    v2 operator-(v2 other) {
+        return {x - other.x , y - other.y};
     }
     
     v2 operator*(float value) {

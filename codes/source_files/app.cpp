@@ -6,6 +6,8 @@
 #include "../classes/assets.hpp"
 #include "../classes/enemy_alan.hpp"
 #include "../classes/enemy_spawner.hpp"
+#include "../classes/enemy_lips.hpp"
+#include "../classes/enemy_bonbon.hpp"
 
 int main() {
     const int scale = 8;
@@ -27,15 +29,26 @@ int main() {
     
     Assets::LoadAssetAnimation("../textures/Mini Pixel Pack 3/Enemies/Alan (16 x 16).png", "alan_idle", 6,0.1f, 16,16); 
     Assets::LoadAssetAnimation("../textures/Mini Pixel Pack 3/Effects/Explosion (16 x 16).png", "explosion_animation", 5,0.1f, 16,16);
+
+    Assets::LoadAssetAnimation("../textures/Mini Pixel Pack 3/Enemies/Lips (16 x 16).png", "lips_idle", 5, 0.1f, 16, 16);
+
+    Assets::LoadAssetAnimation("../textures/Mini Pixel Pack 3/Enemies/Bon_Bon (16 x 16).png", "bonbon_idle", 4, 0.1f, 16, 16);
+
     SetTargetFPS(60);
 
     Scene scene;
-    scene.SetSceneBounds({-0, -0}, {screenWidth+0, screenHeight+0});
+    scene.SetSceneBounds({-0, -0}, {screenWidth+0, screenHeight+0}); //probando el tamano XD por eos tiene -0
 
-    scene.Add(new Player(&scene, {100, 100}));
+    Player * player = new Player(&scene, {100, 100});
+    scene.SetPlayer(player);
+    scene.Add(player);
+
+    //scene.Add(new Player(&scene, {100, 100}));
     //scene.Add(new EnemyAlan(&scene, {screenWidth/4, 100}));
 
-    scene.Add(new EnemySpawner(&scene));
+    scene.Add(new EnemySpawner(&scene)); //apgado para probar otro enemigo manual
+    //scene.Add(new EnemyBonbon(&scene, {100, 100})); 
+    //scene.Add(new EnemyLips(&scene, {screenWidth/4, 100})); //PRUEBa
 
     TextureDetails backgroundAnimation[2] = {Assets::GetTexture("background_0"), Assets::GetTexture("background_1"),};
 

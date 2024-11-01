@@ -5,8 +5,49 @@ CMakeFiles/meowpeow.dir/source_files/animation.cpp.o: /home/oscarhu/Documents/JU
   /home/oscarhu/Documents/JUEGO/meowpeow/codes/classes/animation.hpp \
   /home/oscarhu/Documents/JUEGO/meowpeow/codes/classes/math.hpp \
   /home/oscarhu/Documents/JUEGO/meowpeow/codes/classes/texture_details.hpp \
+  /usr/include/alloca.h \
+  /usr/include/bits/atomic_wide_counter.h \
+  /usr/include/bits/byteswap.h \
+  /usr/include/bits/endian.h \
+  /usr/include/bits/endianness.h \
+  /usr/include/bits/floatn-common.h \
+  /usr/include/bits/floatn.h \
+  /usr/include/bits/flt-eval-method.h \
+  /usr/include/bits/fp-fast.h \
+  /usr/include/bits/fp-logb.h \
+  /usr/include/bits/iscanonical.h \
+  /usr/include/bits/libc-header-start.h \
+  /usr/include/bits/libm-simd-decl-stubs.h \
   /usr/include/bits/long-double.h \
+  /usr/include/bits/math-vector.h \
+  /usr/include/bits/mathcalls-helper-functions.h \
+  /usr/include/bits/mathcalls-narrow.h \
+  /usr/include/bits/mathcalls.h \
+  /usr/include/bits/pthreadtypes-arch.h \
+  /usr/include/bits/pthreadtypes.h \
+  /usr/include/bits/select.h \
+  /usr/include/bits/stdint-intn.h \
+  /usr/include/bits/stdlib-float.h \
+  /usr/include/bits/struct_mutex.h \
+  /usr/include/bits/struct_rwlock.h \
+  /usr/include/bits/thread-shared-types.h \
+  /usr/include/bits/time64.h \
   /usr/include/bits/timesize.h \
+  /usr/include/bits/types.h \
+  /usr/include/bits/types/__locale_t.h \
+  /usr/include/bits/types/__sigset_t.h \
+  /usr/include/bits/types/clock_t.h \
+  /usr/include/bits/types/clockid_t.h \
+  /usr/include/bits/types/locale_t.h \
+  /usr/include/bits/types/sigset_t.h \
+  /usr/include/bits/types/struct_timespec.h \
+  /usr/include/bits/types/struct_timeval.h \
+  /usr/include/bits/types/time_t.h \
+  /usr/include/bits/types/timer_t.h \
+  /usr/include/bits/typesizes.h \
+  /usr/include/bits/uintn-identity.h \
+  /usr/include/bits/waitflags.h \
+  /usr/include/bits/waitstatus.h \
   /usr/include/bits/wordsize.h \
   /usr/include/c++/14/array \
   /usr/include/c++/14/backward/binders.h \
@@ -35,6 +76,8 @@ CMakeFiles/meowpeow.dir/source_files/animation.cpp.o: /home/oscarhu/Documents/JU
   /usr/include/c++/14/bits/range_access.h \
   /usr/include/c++/14/bits/refwrap.h \
   /usr/include/c++/14/bits/requires_hosted.h \
+  /usr/include/c++/14/bits/specfun.h \
+  /usr/include/c++/14/bits/std_abs.h \
   /usr/include/c++/14/bits/std_function.h \
   /usr/include/c++/14/bits/stl_algobase.h \
   /usr/include/c++/14/bits/stl_bvector.h \
@@ -52,6 +95,7 @@ CMakeFiles/meowpeow.dir/source_files/animation.cpp.o: /home/oscarhu/Documents/JU
   /usr/include/c++/14/bits/utility.h \
   /usr/include/c++/14/bits/vector.tcc \
   /usr/include/c++/14/bits/version.h \
+  /usr/include/c++/14/cmath \
   /usr/include/c++/14/compare \
   /usr/include/c++/14/concepts \
   /usr/include/c++/14/cstddef \
@@ -63,8 +107,21 @@ CMakeFiles/meowpeow.dir/source_files/animation.cpp.o: /home/oscarhu/Documents/JU
   /usr/include/c++/14/ext/type_traits.h \
   /usr/include/c++/14/functional \
   /usr/include/c++/14/initializer_list \
+  /usr/include/c++/14/limits \
   /usr/include/c++/14/new \
   /usr/include/c++/14/pstl/pstl_config.h \
+  /usr/include/c++/14/tr1/bessel_function.tcc \
+  /usr/include/c++/14/tr1/beta_function.tcc \
+  /usr/include/c++/14/tr1/ell_integral.tcc \
+  /usr/include/c++/14/tr1/exp_integral.tcc \
+  /usr/include/c++/14/tr1/gamma.tcc \
+  /usr/include/c++/14/tr1/hypergeometric.tcc \
+  /usr/include/c++/14/tr1/legendre_function.tcc \
+  /usr/include/c++/14/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/14/tr1/poly_hermite.tcc \
+  /usr/include/c++/14/tr1/poly_laguerre.tcc \
+  /usr/include/c++/14/tr1/riemann_zeta.tcc \
+  /usr/include/c++/14/tr1/special_function_util.h \
   /usr/include/c++/14/tuple \
   /usr/include/c++/14/type_traits \
   /usr/include/c++/14/typeinfo \
@@ -74,13 +131,18 @@ CMakeFiles/meowpeow.dir/source_files/animation.cpp.o: /home/oscarhu/Documents/JU
   /usr/include/c++/14/x86_64-redhat-linux/bits/c++config.h \
   /usr/include/c++/14/x86_64-redhat-linux/bits/cpu_defines.h \
   /usr/include/c++/14/x86_64-redhat-linux/bits/os_defines.h \
+  /usr/include/endian.h \
   /usr/include/features-time64.h \
   /usr/include/features.h \
   /usr/include/gnu/stubs-64.h \
   /usr/include/gnu/stubs.h \
+  /usr/include/math.h \
   /usr/include/raylib.h \
   /usr/include/stdc-predef.h \
+  /usr/include/stdlib.h \
   /usr/include/sys/cdefs.h \
+  /usr/include/sys/select.h \
+  /usr/include/sys/types.h \
   /usr/lib/gcc/x86_64-redhat-linux/14/include/stdarg.h \
   /usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h
 
@@ -89,6 +151,8 @@ CMakeFiles/meowpeow.dir/source_files/app.cpp.o: /home/oscarhu/Documents/JUEGO/me
   /home/oscarhu/Documents/JUEGO/meowpeow/codes/classes/assets.hpp \
   /home/oscarhu/Documents/JUEGO/meowpeow/codes/classes/enemy.hpp \
   /home/oscarhu/Documents/JUEGO/meowpeow/codes/classes/enemy_alan.hpp \
+  /home/oscarhu/Documents/JUEGO/meowpeow/codes/classes/enemy_bonbon.hpp \
+  /home/oscarhu/Documents/JUEGO/meowpeow/codes/classes/enemy_lips.hpp \
   /home/oscarhu/Documents/JUEGO/meowpeow/codes/classes/enemy_spawner.hpp \
   /home/oscarhu/Documents/JUEGO/meowpeow/codes/classes/entity.hpp \
   /home/oscarhu/Documents/JUEGO/meowpeow/codes/classes/game_object.hpp \
@@ -107,9 +171,18 @@ CMakeFiles/meowpeow.dir/source_files/app.cpp.o: /home/oscarhu/Documents/JUEGO/me
   /usr/include/bits/errno.h \
   /usr/include/bits/floatn-common.h \
   /usr/include/bits/floatn.h \
+  /usr/include/bits/flt-eval-method.h \
+  /usr/include/bits/fp-fast.h \
+  /usr/include/bits/fp-logb.h \
+  /usr/include/bits/iscanonical.h \
   /usr/include/bits/libc-header-start.h \
+  /usr/include/bits/libm-simd-decl-stubs.h \
   /usr/include/bits/locale.h \
   /usr/include/bits/long-double.h \
+  /usr/include/bits/math-vector.h \
+  /usr/include/bits/mathcalls-helper-functions.h \
+  /usr/include/bits/mathcalls-narrow.h \
+  /usr/include/bits/mathcalls.h \
   /usr/include/bits/pthreadtypes-arch.h \
   /usr/include/bits/pthreadtypes.h \
   /usr/include/bits/select.h \
@@ -185,6 +258,7 @@ CMakeFiles/meowpeow.dir/source_files/app.cpp.o: /home/oscarhu/Documents/JUEGO/me
   /usr/include/c++/14/bits/range_access.h \
   /usr/include/c++/14/bits/refwrap.h \
   /usr/include/c++/14/bits/requires_hosted.h \
+  /usr/include/c++/14/bits/specfun.h \
   /usr/include/c++/14/bits/std_abs.h \
   /usr/include/c++/14/bits/std_function.h \
   /usr/include/c++/14/bits/stl_algo.h \
@@ -215,6 +289,7 @@ CMakeFiles/meowpeow.dir/source_files/app.cpp.o: /home/oscarhu/Documents/JUEGO/me
   /usr/include/c++/14/cctype \
   /usr/include/c++/14/cerrno \
   /usr/include/c++/14/clocale \
+  /usr/include/c++/14/cmath \
   /usr/include/c++/14/compare \
   /usr/include/c++/14/concepts \
   /usr/include/c++/14/cstddef \
@@ -231,6 +306,7 @@ CMakeFiles/meowpeow.dir/source_files/app.cpp.o: /home/oscarhu/Documents/JUEGO/me
   /usr/include/c++/14/functional \
   /usr/include/c++/14/initializer_list \
   /usr/include/c++/14/iosfwd \
+  /usr/include/c++/14/limits \
   /usr/include/c++/14/map \
   /usr/include/c++/14/new \
   /usr/include/c++/14/pstl/execution_defs.h \
@@ -238,6 +314,18 @@ CMakeFiles/meowpeow.dir/source_files/app.cpp.o: /home/oscarhu/Documents/JUEGO/me
   /usr/include/c++/14/pstl/pstl_config.h \
   /usr/include/c++/14/string \
   /usr/include/c++/14/string_view \
+  /usr/include/c++/14/tr1/bessel_function.tcc \
+  /usr/include/c++/14/tr1/beta_function.tcc \
+  /usr/include/c++/14/tr1/ell_integral.tcc \
+  /usr/include/c++/14/tr1/exp_integral.tcc \
+  /usr/include/c++/14/tr1/gamma.tcc \
+  /usr/include/c++/14/tr1/hypergeometric.tcc \
+  /usr/include/c++/14/tr1/legendre_function.tcc \
+  /usr/include/c++/14/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/14/tr1/poly_hermite.tcc \
+  /usr/include/c++/14/tr1/poly_laguerre.tcc \
+  /usr/include/c++/14/tr1/riemann_zeta.tcc \
+  /usr/include/c++/14/tr1/special_function_util.h \
   /usr/include/c++/14/tuple \
   /usr/include/c++/14/type_traits \
   /usr/include/c++/14/typeinfo \
@@ -257,6 +345,7 @@ CMakeFiles/meowpeow.dir/source_files/app.cpp.o: /home/oscarhu/Documents/JUEGO/me
   /usr/include/gnu/stubs.h \
   /usr/include/linux/errno.h \
   /usr/include/locale.h \
+  /usr/include/math.h \
   /usr/include/raylib.h \
   /usr/include/stdc-predef.h \
   /usr/include/stdio.h \
@@ -284,9 +373,18 @@ CMakeFiles/meowpeow.dir/source_files/assets.cpp.o: /home/oscarhu/Documents/JUEGO
   /usr/include/bits/errno.h \
   /usr/include/bits/floatn-common.h \
   /usr/include/bits/floatn.h \
+  /usr/include/bits/flt-eval-method.h \
+  /usr/include/bits/fp-fast.h \
+  /usr/include/bits/fp-logb.h \
+  /usr/include/bits/iscanonical.h \
   /usr/include/bits/libc-header-start.h \
+  /usr/include/bits/libm-simd-decl-stubs.h \
   /usr/include/bits/locale.h \
   /usr/include/bits/long-double.h \
+  /usr/include/bits/math-vector.h \
+  /usr/include/bits/mathcalls-helper-functions.h \
+  /usr/include/bits/mathcalls-narrow.h \
+  /usr/include/bits/mathcalls.h \
   /usr/include/bits/pthreadtypes-arch.h \
   /usr/include/bits/pthreadtypes.h \
   /usr/include/bits/select.h \
@@ -360,6 +458,7 @@ CMakeFiles/meowpeow.dir/source_files/assets.cpp.o: /home/oscarhu/Documents/JUEGO
   /usr/include/c++/14/bits/range_access.h \
   /usr/include/c++/14/bits/refwrap.h \
   /usr/include/c++/14/bits/requires_hosted.h \
+  /usr/include/c++/14/bits/specfun.h \
   /usr/include/c++/14/bits/std_abs.h \
   /usr/include/c++/14/bits/std_function.h \
   /usr/include/c++/14/bits/stl_algobase.h \
@@ -386,6 +485,7 @@ CMakeFiles/meowpeow.dir/source_files/assets.cpp.o: /home/oscarhu/Documents/JUEGO
   /usr/include/c++/14/cctype \
   /usr/include/c++/14/cerrno \
   /usr/include/c++/14/clocale \
+  /usr/include/c++/14/cmath \
   /usr/include/c++/14/compare \
   /usr/include/c++/14/concepts \
   /usr/include/c++/14/cstddef \
@@ -402,11 +502,24 @@ CMakeFiles/meowpeow.dir/source_files/assets.cpp.o: /home/oscarhu/Documents/JUEGO
   /usr/include/c++/14/functional \
   /usr/include/c++/14/initializer_list \
   /usr/include/c++/14/iosfwd \
+  /usr/include/c++/14/limits \
   /usr/include/c++/14/map \
   /usr/include/c++/14/new \
   /usr/include/c++/14/pstl/pstl_config.h \
   /usr/include/c++/14/string \
   /usr/include/c++/14/string_view \
+  /usr/include/c++/14/tr1/bessel_function.tcc \
+  /usr/include/c++/14/tr1/beta_function.tcc \
+  /usr/include/c++/14/tr1/ell_integral.tcc \
+  /usr/include/c++/14/tr1/exp_integral.tcc \
+  /usr/include/c++/14/tr1/gamma.tcc \
+  /usr/include/c++/14/tr1/hypergeometric.tcc \
+  /usr/include/c++/14/tr1/legendre_function.tcc \
+  /usr/include/c++/14/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/14/tr1/poly_hermite.tcc \
+  /usr/include/c++/14/tr1/poly_laguerre.tcc \
+  /usr/include/c++/14/tr1/riemann_zeta.tcc \
+  /usr/include/c++/14/tr1/special_function_util.h \
   /usr/include/c++/14/tuple \
   /usr/include/c++/14/type_traits \
   /usr/include/c++/14/typeinfo \
@@ -426,6 +539,7 @@ CMakeFiles/meowpeow.dir/source_files/assets.cpp.o: /home/oscarhu/Documents/JUEGO
   /usr/include/gnu/stubs.h \
   /usr/include/linux/errno.h \
   /usr/include/locale.h \
+  /usr/include/math.h \
   /usr/include/raylib.h \
   /usr/include/stdc-predef.h \
   /usr/include/stdio.h \
@@ -459,9 +573,18 @@ CMakeFiles/meowpeow.dir/source_files/enemy.cpp.o: /home/oscarhu/Documents/JUEGO/
   /usr/include/bits/errno.h \
   /usr/include/bits/floatn-common.h \
   /usr/include/bits/floatn.h \
+  /usr/include/bits/flt-eval-method.h \
+  /usr/include/bits/fp-fast.h \
+  /usr/include/bits/fp-logb.h \
+  /usr/include/bits/iscanonical.h \
   /usr/include/bits/libc-header-start.h \
+  /usr/include/bits/libm-simd-decl-stubs.h \
   /usr/include/bits/locale.h \
   /usr/include/bits/long-double.h \
+  /usr/include/bits/math-vector.h \
+  /usr/include/bits/mathcalls-helper-functions.h \
+  /usr/include/bits/mathcalls-narrow.h \
+  /usr/include/bits/mathcalls.h \
   /usr/include/bits/pthreadtypes-arch.h \
   /usr/include/bits/pthreadtypes.h \
   /usr/include/bits/select.h \
@@ -537,6 +660,7 @@ CMakeFiles/meowpeow.dir/source_files/enemy.cpp.o: /home/oscarhu/Documents/JUEGO/
   /usr/include/c++/14/bits/range_access.h \
   /usr/include/c++/14/bits/refwrap.h \
   /usr/include/c++/14/bits/requires_hosted.h \
+  /usr/include/c++/14/bits/specfun.h \
   /usr/include/c++/14/bits/std_abs.h \
   /usr/include/c++/14/bits/std_function.h \
   /usr/include/c++/14/bits/stl_algo.h \
@@ -567,6 +691,7 @@ CMakeFiles/meowpeow.dir/source_files/enemy.cpp.o: /home/oscarhu/Documents/JUEGO/
   /usr/include/c++/14/cctype \
   /usr/include/c++/14/cerrno \
   /usr/include/c++/14/clocale \
+  /usr/include/c++/14/cmath \
   /usr/include/c++/14/compare \
   /usr/include/c++/14/concepts \
   /usr/include/c++/14/cstddef \
@@ -583,6 +708,7 @@ CMakeFiles/meowpeow.dir/source_files/enemy.cpp.o: /home/oscarhu/Documents/JUEGO/
   /usr/include/c++/14/functional \
   /usr/include/c++/14/initializer_list \
   /usr/include/c++/14/iosfwd \
+  /usr/include/c++/14/limits \
   /usr/include/c++/14/map \
   /usr/include/c++/14/new \
   /usr/include/c++/14/pstl/execution_defs.h \
@@ -590,6 +716,18 @@ CMakeFiles/meowpeow.dir/source_files/enemy.cpp.o: /home/oscarhu/Documents/JUEGO/
   /usr/include/c++/14/pstl/pstl_config.h \
   /usr/include/c++/14/string \
   /usr/include/c++/14/string_view \
+  /usr/include/c++/14/tr1/bessel_function.tcc \
+  /usr/include/c++/14/tr1/beta_function.tcc \
+  /usr/include/c++/14/tr1/ell_integral.tcc \
+  /usr/include/c++/14/tr1/exp_integral.tcc \
+  /usr/include/c++/14/tr1/gamma.tcc \
+  /usr/include/c++/14/tr1/hypergeometric.tcc \
+  /usr/include/c++/14/tr1/legendre_function.tcc \
+  /usr/include/c++/14/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/14/tr1/poly_hermite.tcc \
+  /usr/include/c++/14/tr1/poly_laguerre.tcc \
+  /usr/include/c++/14/tr1/riemann_zeta.tcc \
+  /usr/include/c++/14/tr1/special_function_util.h \
   /usr/include/c++/14/tuple \
   /usr/include/c++/14/type_traits \
   /usr/include/c++/14/typeinfo \
@@ -609,6 +747,7 @@ CMakeFiles/meowpeow.dir/source_files/enemy.cpp.o: /home/oscarhu/Documents/JUEGO/
   /usr/include/gnu/stubs.h \
   /usr/include/linux/errno.h \
   /usr/include/locale.h \
+  /usr/include/math.h \
   /usr/include/raylib.h \
   /usr/include/stdc-predef.h \
   /usr/include/stdio.h \
@@ -641,9 +780,18 @@ CMakeFiles/meowpeow.dir/source_files/enemy_alan.cpp.o: /home/oscarhu/Documents/J
   /usr/include/bits/errno.h \
   /usr/include/bits/floatn-common.h \
   /usr/include/bits/floatn.h \
+  /usr/include/bits/flt-eval-method.h \
+  /usr/include/bits/fp-fast.h \
+  /usr/include/bits/fp-logb.h \
+  /usr/include/bits/iscanonical.h \
   /usr/include/bits/libc-header-start.h \
+  /usr/include/bits/libm-simd-decl-stubs.h \
   /usr/include/bits/locale.h \
   /usr/include/bits/long-double.h \
+  /usr/include/bits/math-vector.h \
+  /usr/include/bits/mathcalls-helper-functions.h \
+  /usr/include/bits/mathcalls-narrow.h \
+  /usr/include/bits/mathcalls.h \
   /usr/include/bits/pthreadtypes-arch.h \
   /usr/include/bits/pthreadtypes.h \
   /usr/include/bits/select.h \
@@ -719,6 +867,7 @@ CMakeFiles/meowpeow.dir/source_files/enemy_alan.cpp.o: /home/oscarhu/Documents/J
   /usr/include/c++/14/bits/range_access.h \
   /usr/include/c++/14/bits/refwrap.h \
   /usr/include/c++/14/bits/requires_hosted.h \
+  /usr/include/c++/14/bits/specfun.h \
   /usr/include/c++/14/bits/std_abs.h \
   /usr/include/c++/14/bits/std_function.h \
   /usr/include/c++/14/bits/stl_algo.h \
@@ -749,6 +898,7 @@ CMakeFiles/meowpeow.dir/source_files/enemy_alan.cpp.o: /home/oscarhu/Documents/J
   /usr/include/c++/14/cctype \
   /usr/include/c++/14/cerrno \
   /usr/include/c++/14/clocale \
+  /usr/include/c++/14/cmath \
   /usr/include/c++/14/compare \
   /usr/include/c++/14/concepts \
   /usr/include/c++/14/cstddef \
@@ -765,6 +915,7 @@ CMakeFiles/meowpeow.dir/source_files/enemy_alan.cpp.o: /home/oscarhu/Documents/J
   /usr/include/c++/14/functional \
   /usr/include/c++/14/initializer_list \
   /usr/include/c++/14/iosfwd \
+  /usr/include/c++/14/limits \
   /usr/include/c++/14/map \
   /usr/include/c++/14/new \
   /usr/include/c++/14/pstl/execution_defs.h \
@@ -772,6 +923,18 @@ CMakeFiles/meowpeow.dir/source_files/enemy_alan.cpp.o: /home/oscarhu/Documents/J
   /usr/include/c++/14/pstl/pstl_config.h \
   /usr/include/c++/14/string \
   /usr/include/c++/14/string_view \
+  /usr/include/c++/14/tr1/bessel_function.tcc \
+  /usr/include/c++/14/tr1/beta_function.tcc \
+  /usr/include/c++/14/tr1/ell_integral.tcc \
+  /usr/include/c++/14/tr1/exp_integral.tcc \
+  /usr/include/c++/14/tr1/gamma.tcc \
+  /usr/include/c++/14/tr1/hypergeometric.tcc \
+  /usr/include/c++/14/tr1/legendre_function.tcc \
+  /usr/include/c++/14/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/14/tr1/poly_hermite.tcc \
+  /usr/include/c++/14/tr1/poly_laguerre.tcc \
+  /usr/include/c++/14/tr1/riemann_zeta.tcc \
+  /usr/include/c++/14/tr1/special_function_util.h \
   /usr/include/c++/14/tuple \
   /usr/include/c++/14/type_traits \
   /usr/include/c++/14/typeinfo \
@@ -791,6 +954,421 @@ CMakeFiles/meowpeow.dir/source_files/enemy_alan.cpp.o: /home/oscarhu/Documents/J
   /usr/include/gnu/stubs.h \
   /usr/include/linux/errno.h \
   /usr/include/locale.h \
+  /usr/include/math.h \
+  /usr/include/raylib.h \
+  /usr/include/stdc-predef.h \
+  /usr/include/stdio.h \
+  /usr/include/stdlib.h \
+  /usr/include/sys/cdefs.h \
+  /usr/include/sys/select.h \
+  /usr/include/sys/types.h \
+  /usr/include/wchar.h \
+  /usr/lib/gcc/x86_64-redhat-linux/14/include/stdarg.h \
+  /usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h
+
+CMakeFiles/meowpeow.dir/source_files/enemy_bonbon.cpp.o: /home/oscarhu/Documents/JUEGO/meowpeow/codes/source_files/enemy_bonbon.cpp \
+  /home/oscarhu/Documents/JUEGO/meowpeow/codes/classes/animation.hpp \
+  /home/oscarhu/Documents/JUEGO/meowpeow/codes/classes/assets.hpp \
+  /home/oscarhu/Documents/JUEGO/meowpeow/codes/classes/enemy.hpp \
+  /home/oscarhu/Documents/JUEGO/meowpeow/codes/classes/enemy_bonbon.hpp \
+  /home/oscarhu/Documents/JUEGO/meowpeow/codes/classes/entity.hpp \
+  /home/oscarhu/Documents/JUEGO/meowpeow/codes/classes/game_object.hpp \
+  /home/oscarhu/Documents/JUEGO/meowpeow/codes/classes/math.hpp \
+  /home/oscarhu/Documents/JUEGO/meowpeow/codes/classes/scene.hpp \
+  /home/oscarhu/Documents/JUEGO/meowpeow/codes/classes/texture_details.hpp \
+  /usr/include/alloca.h \
+  /usr/include/asm-generic/errno-base.h \
+  /usr/include/asm-generic/errno.h \
+  /usr/include/asm/errno.h \
+  /usr/include/bits/atomic_wide_counter.h \
+  /usr/include/bits/byteswap.h \
+  /usr/include/bits/endian.h \
+  /usr/include/bits/endianness.h \
+  /usr/include/bits/errno.h \
+  /usr/include/bits/floatn-common.h \
+  /usr/include/bits/floatn.h \
+  /usr/include/bits/flt-eval-method.h \
+  /usr/include/bits/fp-fast.h \
+  /usr/include/bits/fp-logb.h \
+  /usr/include/bits/iscanonical.h \
+  /usr/include/bits/libc-header-start.h \
+  /usr/include/bits/libm-simd-decl-stubs.h \
+  /usr/include/bits/locale.h \
+  /usr/include/bits/long-double.h \
+  /usr/include/bits/math-vector.h \
+  /usr/include/bits/mathcalls-helper-functions.h \
+  /usr/include/bits/mathcalls-narrow.h \
+  /usr/include/bits/mathcalls.h \
+  /usr/include/bits/pthreadtypes-arch.h \
+  /usr/include/bits/pthreadtypes.h \
+  /usr/include/bits/select.h \
+  /usr/include/bits/stdint-intn.h \
+  /usr/include/bits/stdio_lim.h \
+  /usr/include/bits/stdlib-float.h \
+  /usr/include/bits/struct_mutex.h \
+  /usr/include/bits/struct_rwlock.h \
+  /usr/include/bits/thread-shared-types.h \
+  /usr/include/bits/time64.h \
+  /usr/include/bits/timesize.h \
+  /usr/include/bits/types.h \
+  /usr/include/bits/types/FILE.h \
+  /usr/include/bits/types/__FILE.h \
+  /usr/include/bits/types/__fpos64_t.h \
+  /usr/include/bits/types/__fpos_t.h \
+  /usr/include/bits/types/__locale_t.h \
+  /usr/include/bits/types/__mbstate_t.h \
+  /usr/include/bits/types/__sigset_t.h \
+  /usr/include/bits/types/clock_t.h \
+  /usr/include/bits/types/clockid_t.h \
+  /usr/include/bits/types/cookie_io_functions_t.h \
+  /usr/include/bits/types/error_t.h \
+  /usr/include/bits/types/locale_t.h \
+  /usr/include/bits/types/mbstate_t.h \
+  /usr/include/bits/types/sigset_t.h \
+  /usr/include/bits/types/struct_FILE.h \
+  /usr/include/bits/types/struct_timespec.h \
+  /usr/include/bits/types/struct_timeval.h \
+  /usr/include/bits/types/time_t.h \
+  /usr/include/bits/types/timer_t.h \
+  /usr/include/bits/types/wint_t.h \
+  /usr/include/bits/typesizes.h \
+  /usr/include/bits/uintn-identity.h \
+  /usr/include/bits/waitflags.h \
+  /usr/include/bits/waitstatus.h \
+  /usr/include/bits/wchar.h \
+  /usr/include/bits/wordsize.h \
+  /usr/include/c++/14/algorithm \
+  /usr/include/c++/14/array \
+  /usr/include/c++/14/backward/binders.h \
+  /usr/include/c++/14/bit \
+  /usr/include/c++/14/bits/algorithmfwd.h \
+  /usr/include/c++/14/bits/alloc_traits.h \
+  /usr/include/c++/14/bits/allocator.h \
+  /usr/include/c++/14/bits/basic_string.h \
+  /usr/include/c++/14/bits/basic_string.tcc \
+  /usr/include/c++/14/bits/char_traits.h \
+  /usr/include/c++/14/bits/charconv.h \
+  /usr/include/c++/14/bits/concept_check.h \
+  /usr/include/c++/14/bits/cpp_type_traits.h \
+  /usr/include/c++/14/bits/cxxabi_forced.h \
+  /usr/include/c++/14/bits/enable_special_members.h \
+  /usr/include/c++/14/bits/erase_if.h \
+  /usr/include/c++/14/bits/exception.h \
+  /usr/include/c++/14/bits/exception_defines.h \
+  /usr/include/c++/14/bits/functexcept.h \
+  /usr/include/c++/14/bits/functional_hash.h \
+  /usr/include/c++/14/bits/hash_bytes.h \
+  /usr/include/c++/14/bits/hashtable.h \
+  /usr/include/c++/14/bits/hashtable_policy.h \
+  /usr/include/c++/14/bits/invoke.h \
+  /usr/include/c++/14/bits/localefwd.h \
+  /usr/include/c++/14/bits/memory_resource.h \
+  /usr/include/c++/14/bits/memoryfwd.h \
+  /usr/include/c++/14/bits/move.h \
+  /usr/include/c++/14/bits/new_allocator.h \
+  /usr/include/c++/14/bits/node_handle.h \
+  /usr/include/c++/14/bits/ostream_insert.h \
+  /usr/include/c++/14/bits/postypes.h \
+  /usr/include/c++/14/bits/predefined_ops.h \
+  /usr/include/c++/14/bits/ptr_traits.h \
+  /usr/include/c++/14/bits/range_access.h \
+  /usr/include/c++/14/bits/refwrap.h \
+  /usr/include/c++/14/bits/requires_hosted.h \
+  /usr/include/c++/14/bits/specfun.h \
+  /usr/include/c++/14/bits/std_abs.h \
+  /usr/include/c++/14/bits/std_function.h \
+  /usr/include/c++/14/bits/stl_algo.h \
+  /usr/include/c++/14/bits/stl_algobase.h \
+  /usr/include/c++/14/bits/stl_bvector.h \
+  /usr/include/c++/14/bits/stl_construct.h \
+  /usr/include/c++/14/bits/stl_function.h \
+  /usr/include/c++/14/bits/stl_heap.h \
+  /usr/include/c++/14/bits/stl_iterator.h \
+  /usr/include/c++/14/bits/stl_iterator_base_funcs.h \
+  /usr/include/c++/14/bits/stl_iterator_base_types.h \
+  /usr/include/c++/14/bits/stl_map.h \
+  /usr/include/c++/14/bits/stl_multimap.h \
+  /usr/include/c++/14/bits/stl_pair.h \
+  /usr/include/c++/14/bits/stl_tempbuf.h \
+  /usr/include/c++/14/bits/stl_tree.h \
+  /usr/include/c++/14/bits/stl_uninitialized.h \
+  /usr/include/c++/14/bits/stl_vector.h \
+  /usr/include/c++/14/bits/string_view.tcc \
+  /usr/include/c++/14/bits/stringfwd.h \
+  /usr/include/c++/14/bits/uniform_int_dist.h \
+  /usr/include/c++/14/bits/unordered_map.h \
+  /usr/include/c++/14/bits/uses_allocator.h \
+  /usr/include/c++/14/bits/uses_allocator_args.h \
+  /usr/include/c++/14/bits/utility.h \
+  /usr/include/c++/14/bits/vector.tcc \
+  /usr/include/c++/14/bits/version.h \
+  /usr/include/c++/14/cctype \
+  /usr/include/c++/14/cerrno \
+  /usr/include/c++/14/clocale \
+  /usr/include/c++/14/cmath \
+  /usr/include/c++/14/compare \
+  /usr/include/c++/14/concepts \
+  /usr/include/c++/14/cstddef \
+  /usr/include/c++/14/cstdio \
+  /usr/include/c++/14/cstdlib \
+  /usr/include/c++/14/cwchar \
+  /usr/include/c++/14/debug/assertions.h \
+  /usr/include/c++/14/debug/debug.h \
+  /usr/include/c++/14/ext/aligned_buffer.h \
+  /usr/include/c++/14/ext/alloc_traits.h \
+  /usr/include/c++/14/ext/numeric_traits.h \
+  /usr/include/c++/14/ext/string_conversions.h \
+  /usr/include/c++/14/ext/type_traits.h \
+  /usr/include/c++/14/functional \
+  /usr/include/c++/14/initializer_list \
+  /usr/include/c++/14/iosfwd \
+  /usr/include/c++/14/limits \
+  /usr/include/c++/14/map \
+  /usr/include/c++/14/new \
+  /usr/include/c++/14/pstl/execution_defs.h \
+  /usr/include/c++/14/pstl/glue_algorithm_defs.h \
+  /usr/include/c++/14/pstl/pstl_config.h \
+  /usr/include/c++/14/string \
+  /usr/include/c++/14/string_view \
+  /usr/include/c++/14/tr1/bessel_function.tcc \
+  /usr/include/c++/14/tr1/beta_function.tcc \
+  /usr/include/c++/14/tr1/ell_integral.tcc \
+  /usr/include/c++/14/tr1/exp_integral.tcc \
+  /usr/include/c++/14/tr1/gamma.tcc \
+  /usr/include/c++/14/tr1/hypergeometric.tcc \
+  /usr/include/c++/14/tr1/legendre_function.tcc \
+  /usr/include/c++/14/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/14/tr1/poly_hermite.tcc \
+  /usr/include/c++/14/tr1/poly_laguerre.tcc \
+  /usr/include/c++/14/tr1/riemann_zeta.tcc \
+  /usr/include/c++/14/tr1/special_function_util.h \
+  /usr/include/c++/14/tuple \
+  /usr/include/c++/14/type_traits \
+  /usr/include/c++/14/typeinfo \
+  /usr/include/c++/14/unordered_map \
+  /usr/include/c++/14/vector \
+  /usr/include/c++/14/x86_64-redhat-linux/bits/c++allocator.h \
+  /usr/include/c++/14/x86_64-redhat-linux/bits/c++config.h \
+  /usr/include/c++/14/x86_64-redhat-linux/bits/c++locale.h \
+  /usr/include/c++/14/x86_64-redhat-linux/bits/cpu_defines.h \
+  /usr/include/c++/14/x86_64-redhat-linux/bits/os_defines.h \
+  /usr/include/ctype.h \
+  /usr/include/endian.h \
+  /usr/include/errno.h \
+  /usr/include/features-time64.h \
+  /usr/include/features.h \
+  /usr/include/gnu/stubs-64.h \
+  /usr/include/gnu/stubs.h \
+  /usr/include/linux/errno.h \
+  /usr/include/locale.h \
+  /usr/include/math.h \
+  /usr/include/raylib.h \
+  /usr/include/stdc-predef.h \
+  /usr/include/stdio.h \
+  /usr/include/stdlib.h \
+  /usr/include/sys/cdefs.h \
+  /usr/include/sys/select.h \
+  /usr/include/sys/types.h \
+  /usr/include/wchar.h \
+  /usr/lib/gcc/x86_64-redhat-linux/14/include/stdarg.h \
+  /usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h
+
+CMakeFiles/meowpeow.dir/source_files/enemy_lips.cpp.o: /home/oscarhu/Documents/JUEGO/meowpeow/codes/source_files/enemy_lips.cpp \
+  /home/oscarhu/Documents/JUEGO/meowpeow/codes/classes/animation.hpp \
+  /home/oscarhu/Documents/JUEGO/meowpeow/codes/classes/assets.hpp \
+  /home/oscarhu/Documents/JUEGO/meowpeow/codes/classes/enemy.hpp \
+  /home/oscarhu/Documents/JUEGO/meowpeow/codes/classes/enemy_lips.hpp \
+  /home/oscarhu/Documents/JUEGO/meowpeow/codes/classes/entity.hpp \
+  /home/oscarhu/Documents/JUEGO/meowpeow/codes/classes/game_object.hpp \
+  /home/oscarhu/Documents/JUEGO/meowpeow/codes/classes/math.hpp \
+  /home/oscarhu/Documents/JUEGO/meowpeow/codes/classes/scene.hpp \
+  /home/oscarhu/Documents/JUEGO/meowpeow/codes/classes/texture_details.hpp \
+  /usr/include/alloca.h \
+  /usr/include/asm-generic/errno-base.h \
+  /usr/include/asm-generic/errno.h \
+  /usr/include/asm/errno.h \
+  /usr/include/bits/atomic_wide_counter.h \
+  /usr/include/bits/byteswap.h \
+  /usr/include/bits/endian.h \
+  /usr/include/bits/endianness.h \
+  /usr/include/bits/errno.h \
+  /usr/include/bits/floatn-common.h \
+  /usr/include/bits/floatn.h \
+  /usr/include/bits/flt-eval-method.h \
+  /usr/include/bits/fp-fast.h \
+  /usr/include/bits/fp-logb.h \
+  /usr/include/bits/iscanonical.h \
+  /usr/include/bits/libc-header-start.h \
+  /usr/include/bits/libm-simd-decl-stubs.h \
+  /usr/include/bits/locale.h \
+  /usr/include/bits/long-double.h \
+  /usr/include/bits/math-vector.h \
+  /usr/include/bits/mathcalls-helper-functions.h \
+  /usr/include/bits/mathcalls-narrow.h \
+  /usr/include/bits/mathcalls.h \
+  /usr/include/bits/pthreadtypes-arch.h \
+  /usr/include/bits/pthreadtypes.h \
+  /usr/include/bits/select.h \
+  /usr/include/bits/stdint-intn.h \
+  /usr/include/bits/stdio_lim.h \
+  /usr/include/bits/stdlib-float.h \
+  /usr/include/bits/struct_mutex.h \
+  /usr/include/bits/struct_rwlock.h \
+  /usr/include/bits/thread-shared-types.h \
+  /usr/include/bits/time64.h \
+  /usr/include/bits/timesize.h \
+  /usr/include/bits/types.h \
+  /usr/include/bits/types/FILE.h \
+  /usr/include/bits/types/__FILE.h \
+  /usr/include/bits/types/__fpos64_t.h \
+  /usr/include/bits/types/__fpos_t.h \
+  /usr/include/bits/types/__locale_t.h \
+  /usr/include/bits/types/__mbstate_t.h \
+  /usr/include/bits/types/__sigset_t.h \
+  /usr/include/bits/types/clock_t.h \
+  /usr/include/bits/types/clockid_t.h \
+  /usr/include/bits/types/cookie_io_functions_t.h \
+  /usr/include/bits/types/error_t.h \
+  /usr/include/bits/types/locale_t.h \
+  /usr/include/bits/types/mbstate_t.h \
+  /usr/include/bits/types/sigset_t.h \
+  /usr/include/bits/types/struct_FILE.h \
+  /usr/include/bits/types/struct_timespec.h \
+  /usr/include/bits/types/struct_timeval.h \
+  /usr/include/bits/types/time_t.h \
+  /usr/include/bits/types/timer_t.h \
+  /usr/include/bits/types/wint_t.h \
+  /usr/include/bits/typesizes.h \
+  /usr/include/bits/uintn-identity.h \
+  /usr/include/bits/waitflags.h \
+  /usr/include/bits/waitstatus.h \
+  /usr/include/bits/wchar.h \
+  /usr/include/bits/wordsize.h \
+  /usr/include/c++/14/algorithm \
+  /usr/include/c++/14/array \
+  /usr/include/c++/14/backward/binders.h \
+  /usr/include/c++/14/bit \
+  /usr/include/c++/14/bits/algorithmfwd.h \
+  /usr/include/c++/14/bits/alloc_traits.h \
+  /usr/include/c++/14/bits/allocator.h \
+  /usr/include/c++/14/bits/basic_string.h \
+  /usr/include/c++/14/bits/basic_string.tcc \
+  /usr/include/c++/14/bits/char_traits.h \
+  /usr/include/c++/14/bits/charconv.h \
+  /usr/include/c++/14/bits/concept_check.h \
+  /usr/include/c++/14/bits/cpp_type_traits.h \
+  /usr/include/c++/14/bits/cxxabi_forced.h \
+  /usr/include/c++/14/bits/enable_special_members.h \
+  /usr/include/c++/14/bits/erase_if.h \
+  /usr/include/c++/14/bits/exception.h \
+  /usr/include/c++/14/bits/exception_defines.h \
+  /usr/include/c++/14/bits/functexcept.h \
+  /usr/include/c++/14/bits/functional_hash.h \
+  /usr/include/c++/14/bits/hash_bytes.h \
+  /usr/include/c++/14/bits/hashtable.h \
+  /usr/include/c++/14/bits/hashtable_policy.h \
+  /usr/include/c++/14/bits/invoke.h \
+  /usr/include/c++/14/bits/localefwd.h \
+  /usr/include/c++/14/bits/memory_resource.h \
+  /usr/include/c++/14/bits/memoryfwd.h \
+  /usr/include/c++/14/bits/move.h \
+  /usr/include/c++/14/bits/new_allocator.h \
+  /usr/include/c++/14/bits/node_handle.h \
+  /usr/include/c++/14/bits/ostream_insert.h \
+  /usr/include/c++/14/bits/postypes.h \
+  /usr/include/c++/14/bits/predefined_ops.h \
+  /usr/include/c++/14/bits/ptr_traits.h \
+  /usr/include/c++/14/bits/range_access.h \
+  /usr/include/c++/14/bits/refwrap.h \
+  /usr/include/c++/14/bits/requires_hosted.h \
+  /usr/include/c++/14/bits/specfun.h \
+  /usr/include/c++/14/bits/std_abs.h \
+  /usr/include/c++/14/bits/std_function.h \
+  /usr/include/c++/14/bits/stl_algo.h \
+  /usr/include/c++/14/bits/stl_algobase.h \
+  /usr/include/c++/14/bits/stl_bvector.h \
+  /usr/include/c++/14/bits/stl_construct.h \
+  /usr/include/c++/14/bits/stl_function.h \
+  /usr/include/c++/14/bits/stl_heap.h \
+  /usr/include/c++/14/bits/stl_iterator.h \
+  /usr/include/c++/14/bits/stl_iterator_base_funcs.h \
+  /usr/include/c++/14/bits/stl_iterator_base_types.h \
+  /usr/include/c++/14/bits/stl_map.h \
+  /usr/include/c++/14/bits/stl_multimap.h \
+  /usr/include/c++/14/bits/stl_pair.h \
+  /usr/include/c++/14/bits/stl_tempbuf.h \
+  /usr/include/c++/14/bits/stl_tree.h \
+  /usr/include/c++/14/bits/stl_uninitialized.h \
+  /usr/include/c++/14/bits/stl_vector.h \
+  /usr/include/c++/14/bits/string_view.tcc \
+  /usr/include/c++/14/bits/stringfwd.h \
+  /usr/include/c++/14/bits/uniform_int_dist.h \
+  /usr/include/c++/14/bits/unordered_map.h \
+  /usr/include/c++/14/bits/uses_allocator.h \
+  /usr/include/c++/14/bits/uses_allocator_args.h \
+  /usr/include/c++/14/bits/utility.h \
+  /usr/include/c++/14/bits/vector.tcc \
+  /usr/include/c++/14/bits/version.h \
+  /usr/include/c++/14/cctype \
+  /usr/include/c++/14/cerrno \
+  /usr/include/c++/14/clocale \
+  /usr/include/c++/14/cmath \
+  /usr/include/c++/14/compare \
+  /usr/include/c++/14/concepts \
+  /usr/include/c++/14/cstddef \
+  /usr/include/c++/14/cstdio \
+  /usr/include/c++/14/cstdlib \
+  /usr/include/c++/14/cwchar \
+  /usr/include/c++/14/debug/assertions.h \
+  /usr/include/c++/14/debug/debug.h \
+  /usr/include/c++/14/ext/aligned_buffer.h \
+  /usr/include/c++/14/ext/alloc_traits.h \
+  /usr/include/c++/14/ext/numeric_traits.h \
+  /usr/include/c++/14/ext/string_conversions.h \
+  /usr/include/c++/14/ext/type_traits.h \
+  /usr/include/c++/14/functional \
+  /usr/include/c++/14/initializer_list \
+  /usr/include/c++/14/iosfwd \
+  /usr/include/c++/14/limits \
+  /usr/include/c++/14/map \
+  /usr/include/c++/14/new \
+  /usr/include/c++/14/pstl/execution_defs.h \
+  /usr/include/c++/14/pstl/glue_algorithm_defs.h \
+  /usr/include/c++/14/pstl/pstl_config.h \
+  /usr/include/c++/14/string \
+  /usr/include/c++/14/string_view \
+  /usr/include/c++/14/tr1/bessel_function.tcc \
+  /usr/include/c++/14/tr1/beta_function.tcc \
+  /usr/include/c++/14/tr1/ell_integral.tcc \
+  /usr/include/c++/14/tr1/exp_integral.tcc \
+  /usr/include/c++/14/tr1/gamma.tcc \
+  /usr/include/c++/14/tr1/hypergeometric.tcc \
+  /usr/include/c++/14/tr1/legendre_function.tcc \
+  /usr/include/c++/14/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/14/tr1/poly_hermite.tcc \
+  /usr/include/c++/14/tr1/poly_laguerre.tcc \
+  /usr/include/c++/14/tr1/riemann_zeta.tcc \
+  /usr/include/c++/14/tr1/special_function_util.h \
+  /usr/include/c++/14/tuple \
+  /usr/include/c++/14/type_traits \
+  /usr/include/c++/14/typeinfo \
+  /usr/include/c++/14/unordered_map \
+  /usr/include/c++/14/vector \
+  /usr/include/c++/14/x86_64-redhat-linux/bits/c++allocator.h \
+  /usr/include/c++/14/x86_64-redhat-linux/bits/c++config.h \
+  /usr/include/c++/14/x86_64-redhat-linux/bits/c++locale.h \
+  /usr/include/c++/14/x86_64-redhat-linux/bits/cpu_defines.h \
+  /usr/include/c++/14/x86_64-redhat-linux/bits/os_defines.h \
+  /usr/include/ctype.h \
+  /usr/include/endian.h \
+  /usr/include/errno.h \
+  /usr/include/features-time64.h \
+  /usr/include/features.h \
+  /usr/include/gnu/stubs-64.h \
+  /usr/include/gnu/stubs.h \
+  /usr/include/linux/errno.h \
+  /usr/include/locale.h \
+  /usr/include/math.h \
   /usr/include/raylib.h \
   /usr/include/stdc-predef.h \
   /usr/include/stdio.h \
@@ -806,6 +1384,7 @@ CMakeFiles/meowpeow.dir/source_files/enemy_spawner.cpp.o: /home/oscarhu/Document
   /home/oscarhu/Documents/JUEGO/meowpeow/codes/classes/animation.hpp \
   /home/oscarhu/Documents/JUEGO/meowpeow/codes/classes/enemy.hpp \
   /home/oscarhu/Documents/JUEGO/meowpeow/codes/classes/enemy_alan.hpp \
+  /home/oscarhu/Documents/JUEGO/meowpeow/codes/classes/enemy_lips.hpp \
   /home/oscarhu/Documents/JUEGO/meowpeow/codes/classes/enemy_spawner.hpp \
   /home/oscarhu/Documents/JUEGO/meowpeow/codes/classes/entity.hpp \
   /home/oscarhu/Documents/JUEGO/meowpeow/codes/classes/game_object.hpp \
@@ -823,9 +1402,18 @@ CMakeFiles/meowpeow.dir/source_files/enemy_spawner.cpp.o: /home/oscarhu/Document
   /usr/include/bits/errno.h \
   /usr/include/bits/floatn-common.h \
   /usr/include/bits/floatn.h \
+  /usr/include/bits/flt-eval-method.h \
+  /usr/include/bits/fp-fast.h \
+  /usr/include/bits/fp-logb.h \
+  /usr/include/bits/iscanonical.h \
   /usr/include/bits/libc-header-start.h \
+  /usr/include/bits/libm-simd-decl-stubs.h \
   /usr/include/bits/locale.h \
   /usr/include/bits/long-double.h \
+  /usr/include/bits/math-vector.h \
+  /usr/include/bits/mathcalls-helper-functions.h \
+  /usr/include/bits/mathcalls-narrow.h \
+  /usr/include/bits/mathcalls.h \
   /usr/include/bits/pthreadtypes-arch.h \
   /usr/include/bits/pthreadtypes.h \
   /usr/include/bits/select.h \
@@ -901,6 +1489,7 @@ CMakeFiles/meowpeow.dir/source_files/enemy_spawner.cpp.o: /home/oscarhu/Document
   /usr/include/c++/14/bits/range_access.h \
   /usr/include/c++/14/bits/refwrap.h \
   /usr/include/c++/14/bits/requires_hosted.h \
+  /usr/include/c++/14/bits/specfun.h \
   /usr/include/c++/14/bits/std_abs.h \
   /usr/include/c++/14/bits/std_function.h \
   /usr/include/c++/14/bits/stl_algo.h \
@@ -931,6 +1520,7 @@ CMakeFiles/meowpeow.dir/source_files/enemy_spawner.cpp.o: /home/oscarhu/Document
   /usr/include/c++/14/cctype \
   /usr/include/c++/14/cerrno \
   /usr/include/c++/14/clocale \
+  /usr/include/c++/14/cmath \
   /usr/include/c++/14/compare \
   /usr/include/c++/14/concepts \
   /usr/include/c++/14/cstddef \
@@ -947,6 +1537,7 @@ CMakeFiles/meowpeow.dir/source_files/enemy_spawner.cpp.o: /home/oscarhu/Document
   /usr/include/c++/14/functional \
   /usr/include/c++/14/initializer_list \
   /usr/include/c++/14/iosfwd \
+  /usr/include/c++/14/limits \
   /usr/include/c++/14/map \
   /usr/include/c++/14/new \
   /usr/include/c++/14/pstl/execution_defs.h \
@@ -954,6 +1545,18 @@ CMakeFiles/meowpeow.dir/source_files/enemy_spawner.cpp.o: /home/oscarhu/Document
   /usr/include/c++/14/pstl/pstl_config.h \
   /usr/include/c++/14/string \
   /usr/include/c++/14/string_view \
+  /usr/include/c++/14/tr1/bessel_function.tcc \
+  /usr/include/c++/14/tr1/beta_function.tcc \
+  /usr/include/c++/14/tr1/ell_integral.tcc \
+  /usr/include/c++/14/tr1/exp_integral.tcc \
+  /usr/include/c++/14/tr1/gamma.tcc \
+  /usr/include/c++/14/tr1/hypergeometric.tcc \
+  /usr/include/c++/14/tr1/legendre_function.tcc \
+  /usr/include/c++/14/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/14/tr1/poly_hermite.tcc \
+  /usr/include/c++/14/tr1/poly_laguerre.tcc \
+  /usr/include/c++/14/tr1/riemann_zeta.tcc \
+  /usr/include/c++/14/tr1/special_function_util.h \
   /usr/include/c++/14/tuple \
   /usr/include/c++/14/type_traits \
   /usr/include/c++/14/typeinfo \
@@ -973,6 +1576,7 @@ CMakeFiles/meowpeow.dir/source_files/enemy_spawner.cpp.o: /home/oscarhu/Document
   /usr/include/gnu/stubs.h \
   /usr/include/linux/errno.h \
   /usr/include/locale.h \
+  /usr/include/math.h \
   /usr/include/raylib.h \
   /usr/include/stdc-predef.h \
   /usr/include/stdio.h \
@@ -1001,9 +1605,18 @@ CMakeFiles/meowpeow.dir/source_files/entitiy.cpp.o: /home/oscarhu/Documents/JUEG
   /usr/include/bits/errno.h \
   /usr/include/bits/floatn-common.h \
   /usr/include/bits/floatn.h \
+  /usr/include/bits/flt-eval-method.h \
+  /usr/include/bits/fp-fast.h \
+  /usr/include/bits/fp-logb.h \
+  /usr/include/bits/iscanonical.h \
   /usr/include/bits/libc-header-start.h \
+  /usr/include/bits/libm-simd-decl-stubs.h \
   /usr/include/bits/locale.h \
   /usr/include/bits/long-double.h \
+  /usr/include/bits/math-vector.h \
+  /usr/include/bits/mathcalls-helper-functions.h \
+  /usr/include/bits/mathcalls-narrow.h \
+  /usr/include/bits/mathcalls.h \
   /usr/include/bits/pthreadtypes-arch.h \
   /usr/include/bits/pthreadtypes.h \
   /usr/include/bits/select.h \
@@ -1073,6 +1686,7 @@ CMakeFiles/meowpeow.dir/source_files/entitiy.cpp.o: /home/oscarhu/Documents/JUEG
   /usr/include/c++/14/bits/range_access.h \
   /usr/include/c++/14/bits/refwrap.h \
   /usr/include/c++/14/bits/requires_hosted.h \
+  /usr/include/c++/14/bits/specfun.h \
   /usr/include/c++/14/bits/std_abs.h \
   /usr/include/c++/14/bits/stl_algo.h \
   /usr/include/c++/14/bits/stl_algobase.h \
@@ -1098,6 +1712,7 @@ CMakeFiles/meowpeow.dir/source_files/entitiy.cpp.o: /home/oscarhu/Documents/JUEG
   /usr/include/c++/14/cctype \
   /usr/include/c++/14/cerrno \
   /usr/include/c++/14/clocale \
+  /usr/include/c++/14/cmath \
   /usr/include/c++/14/concepts \
   /usr/include/c++/14/cstddef \
   /usr/include/c++/14/cstdio \
@@ -1111,12 +1726,25 @@ CMakeFiles/meowpeow.dir/source_files/entitiy.cpp.o: /home/oscarhu/Documents/JUEG
   /usr/include/c++/14/ext/type_traits.h \
   /usr/include/c++/14/initializer_list \
   /usr/include/c++/14/iosfwd \
+  /usr/include/c++/14/limits \
   /usr/include/c++/14/new \
   /usr/include/c++/14/pstl/execution_defs.h \
   /usr/include/c++/14/pstl/glue_algorithm_defs.h \
   /usr/include/c++/14/pstl/pstl_config.h \
   /usr/include/c++/14/string \
   /usr/include/c++/14/string_view \
+  /usr/include/c++/14/tr1/bessel_function.tcc \
+  /usr/include/c++/14/tr1/beta_function.tcc \
+  /usr/include/c++/14/tr1/ell_integral.tcc \
+  /usr/include/c++/14/tr1/exp_integral.tcc \
+  /usr/include/c++/14/tr1/gamma.tcc \
+  /usr/include/c++/14/tr1/hypergeometric.tcc \
+  /usr/include/c++/14/tr1/legendre_function.tcc \
+  /usr/include/c++/14/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/14/tr1/poly_hermite.tcc \
+  /usr/include/c++/14/tr1/poly_laguerre.tcc \
+  /usr/include/c++/14/tr1/riemann_zeta.tcc \
+  /usr/include/c++/14/tr1/special_function_util.h \
   /usr/include/c++/14/tuple \
   /usr/include/c++/14/type_traits \
   /usr/include/c++/14/vector \
@@ -1134,6 +1762,7 @@ CMakeFiles/meowpeow.dir/source_files/entitiy.cpp.o: /home/oscarhu/Documents/JUEG
   /usr/include/gnu/stubs.h \
   /usr/include/linux/errno.h \
   /usr/include/locale.h \
+  /usr/include/math.h \
   /usr/include/raylib.h \
   /usr/include/stdc-predef.h \
   /usr/include/stdio.h \
@@ -1160,9 +1789,18 @@ CMakeFiles/meowpeow.dir/source_files/game_object.cpp.o: /home/oscarhu/Documents/
   /usr/include/bits/errno.h \
   /usr/include/bits/floatn-common.h \
   /usr/include/bits/floatn.h \
+  /usr/include/bits/flt-eval-method.h \
+  /usr/include/bits/fp-fast.h \
+  /usr/include/bits/fp-logb.h \
+  /usr/include/bits/iscanonical.h \
   /usr/include/bits/libc-header-start.h \
+  /usr/include/bits/libm-simd-decl-stubs.h \
   /usr/include/bits/locale.h \
   /usr/include/bits/long-double.h \
+  /usr/include/bits/math-vector.h \
+  /usr/include/bits/mathcalls-helper-functions.h \
+  /usr/include/bits/mathcalls-narrow.h \
+  /usr/include/bits/mathcalls.h \
   /usr/include/bits/pthreadtypes-arch.h \
   /usr/include/bits/pthreadtypes.h \
   /usr/include/bits/select.h \
@@ -1232,6 +1870,7 @@ CMakeFiles/meowpeow.dir/source_files/game_object.cpp.o: /home/oscarhu/Documents/
   /usr/include/c++/14/bits/range_access.h \
   /usr/include/c++/14/bits/refwrap.h \
   /usr/include/c++/14/bits/requires_hosted.h \
+  /usr/include/c++/14/bits/specfun.h \
   /usr/include/c++/14/bits/std_abs.h \
   /usr/include/c++/14/bits/stl_algo.h \
   /usr/include/c++/14/bits/stl_algobase.h \
@@ -1257,6 +1896,7 @@ CMakeFiles/meowpeow.dir/source_files/game_object.cpp.o: /home/oscarhu/Documents/
   /usr/include/c++/14/cctype \
   /usr/include/c++/14/cerrno \
   /usr/include/c++/14/clocale \
+  /usr/include/c++/14/cmath \
   /usr/include/c++/14/concepts \
   /usr/include/c++/14/cstddef \
   /usr/include/c++/14/cstdio \
@@ -1270,12 +1910,25 @@ CMakeFiles/meowpeow.dir/source_files/game_object.cpp.o: /home/oscarhu/Documents/
   /usr/include/c++/14/ext/type_traits.h \
   /usr/include/c++/14/initializer_list \
   /usr/include/c++/14/iosfwd \
+  /usr/include/c++/14/limits \
   /usr/include/c++/14/new \
   /usr/include/c++/14/pstl/execution_defs.h \
   /usr/include/c++/14/pstl/glue_algorithm_defs.h \
   /usr/include/c++/14/pstl/pstl_config.h \
   /usr/include/c++/14/string \
   /usr/include/c++/14/string_view \
+  /usr/include/c++/14/tr1/bessel_function.tcc \
+  /usr/include/c++/14/tr1/beta_function.tcc \
+  /usr/include/c++/14/tr1/ell_integral.tcc \
+  /usr/include/c++/14/tr1/exp_integral.tcc \
+  /usr/include/c++/14/tr1/gamma.tcc \
+  /usr/include/c++/14/tr1/hypergeometric.tcc \
+  /usr/include/c++/14/tr1/legendre_function.tcc \
+  /usr/include/c++/14/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/14/tr1/poly_hermite.tcc \
+  /usr/include/c++/14/tr1/poly_laguerre.tcc \
+  /usr/include/c++/14/tr1/riemann_zeta.tcc \
+  /usr/include/c++/14/tr1/special_function_util.h \
   /usr/include/c++/14/tuple \
   /usr/include/c++/14/type_traits \
   /usr/include/c++/14/vector \
@@ -1293,6 +1946,7 @@ CMakeFiles/meowpeow.dir/source_files/game_object.cpp.o: /home/oscarhu/Documents/
   /usr/include/gnu/stubs.h \
   /usr/include/linux/errno.h \
   /usr/include/locale.h \
+  /usr/include/math.h \
   /usr/include/stdc-predef.h \
   /usr/include/stdio.h \
   /usr/include/stdlib.h \
@@ -1305,7 +1959,104 @@ CMakeFiles/meowpeow.dir/source_files/game_object.cpp.o: /home/oscarhu/Documents/
 
 CMakeFiles/meowpeow.dir/source_files/math.cpp.o: /home/oscarhu/Documents/JUEGO/meowpeow/codes/source_files/math.cpp \
   /home/oscarhu/Documents/JUEGO/meowpeow/codes/classes/math.hpp \
-  /usr/include/stdc-predef.h
+  /usr/include/alloca.h \
+  /usr/include/bits/atomic_wide_counter.h \
+  /usr/include/bits/byteswap.h \
+  /usr/include/bits/endian.h \
+  /usr/include/bits/endianness.h \
+  /usr/include/bits/floatn-common.h \
+  /usr/include/bits/floatn.h \
+  /usr/include/bits/flt-eval-method.h \
+  /usr/include/bits/fp-fast.h \
+  /usr/include/bits/fp-logb.h \
+  /usr/include/bits/iscanonical.h \
+  /usr/include/bits/libc-header-start.h \
+  /usr/include/bits/libm-simd-decl-stubs.h \
+  /usr/include/bits/long-double.h \
+  /usr/include/bits/math-vector.h \
+  /usr/include/bits/mathcalls-helper-functions.h \
+  /usr/include/bits/mathcalls-narrow.h \
+  /usr/include/bits/mathcalls.h \
+  /usr/include/bits/pthreadtypes-arch.h \
+  /usr/include/bits/pthreadtypes.h \
+  /usr/include/bits/select.h \
+  /usr/include/bits/stdint-intn.h \
+  /usr/include/bits/stdlib-float.h \
+  /usr/include/bits/struct_mutex.h \
+  /usr/include/bits/struct_rwlock.h \
+  /usr/include/bits/thread-shared-types.h \
+  /usr/include/bits/time64.h \
+  /usr/include/bits/timesize.h \
+  /usr/include/bits/types.h \
+  /usr/include/bits/types/__locale_t.h \
+  /usr/include/bits/types/__sigset_t.h \
+  /usr/include/bits/types/clock_t.h \
+  /usr/include/bits/types/clockid_t.h \
+  /usr/include/bits/types/locale_t.h \
+  /usr/include/bits/types/sigset_t.h \
+  /usr/include/bits/types/struct_timespec.h \
+  /usr/include/bits/types/struct_timeval.h \
+  /usr/include/bits/types/time_t.h \
+  /usr/include/bits/types/timer_t.h \
+  /usr/include/bits/typesizes.h \
+  /usr/include/bits/uintn-identity.h \
+  /usr/include/bits/waitflags.h \
+  /usr/include/bits/waitstatus.h \
+  /usr/include/bits/wordsize.h \
+  /usr/include/c++/14/bit \
+  /usr/include/c++/14/bits/concept_check.h \
+  /usr/include/c++/14/bits/cpp_type_traits.h \
+  /usr/include/c++/14/bits/exception_defines.h \
+  /usr/include/c++/14/bits/functexcept.h \
+  /usr/include/c++/14/bits/move.h \
+  /usr/include/c++/14/bits/predefined_ops.h \
+  /usr/include/c++/14/bits/ptr_traits.h \
+  /usr/include/c++/14/bits/requires_hosted.h \
+  /usr/include/c++/14/bits/specfun.h \
+  /usr/include/c++/14/bits/std_abs.h \
+  /usr/include/c++/14/bits/stl_algobase.h \
+  /usr/include/c++/14/bits/stl_iterator.h \
+  /usr/include/c++/14/bits/stl_iterator_base_funcs.h \
+  /usr/include/c++/14/bits/stl_iterator_base_types.h \
+  /usr/include/c++/14/bits/stl_pair.h \
+  /usr/include/c++/14/bits/utility.h \
+  /usr/include/c++/14/bits/version.h \
+  /usr/include/c++/14/cmath \
+  /usr/include/c++/14/concepts \
+  /usr/include/c++/14/debug/assertions.h \
+  /usr/include/c++/14/debug/debug.h \
+  /usr/include/c++/14/ext/numeric_traits.h \
+  /usr/include/c++/14/ext/type_traits.h \
+  /usr/include/c++/14/limits \
+  /usr/include/c++/14/pstl/pstl_config.h \
+  /usr/include/c++/14/tr1/bessel_function.tcc \
+  /usr/include/c++/14/tr1/beta_function.tcc \
+  /usr/include/c++/14/tr1/ell_integral.tcc \
+  /usr/include/c++/14/tr1/exp_integral.tcc \
+  /usr/include/c++/14/tr1/gamma.tcc \
+  /usr/include/c++/14/tr1/hypergeometric.tcc \
+  /usr/include/c++/14/tr1/legendre_function.tcc \
+  /usr/include/c++/14/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/14/tr1/poly_hermite.tcc \
+  /usr/include/c++/14/tr1/poly_laguerre.tcc \
+  /usr/include/c++/14/tr1/riemann_zeta.tcc \
+  /usr/include/c++/14/tr1/special_function_util.h \
+  /usr/include/c++/14/type_traits \
+  /usr/include/c++/14/x86_64-redhat-linux/bits/c++config.h \
+  /usr/include/c++/14/x86_64-redhat-linux/bits/cpu_defines.h \
+  /usr/include/c++/14/x86_64-redhat-linux/bits/os_defines.h \
+  /usr/include/endian.h \
+  /usr/include/features-time64.h \
+  /usr/include/features.h \
+  /usr/include/gnu/stubs-64.h \
+  /usr/include/gnu/stubs.h \
+  /usr/include/math.h \
+  /usr/include/stdc-predef.h \
+  /usr/include/stdlib.h \
+  /usr/include/sys/cdefs.h \
+  /usr/include/sys/select.h \
+  /usr/include/sys/types.h \
+  /usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h
 
 CMakeFiles/meowpeow.dir/source_files/player.cpp.o: /home/oscarhu/Documents/JUEGO/meowpeow/codes/source_files/player.cpp \
   /home/oscarhu/Documents/JUEGO/meowpeow/codes/classes/animation.hpp \
@@ -1329,9 +2080,18 @@ CMakeFiles/meowpeow.dir/source_files/player.cpp.o: /home/oscarhu/Documents/JUEGO
   /usr/include/bits/errno.h \
   /usr/include/bits/floatn-common.h \
   /usr/include/bits/floatn.h \
+  /usr/include/bits/flt-eval-method.h \
+  /usr/include/bits/fp-fast.h \
+  /usr/include/bits/fp-logb.h \
+  /usr/include/bits/iscanonical.h \
   /usr/include/bits/libc-header-start.h \
+  /usr/include/bits/libm-simd-decl-stubs.h \
   /usr/include/bits/locale.h \
   /usr/include/bits/long-double.h \
+  /usr/include/bits/math-vector.h \
+  /usr/include/bits/mathcalls-helper-functions.h \
+  /usr/include/bits/mathcalls-narrow.h \
+  /usr/include/bits/mathcalls.h \
   /usr/include/bits/pthreadtypes-arch.h \
   /usr/include/bits/pthreadtypes.h \
   /usr/include/bits/select.h \
@@ -1407,6 +2167,7 @@ CMakeFiles/meowpeow.dir/source_files/player.cpp.o: /home/oscarhu/Documents/JUEGO
   /usr/include/c++/14/bits/range_access.h \
   /usr/include/c++/14/bits/refwrap.h \
   /usr/include/c++/14/bits/requires_hosted.h \
+  /usr/include/c++/14/bits/specfun.h \
   /usr/include/c++/14/bits/std_abs.h \
   /usr/include/c++/14/bits/std_function.h \
   /usr/include/c++/14/bits/stl_algo.h \
@@ -1437,6 +2198,7 @@ CMakeFiles/meowpeow.dir/source_files/player.cpp.o: /home/oscarhu/Documents/JUEGO
   /usr/include/c++/14/cctype \
   /usr/include/c++/14/cerrno \
   /usr/include/c++/14/clocale \
+  /usr/include/c++/14/cmath \
   /usr/include/c++/14/compare \
   /usr/include/c++/14/concepts \
   /usr/include/c++/14/cstddef \
@@ -1453,6 +2215,7 @@ CMakeFiles/meowpeow.dir/source_files/player.cpp.o: /home/oscarhu/Documents/JUEGO
   /usr/include/c++/14/functional \
   /usr/include/c++/14/initializer_list \
   /usr/include/c++/14/iosfwd \
+  /usr/include/c++/14/limits \
   /usr/include/c++/14/map \
   /usr/include/c++/14/new \
   /usr/include/c++/14/pstl/execution_defs.h \
@@ -1460,6 +2223,18 @@ CMakeFiles/meowpeow.dir/source_files/player.cpp.o: /home/oscarhu/Documents/JUEGO
   /usr/include/c++/14/pstl/pstl_config.h \
   /usr/include/c++/14/string \
   /usr/include/c++/14/string_view \
+  /usr/include/c++/14/tr1/bessel_function.tcc \
+  /usr/include/c++/14/tr1/beta_function.tcc \
+  /usr/include/c++/14/tr1/ell_integral.tcc \
+  /usr/include/c++/14/tr1/exp_integral.tcc \
+  /usr/include/c++/14/tr1/gamma.tcc \
+  /usr/include/c++/14/tr1/hypergeometric.tcc \
+  /usr/include/c++/14/tr1/legendre_function.tcc \
+  /usr/include/c++/14/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/14/tr1/poly_hermite.tcc \
+  /usr/include/c++/14/tr1/poly_laguerre.tcc \
+  /usr/include/c++/14/tr1/riemann_zeta.tcc \
+  /usr/include/c++/14/tr1/special_function_util.h \
   /usr/include/c++/14/tuple \
   /usr/include/c++/14/type_traits \
   /usr/include/c++/14/typeinfo \
@@ -1479,6 +2254,7 @@ CMakeFiles/meowpeow.dir/source_files/player.cpp.o: /home/oscarhu/Documents/JUEGO
   /usr/include/gnu/stubs.h \
   /usr/include/linux/errno.h \
   /usr/include/locale.h \
+  /usr/include/math.h \
   /usr/include/raylib.h \
   /usr/include/stdc-predef.h \
   /usr/include/stdio.h \
@@ -1512,9 +2288,18 @@ CMakeFiles/meowpeow.dir/source_files/projectile.cpp.o: /home/oscarhu/Documents/J
   /usr/include/bits/errno.h \
   /usr/include/bits/floatn-common.h \
   /usr/include/bits/floatn.h \
+  /usr/include/bits/flt-eval-method.h \
+  /usr/include/bits/fp-fast.h \
+  /usr/include/bits/fp-logb.h \
+  /usr/include/bits/iscanonical.h \
   /usr/include/bits/libc-header-start.h \
+  /usr/include/bits/libm-simd-decl-stubs.h \
   /usr/include/bits/locale.h \
   /usr/include/bits/long-double.h \
+  /usr/include/bits/math-vector.h \
+  /usr/include/bits/mathcalls-helper-functions.h \
+  /usr/include/bits/mathcalls-narrow.h \
+  /usr/include/bits/mathcalls.h \
   /usr/include/bits/pthreadtypes-arch.h \
   /usr/include/bits/pthreadtypes.h \
   /usr/include/bits/select.h \
@@ -1590,6 +2375,7 @@ CMakeFiles/meowpeow.dir/source_files/projectile.cpp.o: /home/oscarhu/Documents/J
   /usr/include/c++/14/bits/range_access.h \
   /usr/include/c++/14/bits/refwrap.h \
   /usr/include/c++/14/bits/requires_hosted.h \
+  /usr/include/c++/14/bits/specfun.h \
   /usr/include/c++/14/bits/std_abs.h \
   /usr/include/c++/14/bits/std_function.h \
   /usr/include/c++/14/bits/stl_algo.h \
@@ -1620,6 +2406,7 @@ CMakeFiles/meowpeow.dir/source_files/projectile.cpp.o: /home/oscarhu/Documents/J
   /usr/include/c++/14/cctype \
   /usr/include/c++/14/cerrno \
   /usr/include/c++/14/clocale \
+  /usr/include/c++/14/cmath \
   /usr/include/c++/14/compare \
   /usr/include/c++/14/concepts \
   /usr/include/c++/14/cstddef \
@@ -1636,6 +2423,7 @@ CMakeFiles/meowpeow.dir/source_files/projectile.cpp.o: /home/oscarhu/Documents/J
   /usr/include/c++/14/functional \
   /usr/include/c++/14/initializer_list \
   /usr/include/c++/14/iosfwd \
+  /usr/include/c++/14/limits \
   /usr/include/c++/14/map \
   /usr/include/c++/14/new \
   /usr/include/c++/14/pstl/execution_defs.h \
@@ -1643,6 +2431,18 @@ CMakeFiles/meowpeow.dir/source_files/projectile.cpp.o: /home/oscarhu/Documents/J
   /usr/include/c++/14/pstl/pstl_config.h \
   /usr/include/c++/14/string \
   /usr/include/c++/14/string_view \
+  /usr/include/c++/14/tr1/bessel_function.tcc \
+  /usr/include/c++/14/tr1/beta_function.tcc \
+  /usr/include/c++/14/tr1/ell_integral.tcc \
+  /usr/include/c++/14/tr1/exp_integral.tcc \
+  /usr/include/c++/14/tr1/gamma.tcc \
+  /usr/include/c++/14/tr1/hypergeometric.tcc \
+  /usr/include/c++/14/tr1/legendre_function.tcc \
+  /usr/include/c++/14/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/14/tr1/poly_hermite.tcc \
+  /usr/include/c++/14/tr1/poly_laguerre.tcc \
+  /usr/include/c++/14/tr1/riemann_zeta.tcc \
+  /usr/include/c++/14/tr1/special_function_util.h \
   /usr/include/c++/14/tuple \
   /usr/include/c++/14/type_traits \
   /usr/include/c++/14/typeinfo \
@@ -1662,6 +2462,7 @@ CMakeFiles/meowpeow.dir/source_files/projectile.cpp.o: /home/oscarhu/Documents/J
   /usr/include/gnu/stubs.h \
   /usr/include/linux/errno.h \
   /usr/include/locale.h \
+  /usr/include/math.h \
   /usr/include/raylib.h \
   /usr/include/stdc-predef.h \
   /usr/include/stdio.h \
@@ -1688,9 +2489,18 @@ CMakeFiles/meowpeow.dir/source_files/scene.cpp.o: /home/oscarhu/Documents/JUEGO/
   /usr/include/bits/errno.h \
   /usr/include/bits/floatn-common.h \
   /usr/include/bits/floatn.h \
+  /usr/include/bits/flt-eval-method.h \
+  /usr/include/bits/fp-fast.h \
+  /usr/include/bits/fp-logb.h \
+  /usr/include/bits/iscanonical.h \
   /usr/include/bits/libc-header-start.h \
+  /usr/include/bits/libm-simd-decl-stubs.h \
   /usr/include/bits/locale.h \
   /usr/include/bits/long-double.h \
+  /usr/include/bits/math-vector.h \
+  /usr/include/bits/mathcalls-helper-functions.h \
+  /usr/include/bits/mathcalls-narrow.h \
+  /usr/include/bits/mathcalls.h \
   /usr/include/bits/pthreadtypes-arch.h \
   /usr/include/bits/pthreadtypes.h \
   /usr/include/bits/select.h \
@@ -1760,6 +2570,7 @@ CMakeFiles/meowpeow.dir/source_files/scene.cpp.o: /home/oscarhu/Documents/JUEGO/
   /usr/include/c++/14/bits/range_access.h \
   /usr/include/c++/14/bits/refwrap.h \
   /usr/include/c++/14/bits/requires_hosted.h \
+  /usr/include/c++/14/bits/specfun.h \
   /usr/include/c++/14/bits/std_abs.h \
   /usr/include/c++/14/bits/stl_algo.h \
   /usr/include/c++/14/bits/stl_algobase.h \
@@ -1785,6 +2596,7 @@ CMakeFiles/meowpeow.dir/source_files/scene.cpp.o: /home/oscarhu/Documents/JUEGO/
   /usr/include/c++/14/cctype \
   /usr/include/c++/14/cerrno \
   /usr/include/c++/14/clocale \
+  /usr/include/c++/14/cmath \
   /usr/include/c++/14/concepts \
   /usr/include/c++/14/cstddef \
   /usr/include/c++/14/cstdio \
@@ -1798,12 +2610,25 @@ CMakeFiles/meowpeow.dir/source_files/scene.cpp.o: /home/oscarhu/Documents/JUEGO/
   /usr/include/c++/14/ext/type_traits.h \
   /usr/include/c++/14/initializer_list \
   /usr/include/c++/14/iosfwd \
+  /usr/include/c++/14/limits \
   /usr/include/c++/14/new \
   /usr/include/c++/14/pstl/execution_defs.h \
   /usr/include/c++/14/pstl/glue_algorithm_defs.h \
   /usr/include/c++/14/pstl/pstl_config.h \
   /usr/include/c++/14/string \
   /usr/include/c++/14/string_view \
+  /usr/include/c++/14/tr1/bessel_function.tcc \
+  /usr/include/c++/14/tr1/beta_function.tcc \
+  /usr/include/c++/14/tr1/ell_integral.tcc \
+  /usr/include/c++/14/tr1/exp_integral.tcc \
+  /usr/include/c++/14/tr1/gamma.tcc \
+  /usr/include/c++/14/tr1/hypergeometric.tcc \
+  /usr/include/c++/14/tr1/legendre_function.tcc \
+  /usr/include/c++/14/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/14/tr1/poly_hermite.tcc \
+  /usr/include/c++/14/tr1/poly_laguerre.tcc \
+  /usr/include/c++/14/tr1/riemann_zeta.tcc \
+  /usr/include/c++/14/tr1/special_function_util.h \
   /usr/include/c++/14/tuple \
   /usr/include/c++/14/type_traits \
   /usr/include/c++/14/vector \
@@ -1821,6 +2646,7 @@ CMakeFiles/meowpeow.dir/source_files/scene.cpp.o: /home/oscarhu/Documents/JUEGO/
   /usr/include/gnu/stubs.h \
   /usr/include/linux/errno.h \
   /usr/include/locale.h \
+  /usr/include/math.h \
   /usr/include/stdc-predef.h \
   /usr/include/stdio.h \
   /usr/include/stdlib.h \
@@ -1834,8 +2660,6 @@ CMakeFiles/meowpeow.dir/source_files/scene.cpp.o: /home/oscarhu/Documents/JUEGO/
 
 /home/oscarhu/Documents/JUEGO/meowpeow/codes/source_files/projectile.cpp:
 
-/home/oscarhu/Documents/JUEGO/meowpeow/codes/source_files/player.cpp:
-
 /home/oscarhu/Documents/JUEGO/meowpeow/codes/source_files/math.cpp:
 
 /home/oscarhu/Documents/JUEGO/meowpeow/codes/source_files/game_object.cpp:
@@ -1843,6 +2667,8 @@ CMakeFiles/meowpeow.dir/source_files/scene.cpp.o: /home/oscarhu/Documents/JUEGO/
 /home/oscarhu/Documents/JUEGO/meowpeow/codes/source_files/entitiy.cpp:
 
 /home/oscarhu/Documents/JUEGO/meowpeow/codes/source_files/enemy_spawner.cpp:
+
+/home/oscarhu/Documents/JUEGO/meowpeow/codes/source_files/enemy_bonbon.cpp:
 
 /home/oscarhu/Documents/JUEGO/meowpeow/codes/classes/explosion_particle.hpp:
 
@@ -1852,25 +2678,17 @@ CMakeFiles/meowpeow.dir/source_files/scene.cpp.o: /home/oscarhu/Documents/JUEGO/
 
 /usr/include/wchar.h:
 
-/usr/include/sys/types.h:
-
 /usr/include/stdio.h:
 
 /usr/include/linux/errno.h:
 
 /usr/include/c++/14/x86_64-redhat-linux/bits/c++locale.h:
 
-/usr/include/c++/14/string_view:
-
 /usr/include/c++/14/string:
-
-/usr/include/c++/14/pstl/glue_algorithm_defs.h:
 
 /usr/include/c++/14/pstl/execution_defs.h:
 
 /usr/include/c++/14/iosfwd:
-
-/usr/include/c++/14/ext/string_conversions.h:
 
 /usr/include/c++/14/cstdio:
 
@@ -1888,13 +2706,7 @@ CMakeFiles/meowpeow.dir/source_files/scene.cpp.o: /home/oscarhu/Documents/JUEGO/
 
 /usr/include/c++/14/bits/stl_algo.h:
 
-/usr/include/c++/14/bits/postypes.h:
-
 /usr/include/c++/14/bits/ostream_insert.h:
-
-/usr/include/endian.h:
-
-/usr/include/c++/14/bits/localefwd.h:
 
 /usr/include/c++/14/bits/cxxabi_forced.h:
 
@@ -1906,39 +2718,117 @@ CMakeFiles/meowpeow.dir/source_files/scene.cpp.o: /home/oscarhu/Documents/JUEGO/
 
 /usr/include/c++/14/bits/basic_string.tcc:
 
-/usr/include/stdlib.h:
-
-/usr/include/c++/14/algorithm:
+/home/oscarhu/Documents/JUEGO/meowpeow/codes/source_files/enemy_lips.cpp:
 
 /usr/include/bits/wchar.h:
 
-/usr/include/ctype.h:
+/usr/include/bits/types/wint_t.h:
 
-/usr/include/bits/waitflags.h:
+/usr/include/bits/types/mbstate_t.h:
 
-/home/oscarhu/Documents/JUEGO/meowpeow/codes/classes/projectile.hpp:
+/usr/include/bits/types/error_t.h:
 
-/usr/include/bits/uintn-identity.h:
+/usr/include/bits/types/cookie_io_functions_t.h:
+
+/usr/include/bits/types/__fpos64_t.h:
+
+/usr/include/bits/types/__FILE.h:
+
+/usr/include/bits/types/__mbstate_t.h:
+
+/usr/include/bits/stdio_lim.h:
+
+/usr/include/bits/locale.h:
+
+/usr/include/asm/errno.h:
+
+/home/oscarhu/Documents/JUEGO/meowpeow/codes/classes/player.hpp:
+
+/home/oscarhu/Documents/JUEGO/meowpeow/codes/classes/enemy_bonbon.hpp:
+
+/home/oscarhu/Documents/JUEGO/meowpeow/codes/classes/enemy.hpp:
+
+/usr/include/c++/14/map:
+
+/usr/lib/gcc/x86_64-redhat-linux/14/include/stdarg.h:
+
+/usr/include/sys/types.h:
+
+/usr/include/sys/cdefs.h:
+
+/usr/include/c++/14/algorithm:
+
+/usr/include/stdlib.h:
+
+/usr/include/math.h:
+
+/usr/include/c++/14/bits/stringfwd.h:
+
+/usr/include/gnu/stubs-64.h:
+
+/usr/include/features-time64.h:
+
+/usr/include/c++/14/bits/localefwd.h:
+
+/usr/include/endian.h:
+
+/usr/include/c++/14/x86_64-redhat-linux/bits/os_defines.h:
+
+/usr/include/c++/14/x86_64-redhat-linux/bits/cpu_defines.h:
+
+/usr/include/locale.h:
+
+/usr/include/c++/14/x86_64-redhat-linux/bits/c++config.h:
+
+/usr/include/c++/14/cctype:
+
+/usr/include/c++/14/bits/exception.h:
 
 /usr/include/c++/14/bits/algorithmfwd.h:
 
 /usr/include/bits/typesizes.h:
 
-/usr/include/bits/types/wint_t.h:
+/home/oscarhu/Documents/JUEGO/meowpeow/codes/classes/projectile.hpp:
+
+/usr/include/bits/uintn-identity.h:
+
+/home/oscarhu/Documents/JUEGO/meowpeow/codes/source_files/scene.cpp:
+
+/usr/include/c++/14/bits/erase_if.h:
+
+/usr/include/c++/14/bits/enable_special_members.h:
+
+/usr/include/c++/14/bits/allocator.h:
+
+/usr/include/bits/wordsize.h:
+
+/usr/include/c++/14/bits/uniform_int_dist.h:
+
+/usr/include/c++/14/vector:
+
+/usr/include/c++/14/bits/alloc_traits.h:
+
+/usr/include/bits/types/struct_FILE.h:
+
+/usr/include/c++/14/array:
 
 /usr/include/bits/types/time_t.h:
 
+/usr/include/bits/mathcalls-helper-functions.h:
+
+/usr/include/bits/struct_rwlock.h:
+
+/usr/include/c++/14/bits/stl_uninitialized.h:
+
+/usr/include/c++/14/limits:
+
 /usr/include/bits/types/struct_timeval.h:
 
-/usr/include/bits/types/mbstate_t.h:
+/usr/include/c++/14/tr1/modified_bessel_func.tcc:
 
-/usr/include/bits/types/__fpos64_t.h:
+/usr/include/bits/atomic_wide_counter.h:
 
-/usr/include/c++/14/ext/alloc_traits.h:
-
-/usr/include/c++/14/unordered_map:
-
-/usr/include/c++/14/bits/vector.tcc:
+/usr/include/bits/types.h:
 
 /usr/include/c++/14/bits/uses_allocator.h:
 
@@ -1946,265 +2836,143 @@ CMakeFiles/meowpeow.dir/source_files/scene.cpp.o: /home/oscarhu/Documents/JUEGO/
 
 /usr/include/c++/14/x86_64-redhat-linux/bits/c++allocator.h:
 
-/usr/include/bits/types.h:
-
-/usr/include/c++/14/x86_64-redhat-linux/bits/cpu_defines.h:
-
-/usr/include/c++/14/bits/unordered_map.h:
-
-/usr/include/c++/14/bits/stl_uninitialized.h:
-
-/usr/include/bits/struct_rwlock.h:
-
-/usr/include/c++/14/bits/stl_iterator_base_types.h:
-
-/usr/include/c++/14/ext/numeric_traits.h:
-
-/usr/include/c++/14/bits/stl_iterator_base_funcs.h:
-
-/usr/include/c++/14/bits/stl_function.h:
-
-/usr/include/bits/types/struct_timespec.h:
-
-/usr/include/c++/14/concepts:
-
-/usr/include/c++/14/cctype:
-
-/usr/include/c++/14/bits/exception.h:
-
-/usr/include/c++/14/bits/std_function.h:
-
-/usr/include/c++/14/bits/memory_resource.h:
-
-/usr/include/c++/14/bits/refwrap.h:
-
-/usr/include/c++/14/bits/uses_allocator_args.h:
-
-/usr/include/c++/14/bits/range_access.h:
-
-/usr/include/c++/14/bits/requires_hosted.h:
-
-/usr/include/bits/waitstatus.h:
-
-/usr/include/bits/timesize.h:
-
-/usr/include/asm/errno.h:
-
 /usr/include/c++/14/cstdlib:
 
 /usr/include/bits/endian.h:
 
-/usr/include/c++/14/map:
+/usr/include/c++/14/bits/uses_allocator_args.h:
 
-/usr/lib/gcc/x86_64-redhat-linux/14/include/stdarg.h:
+/usr/include/bits/timesize.h:
 
-/home/oscarhu/Documents/JUEGO/meowpeow/codes/source_files/scene.cpp:
-
-/usr/include/c++/14/bits/erase_if.h:
-
-/usr/include/c++/14/bit:
-
-/usr/include/asm-generic/errno.h:
-
-/usr/include/c++/14/bits/predefined_ops.h:
-
-/usr/include/bits/long-double.h:
-
-/usr/include/alloca.h:
-
-/usr/include/c++/14/bits/functexcept.h:
-
-/usr/include/c++/14/bits/version.h:
-
-/usr/include/errno.h:
-
-/usr/include/c++/14/debug/debug.h:
-
-/home/oscarhu/Documents/JUEGO/meowpeow/codes/classes/animation.hpp:
-
-/home/oscarhu/Documents/JUEGO/meowpeow/codes/source_files/animation.cpp:
-
-/usr/include/c++/14/bits/stl_vector.h:
-
-/usr/include/c++/14/bits/stl_bvector.h:
-
-/usr/include/bits/wordsize.h:
-
-/usr/include/c++/14/bits/allocator.h:
-
-/usr/include/c++/14/bits/uniform_int_dist.h:
-
-/usr/include/c++/14/vector:
-
-/home/oscarhu/Documents/JUEGO/meowpeow/codes/classes/math.hpp:
-
-/usr/include/c++/14/ext/type_traits.h:
-
-/usr/include/c++/14/compare:
-
-/usr/include/locale.h:
-
-/usr/include/c++/14/x86_64-redhat-linux/bits/c++config.h:
-
-/usr/include/c++/14/bits/alloc_traits.h:
-
-/usr/include/c++/14/debug/assertions.h:
-
-/home/oscarhu/Documents/JUEGO/meowpeow/codes/classes/assets.hpp:
-
-/usr/include/bits/thread-shared-types.h:
-
-/usr/include/c++/14/bits/stl_pair.h:
-
-/usr/include/c++/14/bits/new_allocator.h:
-
-/usr/include/bits/struct_mutex.h:
-
-/usr/include/c++/14/bits/concept_check.h:
-
-/usr/include/c++/14/bits/cpp_type_traits.h:
-
-/usr/include/c++/14/bits/utility.h:
-
-/usr/include/bits/types/sigset_t.h:
-
-/usr/include/c++/14/bits/move.h:
-
-/usr/include/c++/14/bits/node_handle.h:
-
-/usr/include/c++/14/bits/memoryfwd.h:
-
-/usr/include/c++/14/bits/exception_defines.h:
-
-/usr/include/c++/14/bits/enable_special_members.h:
-
-/usr/include/bits/types/timer_t.h:
-
-/usr/include/c++/14/bits/functional_hash.h:
-
-/usr/include/c++/14/x86_64-redhat-linux/bits/os_defines.h:
-
-/usr/include/bits/locale.h:
-
-/usr/include/bits/types/struct_FILE.h:
-
-/usr/include/c++/14/array:
+/usr/include/bits/waitstatus.h:
 
 /usr/include/c++/14/bits/char_traits.h:
 
 /usr/include/c++/14/bits/hash_bytes.h:
 
-/usr/include/c++/14/bits/hashtable.h:
+/home/oscarhu/Documents/JUEGO/meowpeow/codes/classes/input.hpp:
 
-/usr/include/c++/14/bits/invoke.h:
+/usr/include/bits/types/clockid_t.h:
 
-/usr/include/raylib.h:
+/usr/include/c++/14/bits/specfun.h:
 
-/usr/include/c++/14/bits/hashtable_policy.h:
+/home/oscarhu/Documents/JUEGO/meowpeow/codes/classes/game_object.hpp:
+
+/usr/include/bits/types/__locale_t.h:
+
+/usr/include/bits/types/FILE.h:
+
+/home/oscarhu/Documents/JUEGO/meowpeow/codes/classes/enemy_alan.hpp:
+
+/usr/include/bits/flt-eval-method.h:
+
+/usr/include/bits/floatn-common.h:
 
 /usr/include/stdc-predef.h:
 
-/home/oscarhu/Documents/JUEGO/meowpeow/codes/source_files/enemy_alan.cpp:
-
-/usr/include/c++/14/initializer_list:
-
-/usr/include/c++/14/ext/aligned_buffer.h:
-
-/usr/include/c++/14/new:
-
-/usr/include/c++/14/bits/std_abs.h:
-
-/usr/include/c++/14/pstl/pstl_config.h:
-
-/usr/include/c++/14/type_traits:
-
-/usr/include/c++/14/bits/stl_algobase.h:
-
-/usr/include/c++/14/bits/stl_iterator.h:
-
-/usr/include/asm-generic/errno-base.h:
-
-/usr/include/features-time64.h:
-
-/usr/include/c++/14/bits/stl_heap.h:
-
-/usr/include/c++/14/functional:
-
-/usr/include/bits/endianness.h:
-
-/usr/include/features.h:
-
-/usr/include/c++/14/bits/stringfwd.h:
-
-/usr/include/gnu/stubs-64.h:
-
-/usr/include/bits/pthreadtypes-arch.h:
-
-/usr/include/gnu/stubs.h:
-
-/usr/include/sys/cdefs.h:
-
-/usr/include/c++/14/tuple:
-
-/usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h:
-
-/usr/include/c++/14/cstddef:
-
-/home/oscarhu/Documents/JUEGO/meowpeow/codes/source_files/app.cpp:
-
-/usr/include/c++/14/bits/ptr_traits.h:
-
-/usr/include/bits/types/locale_t.h:
-
-/home/oscarhu/Documents/JUEGO/meowpeow/codes/classes/enemy.hpp:
-
-/usr/include/bits/types/__sigset_t.h:
-
-/usr/include/c++/14/typeinfo:
-
-/home/oscarhu/Documents/JUEGO/meowpeow/codes/classes/entity.hpp:
-
-/usr/include/bits/byteswap.h:
+/usr/include/c++/14/tr1/bessel_function.tcc:
 
 /usr/include/bits/types/__fpos_t.h:
 
 /usr/include/bits/types/clock_t.h:
 
-/home/oscarhu/Documents/JUEGO/meowpeow/codes/classes/player.hpp:
+/usr/include/bits/mathcalls.h:
+
+/usr/include/bits/byteswap.h:
+
+/home/oscarhu/Documents/JUEGO/meowpeow/codes/source_files/animation.cpp:
+
+/home/oscarhu/Documents/JUEGO/meowpeow/codes/classes/animation.hpp:
+
+/usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h:
+
+/usr/include/c++/14/tuple:
+
+/usr/include/bits/libm-simd-decl-stubs.h:
+
+/usr/include/c++/14/bits/stl_iterator_base_types.h:
+
+/usr/include/alloca.h:
+
+/usr/include/bits/types/locale_t.h:
+
+/usr/include/c++/14/bits/ptr_traits.h:
+
+/usr/include/ctype.h:
+
+/usr/include/bits/waitflags.h:
+
+/usr/include/bits/types/__sigset_t.h:
+
+/usr/include/bits/errno.h:
+
+/usr/include/c++/14/tr1/special_function_util.h:
+
+/home/oscarhu/Documents/JUEGO/meowpeow/codes/classes/scene.hpp:
 
 /usr/include/c++/14/bits/stl_construct.h:
 
 /home/oscarhu/Documents/JUEGO/meowpeow/codes/classes/texture_details.hpp:
 
-/home/oscarhu/Documents/JUEGO/meowpeow/codes/classes/scene.hpp:
+/usr/include/c++/14/bits/cpp_type_traits.h:
 
-/usr/include/bits/floatn.h:
+/usr/include/c++/14/bits/concept_check.h:
 
-/usr/include/bits/atomic_wide_counter.h:
+/usr/include/c++/14/bits/functexcept.h:
 
-/home/oscarhu/Documents/JUEGO/meowpeow/codes/classes/input.hpp:
+/usr/include/c++/14/bit:
 
-/usr/include/bits/types/clockid_t.h:
+/usr/include/c++/14/new:
 
-/usr/include/bits/errno.h:
+/usr/include/c++/14/ext/aligned_buffer.h:
 
-/usr/include/bits/floatn-common.h:
+/home/oscarhu/Documents/JUEGO/meowpeow/codes/classes/math.hpp:
+
+/usr/include/c++/14/ext/type_traits.h:
+
+/usr/include/c++/14/concepts:
+
+/usr/include/bits/types/struct_timespec.h:
+
+/usr/include/bits/long-double.h:
+
+/usr/include/asm-generic/errno.h:
+
+/usr/include/c++/14/bits/predefined_ops.h:
+
+/usr/include/bits/fp-logb.h:
+
+/usr/include/c++/14/bits/vector.tcc:
+
+/usr/include/bits/iscanonical.h:
 
 /usr/include/bits/libc-header-start.h:
 
-/usr/include/c++/14/bits/basic_string.h:
+/usr/include/c++/14/ext/string_conversions.h:
 
-/usr/include/bits/pthreadtypes.h:
+/usr/include/bits/mathcalls-narrow.h:
 
-/usr/include/bits/select.h:
+/usr/include/bits/thread-shared-types.h:
 
-/usr/include/bits/stdint-intn.h:
+/usr/include/c++/14/bits/stl_pair.h:
 
-/usr/include/bits/types/error_t.h:
+/home/oscarhu/Documents/JUEGO/meowpeow/codes/source_files/player.cpp:
 
-/usr/include/bits/types/__FILE.h:
+/usr/include/bits/math-vector.h:
 
-/usr/include/c++/14/backward/binders.h:
+/usr/include/c++/14/bits/memory_resource.h:
+
+/usr/include/c++/14/bits/std_function.h:
+
+/usr/include/gnu/stubs.h:
+
+/usr/include/bits/pthreadtypes-arch.h:
+
+/usr/include/raylib.h:
+
+/usr/include/c++/14/bits/hashtable_policy.h:
+
+/usr/include/c++/14/bits/invoke.h:
 
 /home/oscarhu/Documents/JUEGO/meowpeow/codes/classes/enemy_spawner.hpp:
 
@@ -2212,16 +2980,132 @@ CMakeFiles/meowpeow.dir/source_files/scene.cpp.o: /home/oscarhu/Documents/JUEGO/
 
 /usr/include/bits/time64.h:
 
-/home/oscarhu/Documents/JUEGO/meowpeow/codes/classes/enemy_alan.hpp:
+/usr/include/c++/14/backward/binders.h:
 
-/usr/include/bits/types/FILE.h:
+/usr/include/bits/select.h:
 
-/home/oscarhu/Documents/JUEGO/meowpeow/codes/classes/game_object.hpp:
+/usr/include/bits/struct_mutex.h:
 
-/usr/include/bits/types/__locale_t.h:
+/usr/include/bits/stdint-intn.h:
 
-/usr/include/bits/stdio_lim.h:
+/usr/include/c++/14/tr1/ell_integral.tcc:
 
-/usr/include/bits/types/__mbstate_t.h:
+/usr/include/bits/types/timer_t.h:
 
-/usr/include/bits/types/cookie_io_functions_t.h:
+/usr/include/c++/14/bits/functional_hash.h:
+
+/usr/include/c++/14/bits/hashtable.h:
+
+/usr/include/c++/14/bits/memoryfwd.h:
+
+/usr/include/c++/14/bits/node_handle.h:
+
+/usr/include/bits/types/sigset_t.h:
+
+/usr/include/c++/14/bits/move.h:
+
+/usr/include/c++/14/bits/utility.h:
+
+/usr/include/c++/14/bits/range_access.h:
+
+/usr/include/c++/14/bits/refwrap.h:
+
+/usr/include/c++/14/bits/requires_hosted.h:
+
+/usr/include/c++/14/tr1/gamma.tcc:
+
+/usr/include/c++/14/string_view:
+
+/usr/include/c++/14/tr1/poly_laguerre.tcc:
+
+/usr/include/asm-generic/errno-base.h:
+
+/usr/include/c++/14/bits/stl_iterator.h:
+
+/usr/include/c++/14/bits/stl_algobase.h:
+
+/usr/include/c++/14/bits/stl_function.h:
+
+/usr/include/c++/14/bits/stl_bvector.h:
+
+/usr/include/c++/14/bits/stl_vector.h:
+
+/usr/include/c++/14/bits/unordered_map.h:
+
+/usr/include/c++/14/bits/version.h:
+
+/usr/include/errno.h:
+
+/usr/include/c++/14/debug/debug.h:
+
+/usr/include/c++/14/bits/new_allocator.h:
+
+/usr/include/c++/14/cmath:
+
+/usr/include/c++/14/pstl/glue_algorithm_defs.h:
+
+/usr/include/c++/14/tr1/hypergeometric.tcc:
+
+/usr/include/c++/14/compare:
+
+/home/oscarhu/Documents/JUEGO/meowpeow/codes/source_files/app.cpp:
+
+/usr/include/c++/14/cstddef:
+
+/home/oscarhu/Documents/JUEGO/meowpeow/codes/classes/assets.hpp:
+
+/usr/include/bits/fp-fast.h:
+
+/usr/include/c++/14/debug/assertions.h:
+
+/usr/include/c++/14/ext/alloc_traits.h:
+
+/usr/include/c++/14/unordered_map:
+
+/usr/include/c++/14/bits/stl_iterator_base_funcs.h:
+
+/usr/include/c++/14/ext/numeric_traits.h:
+
+/usr/include/c++/14/bits/stl_heap.h:
+
+/usr/include/features.h:
+
+/usr/include/bits/endianness.h:
+
+/usr/include/c++/14/functional:
+
+/home/oscarhu/Documents/JUEGO/meowpeow/codes/source_files/enemy_alan.cpp:
+
+/usr/include/c++/14/initializer_list:
+
+/usr/include/bits/floatn.h:
+
+/usr/include/c++/14/tr1/poly_hermite.tcc:
+
+/home/oscarhu/Documents/JUEGO/meowpeow/codes/classes/enemy_lips.hpp:
+
+/usr/include/c++/14/bits/std_abs.h:
+
+/usr/include/c++/14/pstl/pstl_config.h:
+
+/usr/include/c++/14/bits/postypes.h:
+
+/usr/include/c++/14/tr1/beta_function.tcc:
+
+/usr/include/c++/14/type_traits:
+
+/usr/include/c++/14/bits/exception_defines.h:
+
+/usr/include/c++/14/tr1/legendre_function.tcc:
+
+/usr/include/c++/14/bits/basic_string.h:
+
+/usr/include/bits/pthreadtypes.h:
+
+/usr/include/c++/14/tr1/riemann_zeta.tcc:
+
+/home/oscarhu/Documents/JUEGO/meowpeow/codes/classes/entity.hpp:
+
+/usr/include/c++/14/tr1/exp_integral.tcc:
+
+/usr/include/c++/14/typeinfo:

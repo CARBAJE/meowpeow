@@ -1,7 +1,7 @@
-CMakeFiles/meowpeow.dir/source_files/enemy_alan.cpp.o: \
- /home/oscarhu/Documents/JUEGO/meowpeow/codes/source_files/enemy_alan.cpp \
+CMakeFiles/meowpeow.dir/source_files/enemy_lips.cpp.o: \
+ /home/oscarhu/Documents/JUEGO/meowpeow/codes/source_files/enemy_lips.cpp \
  /usr/include/stdc-predef.h \
- /home/oscarhu/Documents/JUEGO/meowpeow/codes/classes/enemy_alan.hpp \
+ /home/oscarhu/Documents/JUEGO/meowpeow/codes/classes/enemy_lips.hpp \
  /home/oscarhu/Documents/JUEGO/meowpeow/codes/classes/enemy.hpp \
  /usr/include/raylib.h \
  /usr/lib/gcc/x86_64-redhat-linux/14/include/stdarg.h \
