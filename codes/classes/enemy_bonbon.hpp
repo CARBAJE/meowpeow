@@ -14,6 +14,7 @@ class EnemyBonbon : public Enemy{
 
         virtual void Tick(float deltaTime) override;
         virtual void Render() override;
+        virtual void OnOutsideScene() override;
 
 };
 

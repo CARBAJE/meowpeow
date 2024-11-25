@@ -1,6 +1,7 @@
 #include "enemy_lips.hpp"
 #include "assets.hpp"
 #include "enemy_projectile.hpp"
+#include "player.hpp"
 #include <cmath>
 
 EnemyLips::EnemyLips(Scene* scene, v2 startingPosition)
@@ -46,8 +47,14 @@ void EnemyLips::Render() {
 
 }
 void EnemyLips::ShootAtPlayer() {
-    v2 direction = (mScene->GetPlayer()->mPosition - mPosition).Normalized();
-    mScene->Add(new EnemyProjectile(mScene, mPosition, this, direction));
+    if(mScene->GetPlayer()){
+      v2 direction = (mScene->GetPlayer()->mPosition - mPosition).Normalized();
+      mScene->Add(new EnemyProjectile(mScene, mPosition, this, direction));
+    }   
 }
 void EnemyLips::OnOutsideScene() {
+    //mDirection.x *= -1;
+    if(mPosition.y > 8 * 64){
+      Delete();
+    }
 }

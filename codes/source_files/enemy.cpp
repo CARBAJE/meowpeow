@@ -31,7 +31,7 @@ void Enemy::Render() {
 
 }
 
-void Enemy::ReceiveDamage(float amount) {
+void Enemy::ReceiveDamage(int amount) {
     mHurtTime = 0.1f;
     mHealth -= amount;
     if (mHealth <= 0) {
@@ -46,4 +46,10 @@ void Enemy::Death() {
 
 void Enemy::OnCollision(GameObject* other) {
     mColor = RED;
+    if(other->mTag=="Player"){
+      Entity* entity =dynamic_cast<Entity*>(other);
+      if(entity){
+        entity->ReceiveDamage(1);
+      }
+    }
 }

@@ -6,6 +6,7 @@
 #include "texture_details.hpp"
 #include "entity.hpp"
 #include "animation.hpp"
+#include "explosion_particle.hpp"
 
 class Player : public Entity {
     private:
@@ -18,13 +19,18 @@ class Player : public Entity {
         float mSpeed;
         float mAttackSpeed;
         float mAttackTime;
+        float mHurtTime;
+        
+        Color mColor;
+        
     public:
         Player(Scene* scene, v2 startingPosition);
 
         virtual void Tick(float deltaTime) override;
         virtual void Render() override;
 
-        virtual void ReceiveDamage(float amount) override;
+        virtual void ReceiveDamage(int amount) override;
+        virtual void Death() override;
 };
 
 #endif //PLAYER_HPP

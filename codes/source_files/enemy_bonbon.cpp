@@ -2,6 +2,7 @@
 
 #include "enemy_bonbon.hpp"
 #include "assets.hpp"
+#include "player.hpp"
 
 EnemyBonbon::EnemyBonbon(Scene* scene, v2 startingPosition)
 :Enemy(scene, startingPosition) {
@@ -22,8 +23,9 @@ void EnemyBonbon::Tick(float deltaTime) {
 
     if(mStartTimer <=0 && !mStartedMoving) {
         mStartedMoving=true; 
-        mDirection= (mScene->GetPlayer()->mPosition - mPosition).Normalized(); 
-
+        if (mScene->GetPlayer()){
+          mDirection= (mScene->GetPlayer()->mPosition - mPosition).Normalized(); 
+        }
     }
 
     if(mHurtTime > 0) {
@@ -48,4 +50,9 @@ void EnemyBonbon::Render() {
 
 }
 
-
+void EnemyBonbon::OnOutsideScene() {
+    //mDirection.x *= -1;
+    if(mPosition.y > 8 * 64){
+      Delete();
+    }
+}

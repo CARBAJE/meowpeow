@@ -25,7 +25,7 @@ class Enemy : public Entity {
         virtual void OnCollision(GameObject* other) override;
         virtual void OnOutsideScene() override;
 
-        virtual void ReceiveDamage(float amount) ;
+        virtual void ReceiveDamage(int amount) ;
 };
 
 #endif //ENEMY_HPP

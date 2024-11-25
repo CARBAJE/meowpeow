@@ -1,5 +1,10 @@
 #include "../classes/scene.hpp"
 #include "../classes/game_object.hpp"
+#include "../classes/ui_overlay.hpp"
+/*
+Scene::Scene(){
+  mDestroyed = false;
+}*/
 
 void Scene::SetSceneBounds(v2 position, v2 size){
     mSceneBounds.Update(position, size);
@@ -21,14 +26,29 @@ void Scene::Tick(float deltaTime) {
 
     for (auto go: mPendingGameObjectsToRemove) {
         auto it = std::find(mGameObjects.begin(), mGameObjects.end(), go);
+        delete *it;
         mGameObjects.erase(it);
     }
     mPendingGameObjectsToRemove.clear();
+    
+    for(auto& overlay : mUIOverlays){
+      overlay.second->Tick(deltaTime);
+    }
 }
 
 void Scene::Render() {
     for (auto& go: mGameObjects) {
         go -> Render();
+    }
+    
+    /*
+    struct pair {
+      std::string first;
+      UIOverlay* second;
+    }*/
+    
+    for(auto& overlay : mUIOverlays){
+      overlay.second->Render();
     }
 }
 
@@ -70,9 +90,47 @@ bool Scene::DetectOutsideOfScene(GameObject* gameObject, v2 amount) {
     return outside;
 }
 
-void Scene::SetPlayer(GameObject* player){
+void Scene::SetPlayer(Player* player){
     mPlayer = player;
 }
-GameObject* Scene::GetPlayer(){
+Player* Scene::GetPlayer(){
     return mPlayer;
+}
+
+void Scene::AddOverlay(const std::string& name, UIOverlay* overlay){
+  mUIOverlays[name] = overlay;
+}
+
+void Scene::initialize(){
+  mDestroyed = false;
+}
+
+void Scene::ScheduleDestroy(){
+  mDestroyed = true;
+}
+
+bool Scene::WasDestroyed(){
+  return mDestroyed;
+}
+
+void Scene::Destroy(){
+  for(auto& go : mGameObjects){
+    delete go; 
+  }
+  
+  mGameObjects.clear();
+  
+  for(auto& overlay : mUIOverlays){
+    delete overlay.second;
+  }
+  
+  mUIOverlays.clear();
+}
+
+UIOverlay* Scene::GetOverlay(const std::string& name){
+  if(mUIOverlays.find(name) == mUIOverlays.end()){
+    return nullptr;
+  }
+  
+  return mUIOverlays[name];
 }

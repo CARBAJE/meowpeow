@@ -2,10 +2,13 @@
 #include "../classes/projectile.hpp"
 #include "../classes/input.hpp"
 #include "../classes/assets.hpp"
-
+//#include "../classes/screen_fade_object.hpp"
+#include "../classes/ui_overlay.hpp"
+#include "../classes/explosion_particle.hpp"
 
 Player::Player(Scene* scene, v2 startingPosition)
     : Entity(scene, startingPosition, 10){ //10 de vida por ajora
+        mScene->SetPlayer(this);
         mTag="Player";
         
         mShipTextures[0] = Assets::GetTexture("player_left");
@@ -28,6 +31,8 @@ Player::Player(Scene* scene, v2 startingPosition)
         mBounds = AABB(mPosition , mBoundsSize);
 
         mRestrictMovementInScene = true;
+        
+        mHealth=4;
     }
 
 void Player::Tick(float deltaTime) {
@@ -52,6 +57,9 @@ void Player::Tick(float deltaTime) {
 
     }
 
+    if(mHurtTime > 0){
+      mHurtTime -= deltaTime;
+    }
 
     //-1 0 1 pero para control Xbox etc se neceista 0 1 2
     //que solo es sumarle 1 xd 
@@ -70,15 +78,41 @@ void Player::Render() {
     destination.y = mPosition.y;
     destination.width = 64;
     destination.height = 64;
+    
+    if(mHurtTime >0){
+      mColor = RED;
+    }
+    else{
+      mColor = WHITE;
+    }
 
     DrawTexturePro(mTexture->texture, mTexture->source, destination, {0, 0}, 0, WHITE);
     v2 offset = {0, 64};
     mBoosters->Render(mPosition+offset, {64, 64}); // mBoosters.Render(mPosition+offset, {64, 64}, RED) si ponemos aqui el color (el sea) cambia la textura 
     //asi ponemos mas colores en el booster xd
+    
 }
 
-void Player::ReceiveDamage(float amount) {
+void Player::ReceiveDamage(int amount) {
+    if(mHurtTime > 0){
+      return;
+    }
+    mHurtTime=0.4f;
     mHealth -= amount;
- 
+    if(mHealth <= 0){
+      Death();
+    }
   
+}
+
+void Player::Death(){
+    Delete();
+    mScene->SetPlayer(nullptr);
+    mScene->Add(new ExplosionParticle(mScene, mPosition));
+    //mScene->Add(new ScreenFadeObject(mScene));
+    UIOverlay* overlay = mScene->GetOverlay("hud");
+    if(overlay){
+      HudOverlay* hudOverlay = dynamic_cast<HudOverlay*>(overlay);
+      hudOverlay->FadeScreen();
+    }
 }

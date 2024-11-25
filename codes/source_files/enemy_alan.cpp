@@ -38,6 +38,9 @@ void EnemyAlan::Render() {
 
 void EnemyAlan::OnOutsideScene() {
     mDirection.x *= -1;
+    if(mPosition.y > 8 * 64){
+      Delete();
+    }
 }
 
     

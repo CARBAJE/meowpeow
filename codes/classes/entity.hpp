@@ -9,12 +9,13 @@
 
 class Entity : public GameObject {
     protected: 
-        float mHealth;
+        int mHealth;
     public: 
-        Entity(Scene* scene, v2 startingPosition, float health);
+        Entity(Scene* scene, v2 startingPosition, int health);
 
-        virtual void ReceiveDamage(float amount) = 0;
-
+        virtual void ReceiveDamage(int amount) = 0;
+        virtual void Death() = 0;
+        int GetHealth() const;
 };
 
 #endif //ENTITY_HPP
