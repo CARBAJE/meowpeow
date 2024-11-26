@@ -1,10 +1,10 @@
 CMakeFiles/meowpeow.dir/source_files/entitiy.cpp.o: \
- /home/oscarhu/Documents/JUEGO/meowpeow/codes/source_files/entitiy.cpp \
+ /home/carbaje/Documents/meowpeow/codes/source_files/entitiy.cpp \
  /usr/include/stdc-predef.h \
- /home/oscarhu/Documents/JUEGO/meowpeow/codes/source_files/../classes/entity.hpp \
- /usr/include/raylib.h \
+ /home/carbaje/Documents/meowpeow/codes/source_files/../classes/entity.hpp \
+ /usr/local/include/raylib.h \
  /usr/lib/gcc/x86_64-redhat-linux/14/include/stdarg.h \
- /home/oscarhu/Documents/JUEGO/meowpeow/codes/source_files/../classes/game_object.hpp \
+ /home/carbaje/Documents/meowpeow/codes/source_files/../classes/game_object.hpp \
  /usr/include/c++/14/string /usr/include/c++/14/bits/requires_hosted.h \
  /usr/include/c++/14/x86_64-redhat-linux/bits/c++config.h \
  /usr/include/bits/wordsize.h \
@@ -98,11 +98,17 @@ CMakeFiles/meowpeow.dir/source_files/entitiy.cpp.o: \
  /usr/include/c++/14/bits/memory_resource.h /usr/include/c++/14/cstddef \
  /usr/include/c++/14/bits/uses_allocator.h \
  /usr/include/c++/14/bits/uses_allocator_args.h /usr/include/c++/14/tuple \
- /home/oscarhu/Documents/JUEGO/meowpeow/codes/source_files/../classes/scene.hpp \
+ /home/carbaje/Documents/meowpeow/codes/source_files/../classes/scene.hpp \
  /usr/include/c++/14/vector /usr/include/c++/14/bits/stl_uninitialized.h \
  /usr/include/c++/14/bits/stl_vector.h \
  /usr/include/c++/14/bits/stl_bvector.h \
- /usr/include/c++/14/bits/vector.tcc /usr/include/c++/14/algorithm \
+ /usr/include/c++/14/bits/vector.tcc /usr/include/c++/14/map \
+ /usr/include/c++/14/bits/stl_tree.h \
+ /usr/include/c++/14/ext/aligned_buffer.h \
+ /usr/include/c++/14/bits/node_handle.h \
+ /usr/include/c++/14/bits/stl_map.h \
+ /usr/include/c++/14/bits/stl_multimap.h \
+ /usr/include/c++/14/bits/erase_if.h /usr/include/c++/14/algorithm \
  /usr/include/c++/14/bits/stl_algo.h \
  /usr/include/c++/14/bits/algorithmfwd.h \
  /usr/include/c++/14/bits/stl_heap.h \
@@ -110,7 +116,7 @@ CMakeFiles/meowpeow.dir/source_files/entitiy.cpp.o: \
  /usr/include/c++/14/bits/stl_tempbuf.h \
  /usr/include/c++/14/pstl/glue_algorithm_defs.h \
  /usr/include/c++/14/pstl/execution_defs.h \
- /home/oscarhu/Documents/JUEGO/meowpeow/codes/source_files/../classes/math.hpp \
+ /home/carbaje/Documents/meowpeow/codes/source_files/../classes/math.hpp \
  /usr/include/c++/14/cmath /usr/include/math.h \
  /usr/include/bits/math-vector.h /usr/include/bits/libm-simd-decl-stubs.h \
  /usr/include/bits/flt-eval-method.h /usr/include/bits/fp-logb.h \
@@ -130,4 +136,4 @@ CMakeFiles/meowpeow.dir/source_files/entitiy.cpp.o: \
  /usr/include/c++/14/tr1/poly_hermite.tcc \
  /usr/include/c++/14/tr1/poly_laguerre.tcc \
  /usr/include/c++/14/tr1/riemann_zeta.tcc \
- /home/oscarhu/Documents/JUEGO/meowpeow/codes/source_files/../classes/texture_details.hpp
+ /home/carbaje/Documents/meowpeow/codes/source_files/../classes/texture_details.hpp

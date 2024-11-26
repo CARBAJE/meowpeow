@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "meowpeow::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-meowpeow-fc6a1baab89cafbbf919.json",
+					"jsonFile" : "target-meowpeow-045147dd27ea6c207756.json",
 					"name" : "meowpeow",
 					"projectIndex" : 0
 				}
@@ -49,12 +49,12 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/oscarhu/Documents/JUEGO/meowpeow/codes/build",
-		"source" : "/home/oscarhu/Documents/JUEGO/meowpeow/codes"
+		"build" : "/home/carbaje/Documents/meowpeow/codes/build",
+		"source" : "/home/carbaje/Documents/meowpeow/codes"
 	},
 	"version" : 
 	{
 		"major" : 2,
-		"minor" : 6
+		"minor" : 7
 	}
 }

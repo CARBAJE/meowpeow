@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/oscarhu/Documents/JUEGO/meowpeow/codes/build"
+			"value" : "/home/carbaje/Documents/meowpeow/codes/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -79,7 +79,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "28"
+			"value" : "30"
 		},
 		{
 			"name" : "CMAKE_CACHE_PATCH_VERSION",
@@ -91,7 +91,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "2"
+			"value" : "5"
 		},
 		{
 			"name" : "CMAKE_COLOR_MAKEFILE",
@@ -559,7 +559,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/oscarhu/Documents/JUEGO/meowpeow/codes/build/CMakeFiles/pkgRedirects"
+			"value" : "/home/carbaje/Documents/meowpeow/codes/build/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -619,7 +619,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/oscarhu/Documents/JUEGO/meowpeow/codes"
+			"value" : "/home/carbaje/Documents/meowpeow/codes"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1171,7 +1171,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "[/usr/lib64/libraylib.so][/usr/include][v()]"
+			"value" : "[/usr/local/lib64/libraylib.so][/usr/local/include][v()]"
 		},
 		{
 			"name" : "MeowPeow_BINARY_DIR",
@@ -1183,7 +1183,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/oscarhu/Documents/JUEGO/meowpeow/codes/build"
+			"value" : "/home/carbaje/Documents/meowpeow/codes/build"
 		},
 		{
 			"name" : "MeowPeow_IS_TOP_LEVEL",
@@ -1207,7 +1207,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/oscarhu/Documents/JUEGO/meowpeow/codes"
+			"value" : "/home/carbaje/Documents/meowpeow/codes"
 		},
 		{
 			"name" : "PC_RAYLIB_CFLAGS",
@@ -1219,7 +1219,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "-I/usr/include"
+			"value" : "-I/usr/local/include"
 		},
 		{
 			"name" : "PC_RAYLIB_CFLAGS_I",
@@ -1267,7 +1267,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/usr/include"
+			"value" : "/usr/local/include"
 		},
 		{
 			"name" : "PC_RAYLIB_INCLUDE_DIRS",
@@ -1279,7 +1279,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/usr/include"
+			"value" : "/usr/local/include"
 		},
 		{
 			"name" : "PC_RAYLIB_LDFLAGS",
@@ -1291,7 +1291,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "-L/usr/lib64;-lraylib"
+			"value" : "-L/usr/local/lib64;-lraylib"
 		},
 		{
 			"name" : "PC_RAYLIB_LDFLAGS_OTHER",
@@ -1315,7 +1315,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/usr/lib64"
+			"value" : "/usr/local/lib64"
 		},
 		{
 			"name" : "PC_RAYLIB_LIBRARIES",
@@ -1339,7 +1339,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/usr/lib64"
+			"value" : "/usr/local/lib64"
 		},
 		{
 			"name" : "PC_RAYLIB_LIBS",
@@ -1411,7 +1411,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/usr"
+			"value" : "/usr/local"
 		},
 		{
 			"name" : "PC_RAYLIB_STATIC_CFLAGS",
@@ -1423,7 +1423,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "-I/usr/include"
+			"value" : "-I/usr/local/include"
 		},
 		{
 			"name" : "PC_RAYLIB_STATIC_CFLAGS_I",
@@ -1459,7 +1459,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/usr/include"
+			"value" : "/usr/local/include"
 		},
 		{
 			"name" : "PC_RAYLIB_STATIC_LDFLAGS",
@@ -1471,7 +1471,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "-L/usr/lib64;-lraylib"
+			"value" : "-L/usr/local/lib64;-lraylib"
 		},
 		{
 			"name" : "PC_RAYLIB_STATIC_LDFLAGS_OTHER",
@@ -1519,7 +1519,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/usr/lib64"
+			"value" : "/usr/local/lib64"
 		},
 		{
 			"name" : "PC_RAYLIB_STATIC_LIBS",
@@ -1579,7 +1579,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "4.5.0"
+			"value" : "5.5.0"
 		},
 		{
 			"name" : "PC_RAYLIB_raylib_INCLUDEDIR",
@@ -1711,7 +1711,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/lib64/libraylib.so"
+			"value" : "/usr/local/lib64/libraylib.so"
 		},
 		{
 			"name" : "prefix_result",
@@ -1723,7 +1723,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/usr/lib64"
+			"value" : "/usr/local/lib64"
 		},
 		{
 			"name" : "raylib_DIR",
@@ -1735,7 +1735,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "/usr/lib64/cmake/raylib"
+			"value" : "/usr/local/lib64/cmake/raylib"
 		},
 		{
 			"name" : "raylib_INCLUDE_DIR",
@@ -1751,7 +1751,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "/usr/include"
+			"value" : "/usr/local/include"
 		},
 		{
 			"name" : "raylib_LIBRARY",
@@ -1767,7 +1767,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/lib64/libraylib.so"
+			"value" : "/usr/local/lib64/libraylib.so"
 		}
 	],
 	"kind" : "cache",

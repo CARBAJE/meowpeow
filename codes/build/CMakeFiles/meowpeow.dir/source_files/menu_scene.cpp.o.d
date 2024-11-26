@@ -1,7 +1,8 @@
-CMakeFiles/meowpeow.dir/source_files/scene.cpp.o: \
- /home/carbaje/Documents/meowpeow/codes/source_files/scene.cpp \
+CMakeFiles/meowpeow.dir/source_files/menu_scene.cpp.o: \
+ /home/carbaje/Documents/meowpeow/codes/source_files/menu_scene.cpp \
  /usr/include/stdc-predef.h \
- /home/carbaje/Documents/meowpeow/codes/source_files/../classes/scene.hpp \
+ /home/carbaje/Documents/meowpeow/codes/source_files/../classes/menu_scene.hpp \
+ /home/carbaje/Documents/meowpeow/codes/source_files/../classes/../classes/scene.hpp \
  /usr/include/c++/14/vector /usr/include/c++/14/bits/requires_hosted.h \
  /usr/include/c++/14/x86_64-redhat-linux/bits/c++config.h \
  /usr/include/bits/wordsize.h \
@@ -112,7 +113,7 @@ CMakeFiles/meowpeow.dir/source_files/scene.cpp.o: \
  /usr/include/c++/14/bits/stl_tempbuf.h \
  /usr/include/c++/14/pstl/glue_algorithm_defs.h \
  /usr/include/c++/14/pstl/execution_defs.h \
- /home/carbaje/Documents/meowpeow/codes/source_files/../classes/math.hpp \
+ /home/carbaje/Documents/meowpeow/codes/source_files/../classes/../classes/math.hpp \
  /usr/include/c++/14/cmath /usr/include/math.h \
  /usr/include/bits/math-vector.h /usr/include/bits/libm-simd-decl-stubs.h \
  /usr/include/bits/flt-eval-method.h /usr/include/bits/fp-logb.h \
@@ -132,8 +133,52 @@ CMakeFiles/meowpeow.dir/source_files/scene.cpp.o: \
  /usr/include/c++/14/tr1/poly_hermite.tcc \
  /usr/include/c++/14/tr1/poly_laguerre.tcc \
  /usr/include/c++/14/tr1/riemann_zeta.tcc \
- /home/carbaje/Documents/meowpeow/codes/source_files/../classes/game_object.hpp \
- /home/carbaje/Documents/meowpeow/codes/source_files/../classes/scene.hpp \
- /home/carbaje/Documents/meowpeow/codes/source_files/../classes/ui_overlay.hpp \
- /home/carbaje/Documents/meowpeow/codes/source_files/../classes/../classes/texture_details.hpp \
- /usr/local/include/raylib.h
+ /home/carbaje/Documents/meowpeow/codes/source_files/../classes/../classes/ui_overlay.hpp \
+ /home/carbaje/Documents/meowpeow/codes/source_files/../classes/../classes/../classes/texture_details.hpp \
+ /usr/local/include/raylib.h \
+ /home/carbaje/Documents/meowpeow/codes/source_files/../classes/assets.hpp \
+ /home/carbaje/Documents/meowpeow/codes/source_files/../classes/animation.hpp \
+ /home/carbaje/Documents/meowpeow/codes/source_files/../classes/texture_details.hpp \
+ /home/carbaje/Documents/meowpeow/codes/source_files/../classes/math.hpp \
+ /usr/include/c++/14/functional /usr/include/c++/14/bits/std_function.h \
+ /usr/include/c++/14/typeinfo /usr/include/c++/14/unordered_map \
+ /usr/include/c++/14/bits/unordered_map.h \
+ /usr/include/c++/14/bits/hashtable.h \
+ /usr/include/c++/14/bits/hashtable_policy.h \
+ /usr/include/c++/14/bits/enable_special_members.h \
+ /usr/include/c++/14/array /usr/include/c++/14/compare \
+ /home/carbaje/Documents/meowpeow/codes/source_files/../classes/settings.hpp \
+ /home/carbaje/Documents/meowpeow/codes/source_files/../classes/scene_manager.hpp \
+ /usr/include/c++/14/iostream /usr/include/c++/14/ostream \
+ /usr/include/c++/14/ios /usr/include/c++/14/exception \
+ /usr/include/c++/14/bits/exception_ptr.h \
+ /usr/include/c++/14/bits/cxxabi_init_exception.h \
+ /usr/include/c++/14/bits/nested_exception.h \
+ /usr/include/c++/14/bits/ios_base.h /usr/include/c++/14/ext/atomicity.h \
+ /usr/include/c++/14/x86_64-redhat-linux/bits/gthr.h \
+ /usr/include/c++/14/x86_64-redhat-linux/bits/gthr-default.h \
+ /usr/include/pthread.h /usr/include/sched.h /usr/include/bits/sched.h \
+ /usr/include/bits/types/struct_sched_param.h /usr/include/bits/cpu-set.h \
+ /usr/include/time.h /usr/include/bits/time.h /usr/include/bits/timex.h \
+ /usr/include/bits/types/struct_tm.h \
+ /usr/include/bits/types/struct_itimerspec.h /usr/include/bits/setjmp.h \
+ /usr/include/bits/types/struct___jmp_buf_tag.h \
+ /usr/include/bits/pthread_stack_min-dynamic.h \
+ /usr/include/c++/14/x86_64-redhat-linux/bits/atomic_word.h \
+ /usr/include/sys/single_threaded.h \
+ /usr/include/c++/14/bits/locale_classes.h \
+ /usr/include/c++/14/bits/locale_classes.tcc \
+ /usr/include/c++/14/system_error \
+ /usr/include/c++/14/x86_64-redhat-linux/bits/error_constants.h \
+ /usr/include/c++/14/stdexcept /usr/include/c++/14/streambuf \
+ /usr/include/c++/14/bits/streambuf.tcc \
+ /usr/include/c++/14/bits/basic_ios.h \
+ /usr/include/c++/14/bits/locale_facets.h /usr/include/c++/14/cwctype \
+ /usr/include/wctype.h /usr/include/bits/wctype-wchar.h \
+ /usr/include/c++/14/x86_64-redhat-linux/bits/ctype_base.h \
+ /usr/include/c++/14/bits/streambuf_iterator.h \
+ /usr/include/c++/14/x86_64-redhat-linux/bits/ctype_inline.h \
+ /usr/include/c++/14/bits/locale_facets.tcc \
+ /usr/include/c++/14/bits/basic_ios.tcc \
+ /usr/include/c++/14/bits/ostream.tcc /usr/include/c++/14/istream \
+ /usr/include/c++/14/bits/istream.tcc

@@ -1,7 +1,7 @@
 CMakeFiles/meowpeow.dir/source_files/math.cpp.o: \
- /home/oscarhu/Documents/JUEGO/meowpeow/codes/source_files/math.cpp \
+ /home/carbaje/Documents/meowpeow/codes/source_files/math.cpp \
  /usr/include/stdc-predef.h \
- /home/oscarhu/Documents/JUEGO/meowpeow/codes/source_files/../classes/math.hpp \
+ /home/carbaje/Documents/meowpeow/codes/source_files/../classes/math.hpp \
  /usr/include/c++/14/cmath /usr/include/c++/14/bits/requires_hosted.h \
  /usr/include/c++/14/x86_64-redhat-linux/bits/c++config.h \
  /usr/include/bits/wordsize.h \

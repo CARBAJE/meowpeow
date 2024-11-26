@@ -1,11 +1,11 @@
 CMakeFiles/meowpeow.dir/source_files/animation.cpp.o: \
- /home/oscarhu/Documents/JUEGO/meowpeow/codes/source_files/animation.cpp \
+ /home/carbaje/Documents/meowpeow/codes/source_files/animation.cpp \
  /usr/include/stdc-predef.h \
- /home/oscarhu/Documents/JUEGO/meowpeow/codes/source_files/../classes/animation.hpp \
- /home/oscarhu/Documents/JUEGO/meowpeow/codes/source_files/../classes/texture_details.hpp \
- /usr/include/raylib.h \
+ /home/carbaje/Documents/meowpeow/codes/source_files/../classes/animation.hpp \
+ /home/carbaje/Documents/meowpeow/codes/source_files/../classes/texture_details.hpp \
+ /usr/local/include/raylib.h \
  /usr/lib/gcc/x86_64-redhat-linux/14/include/stdarg.h \
- /home/oscarhu/Documents/JUEGO/meowpeow/codes/source_files/../classes/math.hpp \
+ /home/carbaje/Documents/meowpeow/codes/source_files/../classes/math.hpp \
  /usr/include/c++/14/cmath /usr/include/c++/14/bits/requires_hosted.h \
  /usr/include/c++/14/x86_64-redhat-linux/bits/c++config.h \
  /usr/include/bits/wordsize.h \

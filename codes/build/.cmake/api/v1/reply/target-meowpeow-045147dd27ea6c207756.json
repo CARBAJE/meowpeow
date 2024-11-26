@@ -20,7 +20,7 @@
 		"files" : 
 		[
 			"CMakeLists.txt",
-			"/usr/lib64/cmake/raylib/raylib-config.cmake"
+			"/usr/local/lib64/cmake/raylib/raylib-config.cmake"
 		],
 		"nodes" : 
 		[
@@ -89,14 +89,14 @@
 				},
 				{
 					"backtrace" : 2,
-					"fragment" : "-I/usr/include"
+					"fragment" : "-I/usr/local/include"
 				}
 			],
 			"includes" : 
 			[
 				{
 					"backtrace" : 8,
-					"path" : "/home/oscarhu/Documents/JUEGO/meowpeow/codes/classes"
+					"path" : "/home/carbaje/Documents/meowpeow/codes/classes"
 				}
 			],
 			"language" : "CXX",
@@ -124,7 +124,12 @@
 				11,
 				12,
 				13,
-				14
+				14,
+				15,
+				16,
+				17,
+				18,
+				19
 			]
 		}
 	],
@@ -138,8 +143,12 @@
 				"role" : "flags"
 			},
 			{
+				"fragment" : "-Wl,-rpath,/usr/local/lib64",
+				"role" : "libraries"
+			},
+			{
 				"backtrace" : 2,
-				"fragment" : "/usr/lib64/libraylib.so",
+				"fragment" : "/usr/local/lib64/libraylib.so",
 				"role" : "libraries"
 			},
 			{
@@ -174,7 +183,7 @@
 			},
 			{
 				"backtrace" : 6,
-				"fragment" : "-L/usr/lib64 -lraylib",
+				"fragment" : "-L/usr/local/lib64 -lraylib",
 				"role" : "libraries"
 			}
 		],
@@ -207,7 +216,12 @@
 				11,
 				12,
 				13,
-				14
+				14,
+				15,
+				16,
+				17,
+				18,
+				19
 			]
 		}
 	],
@@ -282,7 +296,19 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
+			"path" : "source_files/game_scene.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
 			"path" : "source_files/math.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "source_files/menu_scene.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
@@ -301,6 +327,24 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "source_files/scene.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "source_files/scene_manager.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "source_files/settings.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "source_files/ui_overlay.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],
