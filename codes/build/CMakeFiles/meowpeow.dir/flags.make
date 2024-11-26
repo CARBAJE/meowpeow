@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I/home/carbaje/Documents/meowpeow/codes/classes
 
-CXX_FLAGS = -std=gnu++17 -march=native -I/usr/local/include
+CXX_FLAGS = -std=gnu++17 -march=native --coverage -I/usr/local/include
 

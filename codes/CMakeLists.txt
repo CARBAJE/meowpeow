@@ -31,3 +31,19 @@ target_link_libraries(meowpeow raylib)
 if(UNIX)
     target_link_libraries(meowpeow GL m pthread dl rt X11)
 endif()
+
+# --- Integración con herramientas de pruebas ---
+
+## 1. Valgrind: Crear un target para pruebas con Valgrind
+add_custom_target(valgrind
+    COMMAND valgrind --leak-check=full --show-leak-kinds=all $<TARGET_FILE:meowpeow> > valgrind_output.txt 2>&1
+    DEPENDS meowpeow
+    COMMENT "Ejecutando Valgrind y guardando salida en valgrind_output.txt"
+)
+
+## 2. gcov y lcov: Activar cobertura de código
+if(CMAKE_COMPILER_IS_GNUCXX)
+    target_compile_options(meowpeow PRIVATE --coverage)
+    target_link_options(meowpeow PRIVATE --coverage)
+endif()
+

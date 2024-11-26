@@ -72,6 +72,7 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/meowpeow.dir/clean
+clean: CMakeFiles/valgrind.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -99,6 +100,32 @@ meowpeow: CMakeFiles/meowpeow.dir/rule
 CMakeFiles/meowpeow.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/meowpeow.dir/build.make CMakeFiles/meowpeow.dir/clean
 .PHONY : CMakeFiles/meowpeow.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/valgrind.dir
+
+# All Build rule for target.
+CMakeFiles/valgrind.dir/all: CMakeFiles/meowpeow.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/valgrind.dir/build.make CMakeFiles/valgrind.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/valgrind.dir/build.make CMakeFiles/valgrind.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/carbaje/Documents/meowpeow/codes/build/CMakeFiles --progress-num=22 "Built target valgrind"
+.PHONY : CMakeFiles/valgrind.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/valgrind.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/carbaje/Documents/meowpeow/codes/build/CMakeFiles 22
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/valgrind.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/carbaje/Documents/meowpeow/codes/build/CMakeFiles 0
+.PHONY : CMakeFiles/valgrind.dir/rule
+
+# Convenience name for target.
+valgrind: CMakeFiles/valgrind.dir/rule
+.PHONY : valgrind
+
+# clean rule for target.
+CMakeFiles/valgrind.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/valgrind.dir/build.make CMakeFiles/valgrind.dir/clean
+.PHONY : CMakeFiles/valgrind.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

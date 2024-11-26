@@ -1,0 +1,27 @@
+# Usa una imagen base de Fedora
+FROM fedora:latest
+
+# Instala las herramientas necesarias y las dependencias de raylib
+RUN dnf install -y cmake make gcc-c++ git \
+    alsa-lib-devel mesa-libGL-devel libX11-devel libXrandr-devel \
+    libXi-devel libXcursor-devel libXinerama-devel libatomic \
+    raylib-devel && \
+    dnf clean all
+
+# Establece el directorio de trabajo en la imagen
+WORKDIR /app
+
+# Copia el código fuente al contenedor
+COPY . .
+
+# Crea un directorio para los archivos de compilación
+RUN mkdir -p build
+WORKDIR /app/build
+
+RUN rm -r *
+
+# Compila el código
+RUN cmake .. && make
+
+# Ejecuta el binario cuando se inicie el contenedor
+CMD ["./meowpeow"]

@@ -129,6 +129,19 @@ meowpeow/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/meowpeow.dir/build.make CMakeFiles/meowpeow.dir/build
 .PHONY : meowpeow/fast
 
+#=============================================================================
+# Target rules for targets named valgrind
+
+# Build rule for target.
+valgrind: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 valgrind
+.PHONY : valgrind
+
+# fast build rule for target.
+valgrind/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/valgrind.dir/build.make CMakeFiles/valgrind.dir/build
+.PHONY : valgrind/fast
+
 source_files/animation.o: source_files/animation.cpp.o
 .PHONY : source_files/animation.o
 
@@ -617,6 +630,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... valgrind"
 	@echo "... meowpeow"
 	@echo "... source_files/animation.o"
 	@echo "... source_files/animation.i"
