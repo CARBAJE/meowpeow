@@ -1,16 +1,12 @@
 # Usa una imagen base de Fedora
 FROM fedora:latest
 
-# Instala las herramientas necesarias y las dependencias de raylib, y añade Clang-Tidy
+# Instala las herramientas necesarias y las dependencias de raylib
 RUN dnf install -y cmake make gcc-c++ git \
     alsa-lib-devel mesa-libGL-devel libX11-devel libXrandr-devel \
     libXi-devel libXcursor-devel libXinerama-devel libatomic \
-<<<<<<< HEAD
-    raylib-devel clang-tools-extra && \
-=======
     raylib-devel valgrind lcov xorg-x11-server-Xvfb \
     glfw glfw-devel coreutils  clang-tools-extra && \
->>>>>>> a8d8014 (Implementacion de las pruebas de valgrin e lvoc en el contenedor de Docker)
     dnf clean all
 
 # Establece el directorio de trabajo en la imagen
@@ -46,10 +42,3 @@ RUN xvfb-run -s "-screen 0 1024x768x24" ./meowpeow & \
 
 # Define el comando final para el contenedor (opcional)
 CMD ./meowpeow && cat /app/build/valgrind_output.txt
-
-<<<<<<< HEAD
-# Ejecuta el binario cuando se inicie el contenedor
-CMD ["./meowpeow"]
-
-=======
->>>>>>> a8d8014 (Implementacion de las pruebas de valgrin e lvoc en el contenedor de Docker)
