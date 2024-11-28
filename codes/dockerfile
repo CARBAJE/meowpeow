@@ -5,7 +5,12 @@ FROM fedora:latest
 RUN dnf install -y cmake make gcc-c++ git \
     alsa-lib-devel mesa-libGL-devel libX11-devel libXrandr-devel \
     libXi-devel libXcursor-devel libXinerama-devel libatomic \
+<<<<<<< HEAD
     raylib-devel clang-tools-extra && \
+=======
+    raylib-devel valgrind lcov xorg-x11-server-Xvfb \
+    glfw glfw-devel coreutils  clang-tools-extra && \
+>>>>>>> a8d8014 (Implementacion de las pruebas de valgrin e lvoc en el contenedor de Docker)
     dnf clean all
 
 # Establece el directorio de trabajo en la imagen
@@ -18,11 +23,33 @@ COPY . .
 RUN mkdir -p build
 WORKDIR /app/build
 
-RUN rm -r *
+# Limpia y compila el proyecto con opciones de cobertura
+RUN rm -rf * && \
+    cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_CXX_FLAGS="--coverage" .. && \
+    make
 
-# Compila el código
-RUN cmake .. && make
+# Ejecuta las pruebas de Valgrind
+RUN valgrind --leak-check=full --show-leak-kinds=all ./meowpeow > valgrind_output.txt 2>&1 || \
+    (echo "Valgrind detectó errores. Revisa valgrind_output.txt" || exit 1)
 
+# Configura XDG_RUNTIME_DIR
+ENV XDG_RUNTIME_DIR=/tmp/runtime-root
+
+# Ejecuta el servidor X virtual con xvfb-run
+RUN xvfb-run -s "-screen 0 1024x768x24" ./meowpeow & \
+    sleep 5 && \
+    kill $!
+
+# Captura la cobertura de código con lcov y genera el reporte
+#RUN lcov --capture --directory . --output-file coverage.info --ignore-errors empty && \
+#    genhtml coverage.info --output-directory coverage_html > lcov_output.txt 2>&1
+
+# Define el comando final para el contenedor (opcional)
+CMD ./meowpeow && cat /app/build/valgrind_output.txt
+
+<<<<<<< HEAD
 # Ejecuta el binario cuando se inicie el contenedor
 CMD ["./meowpeow"]
 
+=======
+>>>>>>> a8d8014 (Implementacion de las pruebas de valgrin e lvoc en el contenedor de Docker)

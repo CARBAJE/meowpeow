@@ -6,7 +6,7 @@
 			[
 				{
 					"build" : ".",
-					"jsonFile" : "directory-.-f5ebdc15457944623624.json",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.10"
@@ -20,7 +20,7 @@
 					]
 				}
 			],
-			"name" : "",
+			"name" : "Debug",
 			"projects" : 
 			[
 				{
@@ -41,14 +41,14 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "meowpeow::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-meowpeow-01b0f4c69aa5bf3244c8.json",
+					"jsonFile" : "target-meowpeow-Debug-82158c918f62e1bfce7e.json",
 					"name" : "meowpeow",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "valgrind::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-valgrind-296d71fd58704f1194f2.json",
+					"jsonFile" : "target-valgrind-Debug-296d71fd58704f1194f2.json",
 					"name" : "valgrind",
 					"projectIndex" : 0
 				}

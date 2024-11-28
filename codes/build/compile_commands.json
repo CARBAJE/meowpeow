@@ -1,0 +1,122 @@
+[
+{
+  "directory": "/home/carbaje/Documents/meowpeow/codes/build",
+  "command": "/usr/bin/g++  -I/home/carbaje/Documents/meowpeow/codes/classes -g -std=gnu++17 -march=native --coverage -I/usr/local/include -o CMakeFiles/meowpeow.dir/source_files/animation.cpp.o -c /home/carbaje/Documents/meowpeow/codes/source_files/animation.cpp",
+  "file": "/home/carbaje/Documents/meowpeow/codes/source_files/animation.cpp",
+  "output": "CMakeFiles/meowpeow.dir/source_files/animation.cpp.o"
+},
+{
+  "directory": "/home/carbaje/Documents/meowpeow/codes/build",
+  "command": "/usr/bin/g++  -I/home/carbaje/Documents/meowpeow/codes/classes -g -std=gnu++17 -march=native --coverage -I/usr/local/include -o CMakeFiles/meowpeow.dir/source_files/app.cpp.o -c /home/carbaje/Documents/meowpeow/codes/source_files/app.cpp",
+  "file": "/home/carbaje/Documents/meowpeow/codes/source_files/app.cpp",
+  "output": "CMakeFiles/meowpeow.dir/source_files/app.cpp.o"
+},
+{
+  "directory": "/home/carbaje/Documents/meowpeow/codes/build",
+  "command": "/usr/bin/g++  -I/home/carbaje/Documents/meowpeow/codes/classes -g -std=gnu++17 -march=native --coverage -I/usr/local/include -o CMakeFiles/meowpeow.dir/source_files/assets.cpp.o -c /home/carbaje/Documents/meowpeow/codes/source_files/assets.cpp",
+  "file": "/home/carbaje/Documents/meowpeow/codes/source_files/assets.cpp",
+  "output": "CMakeFiles/meowpeow.dir/source_files/assets.cpp.o"
+},
+{
+  "directory": "/home/carbaje/Documents/meowpeow/codes/build",
+  "command": "/usr/bin/g++  -I/home/carbaje/Documents/meowpeow/codes/classes -g -std=gnu++17 -march=native --coverage -I/usr/local/include -o CMakeFiles/meowpeow.dir/source_files/enemy.cpp.o -c /home/carbaje/Documents/meowpeow/codes/source_files/enemy.cpp",
+  "file": "/home/carbaje/Documents/meowpeow/codes/source_files/enemy.cpp",
+  "output": "CMakeFiles/meowpeow.dir/source_files/enemy.cpp.o"
+},
+{
+  "directory": "/home/carbaje/Documents/meowpeow/codes/build",
+  "command": "/usr/bin/g++  -I/home/carbaje/Documents/meowpeow/codes/classes -g -std=gnu++17 -march=native --coverage -I/usr/local/include -o CMakeFiles/meowpeow.dir/source_files/enemy_alan.cpp.o -c /home/carbaje/Documents/meowpeow/codes/source_files/enemy_alan.cpp",
+  "file": "/home/carbaje/Documents/meowpeow/codes/source_files/enemy_alan.cpp",
+  "output": "CMakeFiles/meowpeow.dir/source_files/enemy_alan.cpp.o"
+},
+{
+  "directory": "/home/carbaje/Documents/meowpeow/codes/build",
+  "command": "/usr/bin/g++  -I/home/carbaje/Documents/meowpeow/codes/classes -g -std=gnu++17 -march=native --coverage -I/usr/local/include -o CMakeFiles/meowpeow.dir/source_files/enemy_bonbon.cpp.o -c /home/carbaje/Documents/meowpeow/codes/source_files/enemy_bonbon.cpp",
+  "file": "/home/carbaje/Documents/meowpeow/codes/source_files/enemy_bonbon.cpp",
+  "output": "CMakeFiles/meowpeow.dir/source_files/enemy_bonbon.cpp.o"
+},
+{
+  "directory": "/home/carbaje/Documents/meowpeow/codes/build",
+  "command": "/usr/bin/g++  -I/home/carbaje/Documents/meowpeow/codes/classes -g -std=gnu++17 -march=native --coverage -I/usr/local/include -o CMakeFiles/meowpeow.dir/source_files/enemy_lips.cpp.o -c /home/carbaje/Documents/meowpeow/codes/source_files/enemy_lips.cpp",
+  "file": "/home/carbaje/Documents/meowpeow/codes/source_files/enemy_lips.cpp",
+  "output": "CMakeFiles/meowpeow.dir/source_files/enemy_lips.cpp.o"
+},
+{
+  "directory": "/home/carbaje/Documents/meowpeow/codes/build",
+  "command": "/usr/bin/g++  -I/home/carbaje/Documents/meowpeow/codes/classes -g -std=gnu++17 -march=native --coverage -I/usr/local/include -o CMakeFiles/meowpeow.dir/source_files/enemy_projectile.cpp.o -c /home/carbaje/Documents/meowpeow/codes/source_files/enemy_projectile.cpp",
+  "file": "/home/carbaje/Documents/meowpeow/codes/source_files/enemy_projectile.cpp",
+  "output": "CMakeFiles/meowpeow.dir/source_files/enemy_projectile.cpp.o"
+},
+{
+  "directory": "/home/carbaje/Documents/meowpeow/codes/build",
+  "command": "/usr/bin/g++  -I/home/carbaje/Documents/meowpeow/codes/classes -g -std=gnu++17 -march=native --coverage -I/usr/local/include -o CMakeFiles/meowpeow.dir/source_files/enemy_spawner.cpp.o -c /home/carbaje/Documents/meowpeow/codes/source_files/enemy_spawner.cpp",
+  "file": "/home/carbaje/Documents/meowpeow/codes/source_files/enemy_spawner.cpp",
+  "output": "CMakeFiles/meowpeow.dir/source_files/enemy_spawner.cpp.o"
+},
+{
+  "directory": "/home/carbaje/Documents/meowpeow/codes/build",
+  "command": "/usr/bin/g++  -I/home/carbaje/Documents/meowpeow/codes/classes -g -std=gnu++17 -march=native --coverage -I/usr/local/include -o CMakeFiles/meowpeow.dir/source_files/entitiy.cpp.o -c /home/carbaje/Documents/meowpeow/codes/source_files/entitiy.cpp",
+  "file": "/home/carbaje/Documents/meowpeow/codes/source_files/entitiy.cpp",
+  "output": "CMakeFiles/meowpeow.dir/source_files/entitiy.cpp.o"
+},
+{
+  "directory": "/home/carbaje/Documents/meowpeow/codes/build",
+  "command": "/usr/bin/g++  -I/home/carbaje/Documents/meowpeow/codes/classes -g -std=gnu++17 -march=native --coverage -I/usr/local/include -o CMakeFiles/meowpeow.dir/source_files/game_object.cpp.o -c /home/carbaje/Documents/meowpeow/codes/source_files/game_object.cpp",
+  "file": "/home/carbaje/Documents/meowpeow/codes/source_files/game_object.cpp",
+  "output": "CMakeFiles/meowpeow.dir/source_files/game_object.cpp.o"
+},
+{
+  "directory": "/home/carbaje/Documents/meowpeow/codes/build",
+  "command": "/usr/bin/g++  -I/home/carbaje/Documents/meowpeow/codes/classes -g -std=gnu++17 -march=native --coverage -I/usr/local/include -o CMakeFiles/meowpeow.dir/source_files/game_scene.cpp.o -c /home/carbaje/Documents/meowpeow/codes/source_files/game_scene.cpp",
+  "file": "/home/carbaje/Documents/meowpeow/codes/source_files/game_scene.cpp",
+  "output": "CMakeFiles/meowpeow.dir/source_files/game_scene.cpp.o"
+},
+{
+  "directory": "/home/carbaje/Documents/meowpeow/codes/build",
+  "command": "/usr/bin/g++  -I/home/carbaje/Documents/meowpeow/codes/classes -g -std=gnu++17 -march=native --coverage -I/usr/local/include -o CMakeFiles/meowpeow.dir/source_files/math.cpp.o -c /home/carbaje/Documents/meowpeow/codes/source_files/math.cpp",
+  "file": "/home/carbaje/Documents/meowpeow/codes/source_files/math.cpp",
+  "output": "CMakeFiles/meowpeow.dir/source_files/math.cpp.o"
+},
+{
+  "directory": "/home/carbaje/Documents/meowpeow/codes/build",
+  "command": "/usr/bin/g++  -I/home/carbaje/Documents/meowpeow/codes/classes -g -std=gnu++17 -march=native --coverage -I/usr/local/include -o CMakeFiles/meowpeow.dir/source_files/menu_scene.cpp.o -c /home/carbaje/Documents/meowpeow/codes/source_files/menu_scene.cpp",
+  "file": "/home/carbaje/Documents/meowpeow/codes/source_files/menu_scene.cpp",
+  "output": "CMakeFiles/meowpeow.dir/source_files/menu_scene.cpp.o"
+},
+{
+  "directory": "/home/carbaje/Documents/meowpeow/codes/build",
+  "command": "/usr/bin/g++  -I/home/carbaje/Documents/meowpeow/codes/classes -g -std=gnu++17 -march=native --coverage -I/usr/local/include -o CMakeFiles/meowpeow.dir/source_files/player.cpp.o -c /home/carbaje/Documents/meowpeow/codes/source_files/player.cpp",
+  "file": "/home/carbaje/Documents/meowpeow/codes/source_files/player.cpp",
+  "output": "CMakeFiles/meowpeow.dir/source_files/player.cpp.o"
+},
+{
+  "directory": "/home/carbaje/Documents/meowpeow/codes/build",
+  "command": "/usr/bin/g++  -I/home/carbaje/Documents/meowpeow/codes/classes -g -std=gnu++17 -march=native --coverage -I/usr/local/include -o CMakeFiles/meowpeow.dir/source_files/projectile.cpp.o -c /home/carbaje/Documents/meowpeow/codes/source_files/projectile.cpp",
+  "file": "/home/carbaje/Documents/meowpeow/codes/source_files/projectile.cpp",
+  "output": "CMakeFiles/meowpeow.dir/source_files/projectile.cpp.o"
+},
+{
+  "directory": "/home/carbaje/Documents/meowpeow/codes/build",
+  "command": "/usr/bin/g++  -I/home/carbaje/Documents/meowpeow/codes/classes -g -std=gnu++17 -march=native --coverage -I/usr/local/include -o CMakeFiles/meowpeow.dir/source_files/scene.cpp.o -c /home/carbaje/Documents/meowpeow/codes/source_files/scene.cpp",
+  "file": "/home/carbaje/Documents/meowpeow/codes/source_files/scene.cpp",
+  "output": "CMakeFiles/meowpeow.dir/source_files/scene.cpp.o"
+},
+{
+  "directory": "/home/carbaje/Documents/meowpeow/codes/build",
+  "command": "/usr/bin/g++  -I/home/carbaje/Documents/meowpeow/codes/classes -g -std=gnu++17 -march=native --coverage -I/usr/local/include -o CMakeFiles/meowpeow.dir/source_files/scene_manager.cpp.o -c /home/carbaje/Documents/meowpeow/codes/source_files/scene_manager.cpp",
+  "file": "/home/carbaje/Documents/meowpeow/codes/source_files/scene_manager.cpp",
+  "output": "CMakeFiles/meowpeow.dir/source_files/scene_manager.cpp.o"
+},
+{
+  "directory": "/home/carbaje/Documents/meowpeow/codes/build",
+  "command": "/usr/bin/g++  -I/home/carbaje/Documents/meowpeow/codes/classes -g -std=gnu++17 -march=native --coverage -I/usr/local/include -o CMakeFiles/meowpeow.dir/source_files/settings.cpp.o -c /home/carbaje/Documents/meowpeow/codes/source_files/settings.cpp",
+  "file": "/home/carbaje/Documents/meowpeow/codes/source_files/settings.cpp",
+  "output": "CMakeFiles/meowpeow.dir/source_files/settings.cpp.o"
+},
+{
+  "directory": "/home/carbaje/Documents/meowpeow/codes/build",
+  "command": "/usr/bin/g++  -I/home/carbaje/Documents/meowpeow/codes/classes -g -std=gnu++17 -march=native --coverage -I/usr/local/include -o CMakeFiles/meowpeow.dir/source_files/ui_overlay.cpp.o -c /home/carbaje/Documents/meowpeow/codes/source_files/ui_overlay.cpp",
+  "file": "/home/carbaje/Documents/meowpeow/codes/source_files/ui_overlay.cpp",
+  "output": "CMakeFiles/meowpeow.dir/source_files/ui_overlay.cpp.o"
+}
+]
