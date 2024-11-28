@@ -1,3 +1,4 @@
+
 # Requiere la versión mínima de CMake
 cmake_minimum_required(VERSION 3.10)
 
@@ -6,6 +7,8 @@ project(MeowPeow)
 
 # Especificar el estándar de C++
 set(CMAKE_CXX_STANDARD 17)
+
+set(CMAKE_CXX_CLANG_TIDY "clang-tidy;-checks=*,-clang-analyzer-alpha.*")
 
 # Incluir las carpetas de cabeceras
 include_directories(classes)
@@ -32,18 +35,12 @@ if(UNIX)
     target_link_libraries(meowpeow GL m pthread dl rt X11)
 endif()
 
-# --- Integración con herramientas de pruebas ---
+# Busca las rutas de raylib automáticamente con pkg-config
+find_package(PkgConfig REQUIRED)
+pkg_check_modules(RAYLIB REQUIRED raylib)
 
-## 1. Valgrind: Crear un target para pruebas con Valgrind
-add_custom_target(valgrind
-    COMMAND valgrind --leak-check=full --show-leak-kinds=all $<TARGET_FILE:meowpeow> > valgrind_output.txt 2>&1
-    DEPENDS meowpeow
-    COMMENT "Ejecutando Valgrind y guardando salida en valgrind_output.txt"
-)
-
-## 2. gcov y lcov: Activar cobertura de código
-if(CMAKE_COMPILER_IS_GNUCXX)
-    target_compile_options(meowpeow PRIVATE --coverage)
-    target_link_options(meowpeow PRIVATE --coverage)
-endif()
+# Añade las cabeceras y librerías encontradas por pkg-config
+include_directories(${RAYLIB_INCLUDE_DIRS})
+link_directories(${RAYLIB_LIBRARY_DIRS})
+target_link_libraries(meowpeow ${RAYLIB_LIBRARIES})
 

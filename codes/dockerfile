@@ -1,11 +1,11 @@
 # Usa una imagen base de Fedora
 FROM fedora:latest
 
-# Instala las herramientas necesarias y las dependencias de raylib
+# Instala las herramientas necesarias y las dependencias de raylib, y añade Clang-Tidy
 RUN dnf install -y cmake make gcc-c++ git \
     alsa-lib-devel mesa-libGL-devel libX11-devel libXrandr-devel \
     libXi-devel libXcursor-devel libXinerama-devel libatomic \
-    raylib-devel && \
+    raylib-devel clang-tools-extra && \
     dnf clean all
 
 # Establece el directorio de trabajo en la imagen
@@ -25,3 +25,4 @@ RUN cmake .. && make
 
 # Ejecuta el binario cuando se inicie el contenedor
 CMD ["./meowpeow"]
+
